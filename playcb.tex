@@ -24,9 +24,48 @@
 % 6x9
 \documentclass{wileySix}
 
-\usepackage[utf8]{inputenc}
+%\usepackage[brazil]{babel}
 \usepackage{polyglossia}
 \usepackage{xcolor,graphicx,tikz,url}
+\usepackage{listings}
+\usepackage{color}
+\selectlanguage{portuguese}
+
+\lstdefinestyle{customc}{
+  backgroundcolor=\color{yellow!20}, 
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  extendedchars=true,
+  language=C++,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{red!40!black},
+  commentstyle=\itshape\color{green!40!black},
+  otherkeywords={Ponto},           
+  emph={
+  		AbreJanela,
+  		PintarFundo,
+  		CriaCircunferencia,
+  		CriaCirculo,
+  		CriaGrupo,
+  		Pintar,
+  		Grafite,
+  		Move,
+  		Desenha,
+  		Desenha1Frame,
+  		MostraPlanoCartesiano
+  		},
+  emphstyle={\color{blue!40!black}\bfseries},
+  stringstyle=\color{orange},
+  postbreak=\raisebox{0ex}[0ex][0ex]{%
+  \ensuremath{\color{red}\hookrightarrow\space}},
+  inputencoding=utf8,
+  numbers=left,  numberstyle=\tiny
+}
+\lstset{escapechar=@,style=customc}
+\def\playCB{\textsf{playCB}}
 
 %%%%%%%
 %% for times math: However, this package disables bold math (!)
@@ -99,14 +138,13 @@
 
 \begin{document}
 
-
 \booktitle{playCB}
 \subtitle{Biblioteca gráfica para programadores inexperientes}
 
 \authors{Sinayra Pascoal Cotts Moreira\\
 \affil{Universidade de Brasília}
-%Floyd J. Fowler, Jr.\\
-%\affil{University of New Mexico}
+Floyd J. Fowler, Jr.\\
+\affil{University of New Mexico}
 }
 
 \offprintinfo{Survey Methodology, Second Edition}{Robert M. Groves}
@@ -266,19 +304,21 @@ ABC {\cal DEF} \alpha\beta\Gamma\Delta\sum^{abc}_{def}
 {Submicron Semiconductor\\ Manufacture}
 
 
-\chapter[The Submicrometer Silicon MOSFET]
-{The Submicrometer\\ Silicon MOSFET}
+\chapter[Primeiro capítulo e eu não sei o que tô fazendo]
+{Primeiro capítulo\\ pfv, como assim}
 
 
-\prologue{The sheer volumne of answers can often stifle insight...The purpose
-of computing\index{computing!the purpose} is insight, not numbers.}
-{Hamming \cite{hamming}}
+\prologue{Nunca durma embaixo de um pé de jaca}
+{ditado popular \cite{hamming}}
 
 
-\section{Here is a normal section}
-Here is some text.
+\section{Sessão}
+Aqui vem uma explicação sobre o que diabos é esse capítulo e essa sessão.
 
-\subsection{This is the subsection}
+\lstinputlisting[caption=Teste, style=customc]{src/ex1_PrimeiraJanela.cpp}
+E aqui apareceu um código de teste da playcb, colorido usando gambiarra para deixá-lo bonito. áãÉêóÕÃ
+
+\subsection{Eu preciso de sub-sessão?}
 Here is some normal text.
 Here is some normal text.
 Here is some normal text.
@@ -292,7 +332,7 @@ Here is some normal text.
 Here is some normal text.
 
 
-\subsubsection{This is the subsubsection}
+\subsubsection{Sub-sub sessão}
 Here is some text after the subsubsection.
 Here is some text after the subsubsection.
 Here is some text after the subsubsection.

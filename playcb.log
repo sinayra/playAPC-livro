@@ -1,6 +1,6 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2015.9.23)  23 SEP 2015 14:13
-**W-BKSAMP.TEX
-(./W-BKSAMP.TEX
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2015.9.23)  23 SEP 2015 15:39
+**playcb.tex
+(./playcb.tex
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 69 languages loaded.
 (./wileySix.cls
@@ -37,8 +37,8 @@ Babel <3.9m> and hyphenation patterns for 69 languages loaded.
 \savefootnum=\count93
 \@indexfile=\write3
 
-\openout3 = W-BKSAMP.idx
-Writing index file W-BKSAMP.idx
+\openout3 = playcb.idx
+Writing index file playcb.idx
 \iletterskip=\skip45
 \timing=\count94
 \hourcount=\count95
@@ -62,14 +62,6 @@ Writing index file W-BKSAMP.idx
 \chapskip=\dimen111
 \chapheight=\dimen112
 \authorskip=\dimen113
-) (D:/MikTex/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
 ) (D:/MikTex/tex/latex/polyglossia/polyglossia.sty
 Package: polyglossia 2015/08/06 v1.42.0 Alternative to Babel for XeLaTeX and Lua
 LaTeX
@@ -86,8 +78,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (D:/MikTex/tex/generic/xkeyval/xkeyval.tex
 (D:/MikTex/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks16
-\XKV@tempa@toks=\toks17
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
 
 (D:/MikTex/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count107
@@ -314,7 +306,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.062 seconds
+luaotfload | main : fontloader loaded in 0.067 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -388,46 +380,30 @@ LaTeX Font Info:    Try loading font information for EU2+lmr on input line 105.
 (D:/MikTex/tex/latex/euenc/eu2lmr.fd
 File: eu2lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-luaotfload | db : Font names database not found, generating new one.
-luaotfload | db : This can take several minutes; please be patient.(compiling lu
-c: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmro
-man10-regular.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/
-generic/fonts/otf/lmroman10-regular.lua)(save: C:/Users/Secreto/AppData/Local/Mi
-KTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-regular.luc)) (D:/MikTex/tex/
-xelatex/xunicode/xunicode.sty
+luaotfload | db : Font names database loaded from C:/Users/Secreto/AppData/Local
+/MiKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/S
+ecreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-regular
+.luc))
+(D:/MikTex/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
 ther characters in Unicode lower plane
 
-*** you should *not* be loading the inputenc package
-*** XeTeX expects the source to be in UTF8 encoding
-*** some features of other encodings may conflict, resulting in poor output.
-(D:/MikTex//tex/latex/tipa/t3enc.def
+(D:/MikTex/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
-(compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/f
-onts/otf/lmromanslant10-regular.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX
-/2.9/luatex-cache/generic/fonts/otf/lmromanslant10-regular.lua)(save: C:/Users/S
-ecreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmromanslant10-re
-gular.luc)(compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache
-/generic/fonts/otf/lmroman10-italic.luc)(save: C:/Users/Secreto/AppData/Local/Mi
-KTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-italic.lua)(save: C:/Users/Sec
-reto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-italic.lu
-c)(compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic
-/fonts/otf/lmroman10-bold.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/l
-uatex-cache/generic/fonts/otf/lmroman10-bold.lua)(save: C:/Users/Secreto/AppData
-/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-bold.luc)
+(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
+otf/lmromanslant10-regular.luc)(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/
+2.9/luatex-cache/generic/fonts/otf/lmroman10-italic.luc)(load luc: C:/Users/Secr
+eto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-bold.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmss on input line 357.
 
  (D:/MikTex/tex/latex/euenc/eu2lmss.fd
 File: eu2lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/
-fonts/otf/lmsans10-regular.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/
-luatex-cache/generic/fonts/otf/lmsans10-regular.lua)(save: C:/Users/Secreto/AppD
-ata/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmsans10-regular.luc))
+)(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts
+/otf/lmsans10-regular.luc))
 \tipaTiiicode=\count286
-\tipasavetokens=\toks18
-\tipachecktokens=\toks19
-
-(D:/MikTex/tex/latex/graphics/graphicx.sty
+\tipasavetokens=\toks16
+\tipachecktokens=\toks17
+ (D:/MikTex/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (D:/MikTex/tex/latex/graphics/graphics.sty
@@ -592,7 +568,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (D:/MikTex/tex/latex/pgf/basiclayer/pgf.sty
 (D:/MikTex/tex/latex/pgf/utilities/pgfrcs.sty
 (D:/MikTex/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks20
+\pgfutil@everybye=\toks18
 \pgfutil@tempdima=\dimen261
 \pgfutil@tempdimb=\dimen262
 
@@ -614,11 +590,11 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (D:/MikTex/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks21
-\pgfkeys@temptoks=\toks22
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
 
 (D:/MikTex/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks23
+\pgfkeys@tmptoks=\toks21
 ))
 \pgf@x=\dimen263
 \pgf@y=\dimen264
@@ -634,9 +610,9 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \c@pgf@countb=\count290
 \c@pgf@countc=\count291
 \c@pgf@countd=\count292
-\t@pgf@toka=\toks24
-\t@pgf@tokb=\toks25
-\t@pgf@tokc=\toks26
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
 
 (D:/MikTex/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -667,9 +643,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@dimen=\dimen271
 \pgfmath@count=\count295
 \pgfmath@box=\box257
-\pgfmath@toks=\toks27
-\pgfmath@stack@operand=\toks28
-\pgfmath@stack@operation=\toks29
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
 )
 (D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
@@ -787,8 +763,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (D:/MikTex/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen298
 \pgffor@skip=\dimen299
-\pgffor@stack=\toks30
-\pgffor@toks=\toks31
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
 ))
 (D:/MikTex/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -827,6 +803,45 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 ))) (D:/MikTex/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(D:/MikTex/tex/latex/listings/listings.sty
+\lst@mode=\count308
+\lst@gtempboxa=\box267
+\lst@token=\toks30
+\lst@length=\count309
+\lst@currlwidth=\dimen307
+\lst@column=\count310
+\lst@pos=\count311
+\lst@lostspace=\dimen308
+\lst@width=\dimen309
+\lst@newlines=\count312
+\lst@lineno=\count313
+\lst@maxwidth=\dimen310
+
+(D:/MikTex/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count314
+\lst@skipnumbers=\count315
+\lst@framebox=\box268
+)
+(D:/MikTex/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+
+Package polyglossia Warning: File gloss-portuguese.ldf does not exist!
+(polyglossia)                I will nevertheless try to use hyphenation patterns
+ for portuguese. on input line 32.
+
+(D:/MikTex/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(D:/MikTex/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(D:/MikTex/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 ) (./w-bookps.sty
 
 
@@ -837,58 +852,54 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 
  
 )
-\sectsavebox=\box267
+\sectsavebox=\box269
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 95.
+(Font)              <7> on input line 134.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 95.
+(Font)              <5> on input line 134.
+ (./playcb.aux)
+\openout1 = playcb.aux
 
-No file W-BKSAMP.aux.
-
-\openout1 = W-BKSAMP.aux
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 100.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 100.
-(D:/MikTex/tex/latex/tipa/t3cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 139.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 139.
+ (D:/MikTex/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Try loading font information for EU2+ptm on input line 100.
-LaTeX Font Info:    No file EU2ptm.fd. on input line 100.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Try loading font information for EU2+ptm on input line 139.
+LaTeX Font Info:    No file EU2ptm.fd. on input line 139.
 
 
 LaTeX Font Warning: Font shape `EU2/ptm/m/n' undefined
-(Font)              using `EU2/lmr/m/n' instead on input line 100.
+(Font)              using `EU2/lmr/m/n' instead on input line 139.
 
-*** you should *not* be loading the inputenc package
-*** XeTeX expects the source to be in UTF8 encoding
-*** some features of other encodings may conflict, resulting in poor output.
 (D:/MikTex/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen307
-\scratchbox=\box268
-\nofMPsegments=\count309
-\nofMParguments=\count310
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen308
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count316
+\scratchdimen=\dimen311
+\scratchbox=\box270
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen312
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks32
 )
 .................................................
 . fontspec info: "setup-math"
@@ -897,158 +908,146 @@ LaTeX Font Warning: Font shape `EU2/ptm/m/n' undefined
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 100.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 100.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 100.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 100.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 100.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 100.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 100.
-LaTeX Font Info:    Redeclaring math accent \check on input line 100.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 100.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 100.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 100.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 100.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 100.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 139.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 139.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 139.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 139.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 139.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 139.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 139.
+LaTeX Font Info:    Redeclaring math accent \check on input line 139.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 139.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 139.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 139.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 139.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 100.
+(Font)              `operators' in the math version `normal' on input line 139.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU2/ptm/m/n on input line 100.
+(Font)                  OT1/cmr/m/n --> EU2/ptm/m/n on input line 139.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 100.
+(Font)              `operators' in the math version `bold' on input line 139.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU2/ptm/m/n on input line 100.
+(Font)                  OT1/cmr/bx/n --> EU2/ptm/m/n on input line 139.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU2/ptm/m/n --> EU2/ptm/m/n on input line 100.
+(Font)                  EU2/ptm/m/n --> EU2/ptm/m/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU2/ptm/m/it on input line 100.
+(Font)                  OT1/cmr/m/it --> EU2/ptm/m/it on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU2/ptm/bx/n on input line 100.
+(Font)                  OT1/cmr/bx/n --> EU2/ptm/bx/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU2/phv/m/n on input line 100.
+(Font)                  OT1/cmss/m/n --> EU2/phv/m/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU2/pcr/m/n on input line 100.
+(Font)                  OT1/cmtt/m/n --> EU2/pcr/m/n on input line 139.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU2/ptm/m/n --> EU2/ptm/bx/n on input line 100.
+(Font)                  EU2/ptm/m/n --> EU2/ptm/bx/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU2/ptm/bx/it on input line 100.
+(Font)                  OT1/cmr/bx/it --> EU2/ptm/bx/it on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU2/phv/bx/n on input line 100.
+(Font)                  OT1/cmss/bx/n --> EU2/phv/bx/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU2/pcr/bx/n on input line 100.
- ABD: EveryShipout initializing macros(compiling luc: C:/Users/Secreto/AppData/L
-ocal/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman17-regular.luc)(save: C:/U
-sers/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman17-r
-egular.lua)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic
-/fonts/otf/lmroman17-regular.luc)
+(Font)                  OT1/cmtt/m/n --> EU2/pcr/bx/n on input line 139.
+ ABD: EveryShipout initializing macros
+\c@lstlisting=\count322
+(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
+otf/lmroman17-regular.luc)
 
 LaTeX Font Warning: Font shape `EU2/ptm/bx/n' undefined
-(Font)              using `EU2/ptm/m/n' instead on input line 119.
+(Font)              using `EU2/ptm/m/n' instead on input line 157.
 
 [1{C:/Users/Secreto/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 [2]
-Overfull \hbox (24.17992pt too wide) in paragraph at lines 121--121
+Overfull \hbox (26.21631pt too wide) in paragraph at lines 159--159
 [][]|\subtitlefont Bib-lioteca grá-fica para pro-gra-madores
  []
 
 <wileylogo.pdf, id=12, 292.09125pt x 64.24pt>
 File: wileylogo.pdf Graphic file (type pdf)
  <use wileylogo.pdf>
-Package pdftex.def Info: wileylogo.pdf used on input line 121.
+Package pdftex.def Info: wileylogo.pdf used on input line 159.
 (pdftex.def)             Requested size: 122.85876pt x 27.0208pt.
- [3<./wileylogo.pdf>](compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/l
-uatex-cache/generic/fonts/otf/lmroman7-regular.luc)(save: C:/Users/Secreto/AppDa
-ta/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman7-regular.lua)(save: C
-:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman7
--regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+ [3<./wileylogo.pdf>](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex
+-cache/generic/fonts/otf/lmroman7-regular.luc)
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 
  []
 
-[4](compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generi
-c/fonts/otf/lmroman12-regular.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2
-.9/luatex-cache/generic/fonts/otf/lmroman12-regular.lua)(save: C:/Users/Secreto/
-AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman12-regular.luc)
+[4](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fon
+ts/otf/lmroman12-regular.luc)
 
 LaTeX Font Warning: Font shape `EU2/ptm/m/it' undefined
-(Font)              using `EU2/ptm/m/n' instead on input line 140.
+(Font)              using `EU2/ptm/m/n' instead on input line 178.
 
 [5
 
 ] [5] [6
 
-] (./W-BKSAMP.toc) [7] [8
+] (./playcb.toc) [7] [8
 
-] (./W-BKSAMP.toc
+] (./playcb.toc
 Underfull \hbox (badness 10000) in paragraph at lines 10--10
  [][] []  
  []
 
-[9](compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generi
-c/fonts/otf/lmroman5-regular.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2.
-9/luatex-cache/generic/fonts/otf/lmroman5-regular.lua)(save: C:/Users/Secreto/Ap
-pData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)
-Overfull \hbox (154.14pt too wide) detected at line 37
+[9](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fon
+ts/otf/lmroman5-regular.luc)
+Overfull \hbox (155.82826pt too wide) detected at line 37
 \tocfonts Ap-pendix: This is the Chap-ter Ap-pendix Ti-tle 
  []
 
 
-Overfull \hbox (47.6pt too wide) detected at line 38
+Overfull \hbox (47.99948pt too wide) detected at line 38
 \tocfonts Chap-ter Ap-pendix 
  []
 
 )
 \tf@toc=\write5
 
-\openout5 = W-BKSAMP.toc
-(compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/f
-onts/otf/lmroman8-regular.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/l
-uatex-cache/generic/fonts/otf/lmroman8-regular.lua)(save: C:/Users/Secreto/AppDa
-ta/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)
+\openout5 = playcb.toc
+(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
+otf/lmroman8-regular.luc)
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[10] (./W-BKSAMP.lof)
+[10] (./playcb.lof)
 \tf@lof=\write6
 
-\openout6 = W-BKSAMP.lof
+\openout6 = playcb.lof
  [11
 
 ] [12
 
-] (./W-BKSAMP.lot)
+] (./playcb.lot)
 \tf@lot=\write7
 
-\openout7 = W-BKSAMP.lot
+\openout7 = playcb.lot
  [13] [14
 
 ] [15] [16
 
-](compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/
-fonts/otf/lmroman9-regular.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/
-luatex-cache/generic/fonts/otf/lmroman9-regular.lua)(save: C:/Users/Secreto/AppD
-ata/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman9-regular.luc)
+](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts
+/otf/lmroman9-regular.luc)
 
 LaTeX Font Warning: Font shape `EU2/ptm/m/sc' undefined
-(Font)              using `EU2/ptm/m/n' instead on input line 172.
+(Font)              using `EU2/ptm/m/n' instead on input line 210.
 
 [17] [18
 
@@ -1060,128 +1059,114 @@ LaTeX Font Warning: Font shape `EU2/ptm/m/sc' undefined
 
 ] [25] [26
 
-]
-
-LaTeX Warning: Citation `kilby' on page xxvii undefined on input line 230.
-
-
-LaTeX Warning: Citation `beren' on page xxvii undefined on input line 232.
-
-[27] [28
+] [27] [28
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 266.
+(Font)              <14.4> on input line 304.
  [1] [2
 
 ]
 Chapter 1.
+LaTeX Font Info:    Try loading font information for EU2+pcr on input line 318.
+LaTeX Font Info:    No file EU2pcr.fd. on input line 318.
 
-LaTeX Warning: Citation `hamming' on page 3 undefined on input line 275.
+LaTeX Font Warning: Font shape `EU2/pcr/m/n' undefined
+(Font)              using `EU2/lmr/m/n' instead on input line 318.
 
+(./src/ex1_PrimeiraJanela.cpp
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Warning: Font shape `EU2/pcr/bx/n' undefined
+(Font)              using `EU2/pcr/m/n' instead on input line 1.
 
- [3](compiling luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/gener
-ic/fonts/otf/lmroman6-regular.luc)(save: C:/Users/Secreto/AppData/Local/MiKTeX/2
-.9/luatex-cache/generic/fonts/otf/lmroman6-regular.lua)(save: C:/Users/Secreto/A
-ppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)
+(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
+otf/lmroman6-regular.luc)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 323.
+(Font)              <8> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 323.
+(Font)              <6> on input line 1.
+) [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 323.
+(Font)              <12> on input line 363.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
 [4]
-Chapter 2.
-
-Underfull \vbox (badness 10000) detected at line 349
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
  []
 
-[5
+[5] [6
 
-] [6
+]
+Chapter 2.
+
+Underfull \vbox (badness 10000) detected at line 389
+ []
+
+[7] [8
 
 ]
 Chapter 3.
 
-Overfull \hbox (0.48613pt too wide) detected at line 362
+Overfull \hbox (0.48613pt too wide) detected at line 402
 $[][]$
  []
 
 
-Overfull \hbox (0.48613pt too wide) detected at line 362
+Overfull \hbox (0.48613pt too wide) detected at line 402
 $[][]$
  []
 
 
-Underfull \vbox (badness 10000) detected at line 362
- []
-
-[7]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 398.
-LaTeX Font Info:    Try loading font information for EU2+pcr on input line 446.
-LaTeX Font Info:    No file EU2pcr.fd. on input line 446.
-
-
-LaTeX Font Warning: Font shape `EU2/pcr/m/n' undefined
-(Font)              using `EU2/lmr/m/n' instead on input line 446.
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[8]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
+Underfull \vbox (badness 10000) detected at line 402
  []
 
 [9]
-Overfull \hbox (5.75888pt too wide) in paragraph at lines 561--566
-\EU2/pcr/m/n/10 procedures to determine a appropriate transformation of PRES in
- the regression
- []
-
-
-Overfull \hbox (5.75888pt too wide) in paragraph at lines 609--614
-\EU2/pcr/m/n/10 procedures to determine a appropriate transformation of PRES in
- the regression
- []
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 438.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
 [10]
-
-LaTeX Warning: Citation `xkilby' on page 11 undefined on input line 658.
-
-
-LaTeX Warning: Citation `xberen' on page 11 undefined on input line 658.
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
 [11]
+Overfull \hbox (5.75888pt too wide) in paragraph at lines 601--606
+\EU2/pcr/m/n/10 procedures to determine a appropriate transformation of PRES in
+ the regression
+ []
+
+
+Overfull \hbox (5.75888pt too wide) in paragraph at lines 649--654
+\EU2/pcr/m/n/10 procedures to determine a appropriate transformation of PRES in
+ the regression
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[12] [13
+[12]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
 
-] [14
+[13]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
 
-] [15] [16
+[14] [15
+
+] [16
 
 ] [17] [18
 
@@ -1189,63 +1174,50 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ] [21] [22
 
-] (./W-BKSAMP.ind
-Overfull \hbox (1.07605pt too wide) in paragraph at lines 40--41
-[][]\EU2/pcr/m/n/8 Au-to-cor-re-la-tion func-tion (ACF), 194, 236 
- []
+] [23] [24
 
-
-Overfull \hbox (0.68407pt too wide) in paragraph at lines 44--45
-[][]\EU2/pcr/m/n/8 Au-to-co-vari-ance se-quence (ACVS), 61--63,
- []
-
-[23
-
-]) (./W-BKSAMP.aux)
+]
+No file playcb.ind.
+(./playcb.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 26037 strings out of 494701
- 100000,552014 words of node,token memory allocated
- 1175 words of node memory still in use:
+ 27696 strings out of 494701
+ 100000,662416 words of node,token memory allocated
+ 1121 words of node memory still in use:
     nodes
-   avail lists: 1:2,2:6807,3:242,4:846,5:133,6:2279,7:63,9:183,10:179
- 28935 multiletter control sequences out of 65536+200000
- 151 fonts using 9601695 bytes
- 55i,10n,54p,1246b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+   avail lists: 1:2,2:6812,3:191,4:1274,5:615,6:2280,7:425,9:924,10:180
+ 30537 multiletter control sequences out of 65536+200000
+ 147 fonts using 9477615 bytes
+ 57i,10n,120p,1244b,840s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/MikTex/fonts/enc/dvips/fontname/8r.enc}<d:/miktex/fonts/opentype/public/lm/l
-mroman8-regular.otf><d:/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><d:
-/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><d:/miktex/fonts/opentype
-/public/lm/lmroman12-regular.otf><d:/miktex/fonts/opentype/public/lm/lmroman7-re
-gular.otf><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><<D:/MikTex/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><<D:/MikTex/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi9.pfb><<D:/MikTex/fon
-ts/type1/public/amsfonts/cm/cmmib10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/
-cmextra/cmmib7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><<D:/Mik
-Tex/fonts/type1/public/amsfonts/cm/cmr6.pfb><<D:/MikTex/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><<D:/MikTex/
-fonts/type1/public/amsfonts/cm/cmr9.pfb><<D:/MikTex/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><<D:/MikTex/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb><<D:/MikTex/fonts/type1/urw/helvetic/uhvb8a.pfb><<D:/MikTex/fonts/t
-ype1/urw/helvetic/uhvbo8a.pfb><<D:/MikTex/fonts/type1/urw/helvetic/uhvr8a.pfb><<
-D:/MikTex/fonts/type1/urw/helvetic/uhvro8a.pfb><<D:/MikTex/fonts/type1/urw/times
-/utmb8a.pfb><<D:/MikTex/fonts/type1/urw/times/utmbi8a.pfb><<D:/MikTex/fonts/type
-1/urw/times/utmr8a.pfb><<D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on W-BKSAMP.pdf (52 pages, 1187165 bytes).
+mroman5-regular.otf><d:/miktex/fonts/opentype/public/lm/lmroman8-regular.otf><d:
+/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><d:/miktex/fonts/opentype/
+public/lm/lmroman10-regular.otf><d:/miktex/fonts/opentype/public/lm/lmroman12-re
+gular.otf><d:/miktex/fonts/opentype/public/lm/lmroman7-regular.otf><<D:/MikTex/f
+onts/type1/public/amsfonts/cm/cmcsc10.pfb><<D:/MikTex/fonts/type1/public/amsfont
+s/cm/cmex10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><<D:/MikTe
+x/fonts/type1/public/amsfonts/cm/cmmi6.pfb><<D:/MikTex/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><<D:/MikTex
+/fonts/type1/public/amsfonts/cm/cmmi9.pfb><<D:/MikTex/fonts/type1/public/amsfont
+s/cm/cmmib10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><<D:
+/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><<D:/MikTex/fonts/type1/public/
+amsfonts/cm/cmr6.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><<D:/Mi
+kTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><<D:/MikTex/fonts/type1/public/amsf
+onts/cm/cmr9.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><<D:/MikT
+ex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><<D:/MikTex/fonts/type1/public/amsfo
+nts/cm/cmsy7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><<D:/MikTe
+x/fonts/type1/urw/helvetic/uhvb8a.pfb><<D:/MikTex/fonts/type1/urw/helvetic/uhvbo
+8a.pfb><<D:/MikTex/fonts/type1/urw/helvetic/uhvr8a.pfb><<D:/MikTex/fonts/type1/u
+rw/helvetic/uhvro8a.pfb><<D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><<D:/MikTex
+/fonts/type1/urw/times/utmbi8a.pfb><<D:/MikTex/fonts/type1/urw/times/utmr8a.pfb>
+<<D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on playcb.pdf (53 pages, 1194751 bytes).
 
-PDF statistics: 321 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 331 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,1249 @@
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2015.9.23)  23 SEP 2015 14:25
+**W-BKSAMP.TEX
+(./W-BKSAMP.TEX
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+(./wileySix.cls
+
+
+ Wiley Book Style, Design No.: SD 001C
+ and SD 004B
+ 
+ Written by Amy Hendrickson, TeXnology, Inc.
+ 
+ This version is dated Feb 16, 2011
+
+
+\phspace=\dimen102
+\SpaceAboveChapterNumber=\dimen103
+\savefootnotenumber=\count79
+\ftnum=\count80
+\saveftnum=\count81
+\c@chapapp=\count82
+\c@part=\count83
+\c@chapter=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\c@figure=\count90
+\c@table=\count91
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\partskip=\skip43
+\tabandfigskip=\skip44
+\footnum=\count92
+\savefootnum=\count93
+\@indexfile=\write3
+
+\openout3 = W-BKSAMP.idx
+Writing index file W-BKSAMP.idx
+\iletterskip=\skip45
+\timing=\count94
+\hourcount=\count95
+\oldtime=\count96
+\probcount=\count97
+\subprobcount=\count98
+\c@subproblem=\count99
+\c@subproblem=\count100
+\widthofcropmarks=\dimen104
+\raisetopcropmarks=\dimen105
+\raisebottomcropmarks=\dimen106
+\movecropmarksright=\dimen107
+\c@theorem=\count101
+\c@appfootnote=\count102
+\slugwidth=\dimen108
+\slugheight=\dimen109
+\slugdepth=\dimen110
+\c@exampnum=\count103
+\c@algo=\count104
+\c@algorithm=\count105
+\chapskip=\dimen111
+\chapheight=\dimen112
+\authorskip=\dimen113
+) (D:/MikTex/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (D:/MikTex/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2015/08/06 v1.42.0 Alternative to Babel for XeLaTeX and Lua
+LaTeX
+
+(D:/MikTex/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count106
+)
+(D:/MikTex/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(D:/MikTex/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(D:/MikTex/tex/generic/xkeyval/xkeyval.tex
+(D:/MikTex/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+
+(D:/MikTex/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count107
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(D:/MikTex/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2015/07/22 v2.4d Font selection for XeLaTeX and LuaLaTeX
+
+(D:/MikTex/tex/latex/l3kernel/expl3.sty
+Package: expl3 2015/09/11 v6002 L3 programming layer (loader) 
+
+(D:/MikTex/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2015/09/11 v6002 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/09/10 v5983 L3 Bootstrap code
+L3 Module: l3names 2015/09/07 v5939 L3 Namespace for primitives
+L3 Module: l3basics 2015/09/10 v5983 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2015/09/10 v5983 L3 Token lists
+L3 Module: l3str 2015/09/10 v5983 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2015/09/11 v5987 L3 Integers
+\c_max_int=\count108
+\l_tmpa_int=\count109
+\l_tmpb_int=\count110
+\g_tmpa_int=\count111
+\g_tmpb_int=\count112
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/09/10 v5983 L3 Control structures
+\g__prg_map_int=\count113
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2015/08/26 v5893 L3 Experimental token manipulation
+L3 Module: l3prop 2015/08/05 v5777 L3 Property lists
+L3 Module: l3msg 2015/09/10 v5983 L3 Messages
+L3 Module: l3file 2015/08/05 v5786 L3 File and I/O operations
+\l_iow_line_count_int=\count114
+\l__iow_target_count_int=\count115
+\l__iow_current_line_int=\count116
+\l__iow_current_word_int=\count117
+\l__iow_current_indentation_int=\count118
+L3 Module: l3skip 2015/09/10 v5983 L3 Dimensions and skips
+\c_zero_dim=\dimen114
+\c_max_dim=\dimen115
+\l_tmpa_dim=\dimen116
+\l_tmpb_dim=\dimen117
+\g_tmpa_dim=\dimen118
+\g_tmpb_dim=\dimen119
+\c_zero_skip=\skip46
+\c_max_skip=\skip47
+\l_tmpa_skip=\skip48
+\l_tmpb_skip=\skip49
+\g_tmpa_skip=\skip50
+\g_tmpb_skip=\skip51
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+L3 Module: l3keys 2015/09/10 v5983 L3 Key-value interfaces
+\g__keyval_level_int=\count119
+\l_keys_choice_int=\count120
+L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
+\c__fp_leading_shift_int=\count121
+\c__fp_middle_shift_int=\count122
+\c__fp_trailing_shift_int=\count123
+\c__fp_big_leading_shift_int=\count124
+\c__fp_big_middle_shift_int=\count125
+\c__fp_big_trailing_shift_int=\count126
+\c__fp_Bigg_leading_shift_int=\count127
+\c__fp_Bigg_middle_shift_int=\count128
+\c__fp_Bigg_trailing_shift_int=\count129
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box26
+\l_tmpa_box=\box27
+\l_tmpb_box=\box28
+\g_tmpa_box=\box29
+\g_tmpb_box=\box30
+L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
+\l__coffin_internal_box=\box31
+\l__coffin_internal_dim=\dimen120
+\l__coffin_offset_x_dim=\dimen121
+\l__coffin_offset_y_dim=\dimen122
+\l__coffin_x_dim=\dimen123
+\l__coffin_y_dim=\dimen124
+\l__coffin_x_prime_dim=\dimen125
+\l__coffin_y_prime_dim=\dimen126
+\c_empty_coffin=\box32
+\l__coffin_aligned_coffin=\box33
+\l__coffin_aligned_internal_coffin=\box34
+\l_tmpa_coffin=\box35
+\l_tmpb_coffin=\box36
+\l__coffin_display_coffin=\box37
+\l__coffin_display_coord_coffin=\box38
+\l__coffin_display_pole_coffin=\box39
+\l__coffin_display_offset_dim=\dimen127
+\l__coffin_display_x_dim=\dimen128
+\l__coffin_display_y_dim=\dimen129
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2015/09/11 v6002 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen130
+\l__box_bottom_dim=\dimen131
+\l__box_left_dim=\dimen132
+\l__box_right_dim=\dimen133
+\l__box_top_new_dim=\dimen134
+\l__box_bottom_new_dim=\dimen135
+\l__box_left_new_dim=\dimen136
+\l__box_right_new_dim=\dimen137
+\l__box_internal_box=\box40
+\l__coffin_bounding_shift_dim=\dimen138
+\l__coffin_left_corner_dim=\dimen139
+\l__coffin_right_corner_dim=\dimen140
+\l__coffin_bottom_corner_dim=\dimen141
+\l__coffin_top_corner_dim=\dimen142
+\l__coffin_scaled_total_height_dim=\dimen143
+\l__coffin_scaled_width_dim=\dimen144
+L3 Module: [unknown name] 0000/00/00 v-1 L3 Experimental system/runtime function
+s
+L3 Module: l3luatex 2015/09/10 v5983 L3 Experimental LuaTeX-specific functions
+)
+(D:/MikTex/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2015/07/20 v5676 L3 Unicode data
+)
+(D:/MikTex/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2015/09/10 v5983 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count130
+))
+(D:/MikTex/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2015/09/11 v6001 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count131
+\l__xparse_m_args_int=\count132
+\l__xparse_mandatory_args_int=\count133
+\l__xparse_processor_int=\count134
+\l__xparse_v_nesting_int=\count135
+)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload.sty
+Package: luaotfload 2014/08/10 v2.5-4 OpenType layout system
+
+(D:/MikTex/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2013/05/11 v0.6 Resource management for the LuaTeX macro pro
+grammer
+
+(D:/MikTex/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
+(D:/MikTex/tex/generic/oberdiek/luatex.sty
+Package: luatex 2010/03/09 v0.4 LuaTeX basic definition package (HO)
+
+(D:/MikTex/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(D:/MikTex/tex/latex/misc/etex.sty
+Package: etex 2015/07/08 v2.3 eTeX basic definition package (PEB,DPC)
+\et@xins=\count136
+)
+\LuT@AllocAttribute=\count277
+\LuT@AllocCatcodeTable=\count278
+\CatcodeTableStack=\count279
+\CatcodeTableIniTeX=\catcodetable1
+\CatcodeTableString=\catcodetable3
+\CatcodeTableOther=\catcodetable5
+\CatcodeTableLaTeX=\catcodetable7
+
+(D:/MikTex/tex/generic/oberdiek/luatex-loader.sty
+Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
+
+(D:/MikTex/scripts/oberdiek/oberdiek.luatex.lua)))
+(D:/MikTex/tex/luatex/luatexbase/luatexbase-compat.sty
+Package: luatexbase-compat 2011/05/24 v0.4 Compatibility tools for LuaTeX
+)
+(D:/MikTex/tex/luatex/luatexbase/luatexbase-modutils.sty
+Package: luatexbase-modutils 2013/05/11 v0.6 Module utilities for LuaTeX
+
+(D:/MikTex/tex/luatex/luatexbase/luatexbase-loader.sty
+Package: luatexbase-loader 2013/05/11 v0.6 Lua module loader for LuaTeX
+
+(D:/MikTex/tex/luatex/luatexbase/luatexbase.loader.lua))
+(D:/MikTex/tex/luatex/luatexbase/modutils.lua)
+Lua module: luatexbase-modutils 2013/05/11 0.6 Module utilities for LuaTeX
+)
+(D:/MikTex/tex/luatex/luatexbase/luatexbase-regs.sty
+Package: luatexbase-regs 2011/05/24 v0.4 Registers allocation for LuaTeX
+)
+(D:/MikTex/tex/luatex/luatexbase/luatexbase-attr.sty
+Package: luatexbase-attr 2013/05/11 v0.6 Attributes allocation for LuaTeX
+
+(D:/MikTex/tex/luatex/luatexbase/attr.lua)
+Lua module: luatexbase-attr 2013/05/11 0.6 Attributes allocation for LuaTeX
+\lltxb@attr@unsetvalue=\count280
+)
+(D:/MikTex/tex/luatex/luatexbase/luatexbase-cctb.sty
+Package: luatexbase-cctb 2013/05/11 v0.6 Catcodetable allocation for LuaTeX
+
+(D:/MikTex/tex/luatex/luatexbase/cctb.lua)
+Lua module: luatexbase-cctb 2013/05/11 0.6 Catcodetable allocation for LuaTeX
+\lltxb@catcodetable@alloc=\count281
+\CatcodeTableStack=\count282
+\CatcodeTableIniTeX=\luatexcatcodetable1
+\CatcodeTableString=\luatexcatcodetable3
+\CatcodeTableOther=\luatexcatcodetable5
+\CatcodeTableLaTeX=\luatexcatcodetable7
+\CatcodeTableLaTeXAtLetter=\luatexcatcodetable9
+\CatcodeTableExpl=\luatexcatcodetable11
+)
+(D:/MikTex/tex/luatex/luatexbase/luatexbase-mcb.sty
+Package: luatexbase-mcb 2013/05/11 v0.6 Callback management for LuaTeX
+
+(D:/MikTex/tex/luatex/luatexbase/mcb.lua)
+Lua module: luatexbase-mcb 2013/05/11 0.6 register several functions in a callba
+ck
+))
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-main.lua)
+Lua module: luaotfload-main 2014/08/10 2.50003 OpenType layout system.
+
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-log.lua)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-fontloader.lua)(using cache: C:/User
+s/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic)
+luatexbase-attr: luatexbase.attributes["luaotfload@kernpair"] = 1
+luatexbase-attr: luatexbase.attributes["luaotfload@ligacomp"] = 2
+luatexbase-attr: luatexbase.attributes["luaotfload@markbase"] = 3
+luatexbase-attr: luatexbase.attributes["luaotfload@markmark"] = 4
+luatexbase-attr: luatexbase.attributes["luaotfload@markdone"] = 5
+luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
+luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
+luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
+luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
+luaotfload | main : fontloader loaded in 0.086 seconds
+luatexbase-mcb: inserting 'luaotfload.node_processor'
+at position 1 in 'pre_linebreak_filter'
+luatexbase-mcb: inserting 'luaotfload.node_processor'
+at position 1 in 'hpack_filter'
+luatexbase-mcb: inserting 'luaotfload.find_vf_file'
+at position 1 in 'find_vf_file'
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-override.lua)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-parsers.lua)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-configuration.lua)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-status.lua)
+luaotfload | conf : Root cache directory is C:/Users/Secreto/AppData/Local/MiKTe
+X/2.9/luatex-cache/generic/names.
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-loaders.lua)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-database.lua)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-colors.lua)
+luaotfload | conf : Root cache directory is C:/Users/Secreto/AppData/Local/MiKTe
+X/2.9/luatex-cache/generic/names.
+luatexbase-mcb: creating 'luaotfload.resolve_font' type 4
+luatexbase-mcb: creating 'luaotfload.patch_font' type 4
+luatexbase-mcb: resetting callback 'define_font'
+luatexbase-mcb: inserting 'luaotfload.define_font'
+at position 1 in 'define_font'
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-features.lua)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-letterspace.lua)
+(D:/MikTex/tex/luatex/luaotfload/luaotfload-auxiliary.lua)
+luatexbase-mcb: inserting 'luaotfload.aux.set_sscale_dimens'
+at position 1 in 'luaotfload.patch_font'
+luatexbase-mcb: inserting 'luaotfload.aux.patch_cambria_domh'
+at position 2 in 'luaotfload.patch_font'
+luatexbase-mcb: inserting 'luaotfload.aux.set_capheight'
+at position 3 in 'luaotfload.patch_font'
+luatexbase-mcb: inserting 'luaotfload.rewrite_fontname'
+at position 4 in 'luaotfload.patch_font')
+(D:/MikTex/tex/latex/fontspec/fontspec.lua)
+Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
+\l_fontspec_script_int=\count283
+\l_fontspec_language_int=\count284
+\l_fontspec_strnum_int=\count285
+\l__fontspec_tmpa_dim=\dimen256
+\l__fontspec_tmpb_dim=\dimen257
+\l__fontspec_tmpc_dim=\dimen258
+
+(D:/MikTex/tex/latex/fontspec/fontspec-patches.sty
+Package: fontspec-patches 2015/07/22 v2.4d Font selection for XeLaTeX and LuaLaT
+eX
+LaTeX Info: Redefining \em on input line 49.
+LaTeX Info: Redefining \emph on input line 57.
+LaTeX Info: Redefining \- on input line 60.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 155.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 159.
+.................................................
+)
+(D:/MikTex/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2015/07/22 v2.4d Font selection for XeLaTeX and LuaLaTe
+X
+
+(D:/MikTex/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+ (D:/MikTex/tex/latex/euenc/eu2enc.def
+File: eu2enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU2+lmr on input line 105.
+
+(D:/MikTex/tex/latex/euenc/eu2lmr.fd
+File: eu2lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+luaotfload | db : Font names database loaded from C:/Users/Secreto/AppData/Local
+/MiKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/S
+ecreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-regular
+.luc))
+(D:/MikTex/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
+ther characters in Unicode lower plane
+
+*** you should *not* be loading the inputenc package
+*** XeTeX expects the source to be in UTF8 encoding
+*** some features of other encodings may conflict, resulting in poor output.
+(D:/MikTex/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
+otf/lmromanslant10-regular.luc)(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/
+2.9/luatex-cache/generic/fonts/otf/lmroman10-italic.luc)(load luc: C:/Users/Secr
+eto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-bold.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmss on input line 357.
+
+ (D:/MikTex/tex/latex/euenc/eu2lmss.fd
+File: eu2lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts
+/otf/lmsans10-regular.luc))
+\tipaTiiicode=\count286
+\tipasavetokens=\toks18
+\tipachecktokens=\toks19
+ (D:/MikTex/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:/MikTex/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(D:/MikTex/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:/MikTex/tex/latex/00miktex/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(D:/MikTex/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(D:/MikTex/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count287
+))
+\Gin@req@height=\dimen259
+\Gin@req@width=\dimen260
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'om' on line 47.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'om' on line 57.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'om' on line 67.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'om' on line 77.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'om' on line 91.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'om' on line 99.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'om' on line 107.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'om' on line 115.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mom' on line 129.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mom' on line 144.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 158.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 214.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 225.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 233.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 241.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 265.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 274.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 279.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 305.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 325.
+.................................................
+\l__fontspec_tmp_int=\count288
+LaTeX Info: Redefining \itshape on input line 2154.
+LaTeX Info: Redefining \slshape on input line 2159.
+LaTeX Info: Redefining \scshape on input line 2164.
+LaTeX Info: Redefining \upshape on input line 2169.
+
+(D:/MikTex/tex/latex/fontspec/fontspec.cfg)))
+(D:/MikTex/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(D:/MikTex/tex/latex/polyglossia/polyglossia.lua)
+(D:/MikTex/tex/luatex/hyph-utf8/luatex-hyphen.lua)
+luatex-hyphen: using data file: C:/Users/Secreto/AppData/Roaming/MiKTeX/2.9/tex/
+generic/config/language.dat.lua
+Lua module: polyglossia 2013/05/11 1.3 Polyglossia
+)
+(D:/MikTex/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+ (D:/MikTex/tex/latex/00miktex/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+) (D:/MikTex/tex/latex/pgf/frontendlayer/tikz.sty
+(D:/MikTex/tex/latex/pgf/basiclayer/pgf.sty
+(D:/MikTex/tex/latex/pgf/utilities/pgfrcs.sty
+(D:/MikTex/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks20
+\pgfutil@tempdima=\dimen261
+\pgfutil@tempdimb=\dimen262
+
+(D:/MikTex/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(D:/MikTex/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box256
+
+(D:/MikTex/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(D:/MikTex/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(D:/MikTex/tex/latex/pgf/basiclayer/pgfcore.sty
+(D:/MikTex/tex/latex/pgf/systemlayer/pgfsys.sty
+(D:/MikTex/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(D:/MikTex/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
+
+(D:/MikTex/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks23
+))
+\pgf@x=\dimen263
+\pgf@y=\dimen264
+\pgf@xa=\dimen265
+\pgf@ya=\dimen266
+\pgf@xb=\dimen267
+\pgf@yb=\dimen268
+\pgf@xc=\dimen269
+\pgf@yc=\dimen270
+\w@pgf@writea=\write4
+\r@pgf@reada=\read1
+\c@pgf@counta=\count289
+\c@pgf@countb=\count290
+\c@pgf@countc=\count291
+\c@pgf@countd=\count292
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
+
+(D:/MikTex/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(D:/MikTex/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(D:/MikTex/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(D:/MikTex/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count293
+\pgfsyssoftpath@bigbuffer@items=\count294
+)
+(D:/MikTex/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(D:/MikTex/tex/generic/pgf/math/pgfmath.code.tex
+(D:/MikTex/tex/generic/pgf/math/pgfmathcalc.code.tex
+(D:/MikTex/tex/generic/pgf/math/pgfmathutil.code.tex)
+(D:/MikTex/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen271
+\pgfmath@count=\count295
+\pgfmath@box=\box257
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
+)
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(D:/MikTex/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)))
+(D:/MikTex/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count296
+))
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen272
+\pgf@picmaxx=\dimen273
+\pgf@picminy=\dimen274
+\pgf@picmaxy=\dimen275
+\pgf@pathminx=\dimen276
+\pgf@pathmaxx=\dimen277
+\pgf@pathminy=\dimen278
+\pgf@pathmaxy=\dimen279
+\pgf@xx=\dimen280
+\pgf@xy=\dimen281
+\pgf@yx=\dimen282
+\pgf@yy=\dimen283
+\pgf@zx=\dimen284
+\pgf@zy=\dimen285
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen286
+\pgf@path@lasty=\dimen287
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen288
+\pgf@shorten@start@additional=\dimen289
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box258
+\pgf@hbox=\box259
+\pgf@layerbox@main=\box260
+\pgf@picture@serial@count=\count297
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen290
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen291
+\pgf@pt@y=\dimen292
+\pgf@pt@temp=\dimen293
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen294
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen295
+\pgf@sys@shading@range@num=\count298
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box261
+))
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(D:/MikTex/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(D:/MikTex/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box262
+)
+(D:/MikTex/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(D:/MikTex/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen296
+\pgf@nodesepend=\dimen297
+)
+(D:/MikTex/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(D:/MikTex/tex/latex/pgf/utilities/pgffor.sty
+(D:/MikTex/tex/latex/pgf/utilities/pgfkeys.sty
+(D:/MikTex/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(D:/MikTex/tex/latex/pgf/math/pgfmath.sty
+(D:/MikTex/tex/generic/pgf/math/pgfmath.code.tex))
+(D:/MikTex/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(D:/MikTex/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen298
+\pgffor@skip=\dimen299
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
+))
+(D:/MikTex/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(D:/MikTex/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen300
+)
+\tikz@lastx=\dimen301
+\tikz@lasty=\dimen302
+\tikz@lastxsaved=\dimen303
+\tikz@lastysaved=\dimen304
+\tikzleveldistance=\dimen305
+\tikzsiblingdistance=\dimen306
+\tikz@figbox=\box263
+\tikz@figbox@bg=\box264
+\tikz@tempbox=\box265
+\tikz@tempbox@bg=\box266
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
+
+(D:/MikTex/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
+)
+\tikz@expandcount=\count307
+
+(D:/MikTex/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code
+.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+))) (D:/MikTex/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(D:/MikTex/tex/latex/listings/listings.sty
+\lst@mode=\count308
+\lst@gtempboxa=\box267
+\lst@token=\toks32
+\lst@length=\count309
+\lst@currlwidth=\dimen307
+\lst@column=\count310
+\lst@pos=\count311
+\lst@lostspace=\dimen308
+\lst@width=\dimen309
+\lst@newlines=\count312
+\lst@lineno=\count313
+\lst@maxwidth=\dimen310
+
+(D:/MikTex/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count314
+\lst@skipnumbers=\count315
+\lst@framebox=\box268
+)
+(D:/MikTex/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (./w-bookps.sty
+
+
+ Using PostScript Fonts
+
+ Wiley Monograph/Edited Book Style
+ Feb 16, 2012
+
+ 
+)
+\sectsavebox=\box269
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 96.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 96.
+
+No file W-BKSAMP.aux.
+
+\openout1 = W-BKSAMP.aux
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 101.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 101.
+(D:/MikTex/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Try loading font information for EU2+ptm on input line 101.
+LaTeX Font Info:    No file EU2ptm.fd. on input line 101.
+
+
+LaTeX Font Warning: Font shape `EU2/ptm/m/n' undefined
+(Font)              using `EU2/lmr/m/n' instead on input line 101.
+
+*** you should *not* be loading the inputenc package
+*** XeTeX expects the source to be in UTF8 encoding
+*** some features of other encodings may conflict, resulting in poor output.
+(D:/MikTex/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count316
+\scratchdimen=\dimen311
+\scratchbox=\box270
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen312
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks34
+)
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 101.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 101.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 101.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 101.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 101.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 101.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 101.
+LaTeX Font Info:    Redeclaring math accent \check on input line 101.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 101.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 101.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 101.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 101.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)              `operators' in the math version `normal' on input line 101.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU2/ptm/m/n on input line 101.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)              `operators' in the math version `bold' on input line 101.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU2/ptm/m/n on input line 101.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU2/ptm/m/n --> EU2/ptm/m/n on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU2/ptm/m/it on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU2/ptm/bx/n on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU2/phv/m/n on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU2/pcr/m/n on input line 101.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU2/ptm/m/n --> EU2/ptm/bx/n on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU2/ptm/bx/it on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU2/phv/bx/n on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU2/pcr/bx/n on input line 101.
+ ABD: EveryShipout initializing macros
+\c@lstlisting=\count322
+(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
+otf/lmroman17-regular.luc)
+
+LaTeX Font Warning: Font shape `EU2/ptm/bx/n' undefined
+(Font)              using `EU2/ptm/m/n' instead on input line 120.
+
+[1{C:/Users/Secreto/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2]
+Overfull \hbox (24.17992pt too wide) in paragraph at lines 122--122
+[][]|\subtitlefont Bib-lioteca grá-fica para pro-gra-madores
+ []
+
+<wileylogo.pdf, id=12, 292.09125pt x 64.24pt>
+File: wileylogo.pdf Graphic file (type pdf)
+ <use wileylogo.pdf>
+Package pdftex.def Info: wileylogo.pdf used on input line 122.
+(pdftex.def)             Requested size: 122.85876pt x 27.0208pt.
+ [3<./wileylogo.pdf>](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex
+-cache/generic/fonts/otf/lmroman7-regular.luc)
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+
+ []
+
+[4](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fon
+ts/otf/lmroman12-regular.luc)
+
+LaTeX Font Warning: Font shape `EU2/ptm/m/it' undefined
+(Font)              using `EU2/ptm/m/n' instead on input line 141.
+
+[5
+
+] [5] [6
+
+] (./W-BKSAMP.toc) [7] [8
+
+] (./W-BKSAMP.toc
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+ [][] []  
+ []
+
+[9](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fon
+ts/otf/lmroman5-regular.luc)
+Overfull \hbox (154.14pt too wide) detected at line 37
+\tocfonts Ap-pendix: This is the Chap-ter Ap-pendix Ti-tle 
+ []
+
+
+Overfull \hbox (47.6pt too wide) detected at line 38
+\tocfonts Chap-ter Ap-pendix 
+ []
+
+)
+\tf@toc=\write5
+
+\openout5 = W-BKSAMP.toc
+(load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
+otf/lmroman8-regular.luc)
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[10] (./W-BKSAMP.lof)
+\tf@lof=\write6
+
+\openout6 = W-BKSAMP.lof
+ [11
+
+] [12
+
+] (./W-BKSAMP.lot)
+\tf@lot=\write7
+
+\openout7 = W-BKSAMP.lot
+ [13] [14
+
+] [15] [16
+
+](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts
+/otf/lmroman9-regular.luc)
+
+LaTeX Font Warning: Font shape `EU2/ptm/m/sc' undefined
+(Font)              using `EU2/ptm/m/n' instead on input line 173.
+
+[17] [18
+
+] [19] [20
+
+] [21] [22
+
+] [23] [24
+
+] [25] [26
+
+]
+
+LaTeX Warning: Citation `kilby' on page xxvii undefined on input line 231.
+
+
+LaTeX Warning: Citation `beren' on page xxvii undefined on input line 233.
+
+[27] [28
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 267.
+ [1] [2
+
+]
+Chapter 1.
+
+LaTeX Warning: Citation `hamming' on page 3 undefined on input line 276.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3](load luc: C:/Users/Secreto/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fo
+nts/otf/lmroman6-regular.luc)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 324.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 324.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 324.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[4]
+Chapter 2.
+
+Underfull \vbox (badness 10000) detected at line 350
+ []
+
+[5
+
+] [6
+
+]
+Chapter 3.
+
+Overfull \hbox (0.48613pt too wide) detected at line 363
+$[][]$
+ []
+
+
+Overfull \hbox (0.48613pt too wide) detected at line 363
+$[][]$
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 363
+ []
+
+[7]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 399.
+LaTeX Font Info:    Try loading font information for EU2+pcr on input line 447.
+LaTeX Font Info:    No file EU2pcr.fd. on input line 447.
+
+
+LaTeX Font Warning: Font shape `EU2/pcr/m/n' undefined
+(Font)              using `EU2/lmr/m/n' instead on input line 447.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[8]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[9]
+Overfull \hbox (5.75888pt too wide) in paragraph at lines 562--567
+\EU2/pcr/m/n/10 procedures to determine a appropriate transformation of PRES in
+ the regression
+ []
+
+
+Overfull \hbox (5.75888pt too wide) in paragraph at lines 610--615
+\EU2/pcr/m/n/10 procedures to determine a appropriate transformation of PRES in
+ the regression
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[10]
+
+LaTeX Warning: Citation `xkilby' on page 11 undefined on input line 659.
+
+
+LaTeX Warning: Citation `xberen' on page 11 undefined on input line 659.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[11]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[12] [13
+
+] [14
+
+] [15] [16
+
+] [17] [18
+
+] [19] [20
+
+] [21] [22
+
+] (./W-BKSAMP.ind
+Overfull \hbox (1.07605pt too wide) in paragraph at lines 40--41
+[][]\EU2/pcr/m/n/8 Au-to-cor-re-la-tion func-tion (ACF), 194, 236 
+ []
+
+
+Overfull \hbox (0.68407pt too wide) in paragraph at lines 44--45
+[][]\EU2/pcr/m/n/8 Au-to-co-vari-ance se-quence (ACVS), 61--63,
+ []
+
+[23
+
+]) (./W-BKSAMP.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+)
+
+Here is how much of LuaTeX's memory you used:
+ 27274 strings out of 494701
+ 100000,662416 words of node,token memory allocated
+ 1175 words of node memory still in use:
+    nodes
+   avail lists: 1:2,2:6810,3:242,4:846,5:133,6:2280,7:63,9:183,10:180
+ 30145 multiletter control sequences out of 65536+200000
+ 151 fonts using 9601695 bytes
+ 55i,10n,54p,1246b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/MikTex/fonts/enc/dvips/fontname/8r.enc}<d:/miktex/fonts/opentype/public/lm/l
+mroman8-regular.otf><d:/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><d:
+/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><d:/miktex/fonts/opentype
+/public/lm/lmroman12-regular.otf><d:/miktex/fonts/opentype/public/lm/lmroman7-re
+gular.otf><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><<D:/MikTex/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><<D:/MikTex/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi9.pfb><<D:/MikTex/fon
+ts/type1/public/amsfonts/cm/cmmib10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/
+cmextra/cmmib7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><<D:/Mik
+Tex/fonts/type1/public/amsfonts/cm/cmr6.pfb><<D:/MikTex/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><<D:/MikTex/
+fonts/type1/public/amsfonts/cm/cmr9.pfb><<D:/MikTex/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><<D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><<D:/MikTex/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb><<D:/MikTex/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb><<D:/MikTex/fonts/type1/urw/helvetic/uhvb8a.pfb><<D:/MikTex/fonts/t
+ype1/urw/helvetic/uhvbo8a.pfb><<D:/MikTex/fonts/type1/urw/helvetic/uhvr8a.pfb><<
+D:/MikTex/fonts/type1/urw/helvetic/uhvro8a.pfb><<D:/MikTex/fonts/type1/urw/times
+/utmb8a.pfb><<D:/MikTex/fonts/type1/urw/times/utmbi8a.pfb><<D:/MikTex/fonts/type
+1/urw/times/utmr8a.pfb><<D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on W-BKSAMP.pdf (52 pages, 1187811 bytes).
+
+PDF statistics: 321 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
