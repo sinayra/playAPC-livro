@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{sb6}
+{\em OpenGL SuperBible}.
+\newblock Pearson Education Inc, 6 edition, 2014.
+
+\bibitem{glfw}
+Marcus Geelnard and Camilla Berglund.
+\newblock {\em GLFW - Reference guide}, 2010.
+\newblock API version 2.7.
+
+\bibitem{cbook}
+Brian~W. Kernighan and Dennis~M. Ritchie.
+\newblock {\em The C Programming Language}.
+\newblock 1989.
+
+\bibitem{cppbook}
+Stanley~B. Lippman, Josés Lajoile, and Barbara Moo.
+\newblock {\em C++ Primer}.
+\newblock 2013.
+
+\end{thebibliography}

@@ -1,3 +1,5 @@
+%!TEX program = lualatex
+
 %%%%%%%%%%%%%%
 %% Run LaTeX on this file several times to get Table of Contents,
 %% cross-references, and citations.
@@ -25,11 +27,13 @@
 \documentclass{wileySix}
 
 %\usepackage[brazil]{babel}
+%\usepackage[utf8]{inputenc}
 \usepackage{polyglossia}
 \usepackage{xcolor,graphicx,tikz,url}
 \usepackage{listings}
 \usepackage{color}
-\selectlanguage{portuguese}
+\usepackage{hyperref}
+%\selectlanguage{portuguese}
 
 \lstdefinestyle{customc}{
   backgroundcolor=\color{yellow!20}, 
@@ -299,85 +303,8 @@ ABC {\cal DEF} \alpha\beta\Gamma\Delta\sum^{abc}_{def}
 \end{chapreferences}
 \end{introduction}
 
+\input{capitulos/capitulo1}
 
-\part[Submicron Semiconductor Manufacture]
-{Submicron Semiconductor\\ Manufacture}
-
-
-\chapter[Primeiro capítulo e eu não sei o que tô fazendo]
-{Primeiro capítulo\\ pfv, como assim}
-
-
-
-\section{Sessão}
-Aqui vem uma explicação sobre o que diabos é esse capítulo e essa sessão.
-
-\lstinputlisting[caption=Teste, style=customc]{src/ex1_PrimeiraJanela.cpp}
-E aqui apareceu um código de teste da playcb, colorido usando gambiarra para deixá-lo bonito. áãÉêóÕÃ
-
-\subsection{Eu preciso de sub-sessão?}
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-
-
-\subsubsection{Sub-sub sessão}
-Here is some text after the subsubsection.
-Here is some text after the subsubsection.
-Here is some text after the subsubsection.
-Here is some text after the subsubsection.
-
-\paragraph{This is the paragraph}
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-
-\section{Tips On Special Section Heads}
-Here are some things you can do for a special
-section head.
-
-\section[This Version of Section Head will be sent Contents]
-{Break Long Section heads\\ with double backslash}
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-
- \section[This show how to explicitly break lines
-\string\hfill\string\break\space in Table of Contents]
-{Here is a Section Title}
-See this section head for information on how to explicitly break lines in
-table of contents.
-
-\section{How to get \lowercase{lower case} in section head: \lowercase{$p$}$H$}
-Here is some normal text.
-Here is some normal text.
-Here is some normal text.
-
-\section{How to use a macro that has both upper and lower case parts: 
-\copy\sectsavebox}
-See the top of this file where the definition and box were set.
-
-%% Sending different version of section to running head, 
-%% so that the size of math is correct in running head:
-\markright{Sample macro \VT{\lowercase{xyz}} sent to running head}
-
-\section{Equation}
-
-For optimal vertical spacing, no blank lines before or after
-equations
-\begin{equation}
-\alpha\beta\Gamma\Delta
-\end{equation}
-as you see here.
 
 
 \chapter{First Edited Book Sample Chapter Title}
