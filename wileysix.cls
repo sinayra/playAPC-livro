@@ -161,7 +161,7 @@ This version is dated \currversion^^J^^J}
 \newcommand{\listtablename}{List of Tables}
 \newcommand{\bibname}{Bibliography}
 \newcommand{\indexname}{INDEX}
-\newcommand{\figurename}{Figure}
+\newcommand{\figurename}{Figura}
 \newcommand{\tablename}{Table}
 \newcommand{\partname}{PART}
 \newcommand{\chaptername}{Chapter}
@@ -683,7 +683,7 @@ This version is dated \currversion^^J^^J}
   {\parindent \z@ 
     \interlinepenalty\@M
 \Large
-\hbox to\textwidth{\hbox{\chapternumberfont CHAPTER
+\hbox to\textwidth{\hbox{\chapternumberfont CAPÍTULO
 \the\c@chapter}\hfill\vrule depth12pt width0pt}
 \hrule height3pt
 \vtop to22.5pc{\vfill
