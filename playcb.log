@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.1.7)  7 JAN 2016 16:56
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.1.7)  8 MAR 2016 16:54
 **D:/GitHub/playCB-livro/playcb.tex
 (D:/GitHub/playCB-livro/playcb.tex
 LaTeX2e <2015/10/01> patch level 2
@@ -235,7 +235,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.065 seconds
+luaotfload | main : fontloader loaded in 0.063 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -877,7 +877,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 138.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 138.
- (./playcb.aux)
+ (./playcb.aux
+
+LaTeX Warning: Label `lst:cap01_ex1' multiply defined.
+
+
+LaTeX Warning: Label `fig:cap01_ex1' multiply defined.
+
+
+LaTeX Warning: Label `fig:cap01_ex1' multiply defined.
+
+
+LaTeX Warning: Label `lst:cap01_ex1' multiply defined.
+
+)
 \openout1 = playcb.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 143.
@@ -1017,7 +1030,7 @@ Overfull \hbox (26.21631pt too wide) in paragraph at lines 163--163
 [][]|\subtitlefont Bib-lioteca grá-fica para pro-gra-madores
  []
 
-<wileylogo.pdf, id=159, 292.09125pt x 64.24pt>
+<wileylogo.pdf, id=104, 292.09125pt x 64.24pt>
 File: wileylogo.pdf Graphic file (type pdf)
  <use wileylogo.pdf>
 Package pdftex.def Info: wileylogo.pdf used on input line 163.
@@ -1065,17 +1078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--12
  [][] []  
  []
 
-[9]
-Overfull \hbox (155.82826pt too wide) detected at line 32
-\tocfonts Ap-pendix: This is the Chap-ter Ap-pendix Ti-tle 
- []
-
-
-Overfull \hbox (47.99948pt too wide) detected at line 33
-\tocfonts Chap-ter Ap-pendix 
- []
-
-)
+[9])
 \tf@toc=\write6
 
 \openout6 = playcb.toc
@@ -1097,15 +1100,13 @@ Package hyperref Warning: bookmark level for unknown schapter defaults to 0.
 
 ] [12
 
-] (./playcb.lot(load luc: C:/Users/nayra/AppData/Local/MiKTeX/2.9/luatex-cache/g
-eneric/fonts/otf/lmroman5-regular.luc))
+] (./playcb.lot)
 \tf@lot=\write8
 
 \openout8 = playcb.lot
  [13] [14
 
-]
-[15] [16
+] [15] [16
 
 ](load luc: C:/Users/nayra/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/o
 tf/lmroman9-regular.luc)
@@ -1121,7 +1122,8 @@ LaTeX Font Warning: Font shape `EU2/ptm/m/sc' undefined
 
 ] [23] [24
 
-] [25] [26
+](load luc: C:/Users/nayra/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/o
+tf/lmroman5-regular.luc) [25] [26
 
 ]
 
@@ -1157,11 +1159,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapter 1.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-<img/cap1_ex1.png, id=400, 302.63063pt x 326.72063pt>
+<img/cap1_ex1.png, id=295, 302.63063pt x 326.72063pt>
 File: img/cap1_ex1.png Graphic file (type png)
  <use img/cap1_ex1.png>
 Package pdftex.def Info: img/cap1_ex1.png used on input line 52.
@@ -1172,207 +1170,97 @@ Package pdftex.def Info: img/cap1_ex1.png used on input line 52.
 LaTeX Font Warning: Font shape `EU2/pcr/bx/n' undefined
 (Font)              using `EU2/pcr/m/n' instead on input line 1.
 
-))
+[3]) <img/cap1_ex3.png, id=305, 302.63063pt x 325.215pt>
+File: img/cap1_ex3.png Graphic file (type png)
+
+<use img/cap1_ex3.png>
+Package pdftex.def Info: img/cap1_ex3.png used on input line 61.
+(pdftex.def)             Requested size: 168.0pt x 180.53615pt.
+ (./src/ex3_boneco.cpp [4<./img/cap1_ex1.png>])
+<img/cap1_ex2.png, id=333, 303.38344pt x 325.215pt>
+File: img/cap1_ex2.png Graphic file (type png)
+ <use img/cap1_ex2.png>
+Package pdftex.def Info: img/cap1_ex2.png used on input line 70.
+(pdftex.def)             Requested size: 168.0pt x 180.08954pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[4<./img/cap1_ex1.png>]
-Chapter 2.
-
-Underfull \vbox (badness 10000) detected at line 311
+[5<./img/cap1_ex3.png>] (./src/ex2_davi.cpp [6<./img/cap1_ex2.png>]))
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
  []
 
-[5
-
-] [6
+[7] [8
 
 ]
-Chapter 3.
-
-Overfull \hbox (0.48613pt too wide) detected at line 324
-$[][]$
- []
-
-
-Overfull \hbox (0.48613pt too wide) detected at line 324
-$[][]$
- []
-
-
-Underfull \vbox (badness 10000) detected at line 324
- []
-
-[7]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 360.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[8]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[9]
-Overfull \hbox (5.75888pt too wide) in paragraph at lines 523--528
-\EU2/pcr/m/n/10 procedures to determine a appropriate transformation of PRES in
- the regression
- []
-
-
-Overfull \hbox (5.75888pt too wide) in paragraph at lines 571--576
-\EU2/pcr/m/n/10 procedures to determine a appropriate transformation of PRES in
- the regression
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[10]LuaTeX warning (ext4): destination with the same identifier (name{figure.3.
-1}) has been already used, duplicate ignored
-<to be read again> 
-\relax 
-l.654 \caption{This is an appendix figure caption.}
-                                                 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[11]LuaTeX warning (ext4): destination with the same identifier (name{table.3.1
-}) has been already used, duplicate ignored
-<to be read again> 
-\relax 
-l.658 \caption{This is an appendix table caption}
-                                               LuaTeX warning (ext4): destinatio
-n with the same identifier (name{equation.3.0.1}) has been already used, duplica
-te ignored
-<to be read again> 
-\relax 
-l.686 \begin{equation}
-                    LuaTeX warning (ext4): destination with the same identifier 
-(name{equation.3.0.1}) has been already used, duplicate ignored
-<to be read again> 
-\relax 
-l.686 \begin{equation}
-                    LuaTeX warning (ext4): destination with the same identifier 
-(name{equation.3.0.1}) has been already used, duplicate ignored
-<to be read again> 
-\relax 
-l.686 \begin{equation}
-                    LuaTeX warning (ext4): destination with the same identifier 
-(name{equation.3.0.1}) has been already used, duplicate ignored
-<to be read again> 
-\relax 
-l.686 \begin{equation}
-                    
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[12]
 
 Package hyperref Warning: bookmark level for unknown achapter defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 2.0pt
-(hyperref)                removed on input line 695.
+(hyperref)                removed on input line 740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 695.
+(hyperref)                replaced by space on input line 740.
 
-[13
+[9] [10
 
-] [14
+] [11] [12
 
-]
+] [13] [14
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 2.0pt
-(hyperref)                removed on input line 722.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 722.
-
-[15] [16
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 2.0pt
-(hyperref)                removed on input line 739.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 739.
-
-[17] [18
-
-] [19] [20
-
-] [21] [22
-
-] (./playcb.ind [23
+] (./playcb.ind [15
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 842.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 842.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 843.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 843.
  (./playcb.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 842.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 842.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 843.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 843.
 Package rerunfilecheck Info: File `playcb.out' has not changed.
-(rerunfilecheck)             Checksum: BA4D19F0AAD8CB6E700E9678A4D75F0C;2170.
+(rerunfilecheck)             Checksum: 6FF8FFAADA736C13B60ABFB85886019F;1323.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 31229 strings out of 494933
+ 31299 strings out of 494933
  100000,794899 words of node,token memory allocated
- 1135 words of node memory still in use:
+ 882 words of node memory still in use:
     nodes
-   avail lists: 1:2,2:6825,3:206,4:1397,5:632,6:2280,7:421,8:24,9:957,10:180
- 33804 multiletter control sequences out of 65536+200000
- 138 fonts using 8945775 bytes
- 60i,10n,120p,777b,845s stack positions out of 5000i,500n,10000p,200000b,50000s
+   avail lists: 1:2,2:6871,3:134,4:3921,5:2079,6:2291,7:1580,8:32,9:3150,10:196
+ 33825 multiletter control sequences out of 65536+200000
+ 135 fonts using 8767503 bytes
+ 60i,11n,120p,749b,1060s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/miktex 2.9/fonts/opentype/public/lm/lmroman5-regular.otf>{D:/MiKTeX 2.9/font
 s/enc/dvips/fontname/8r.enc}<d:/miktex 2.9/fonts/opentype/public/lm/lmroman6-reg
 ular.otf><d:/miktex 2.9/fonts/opentype/public/lm/lmroman8-regular.otf><d:/miktex
  2.9/fonts/opentype/public/lm/lmroman9-regular.otf><d:/miktex 2.9/fonts/opentype
 /public/lm/lmroman10-regular.otf><d:/miktex 2.9/fonts/opentype/public/lm/lmroman
 12-regular.otf><d:/miktex 2.9/fonts/opentype/public/lm/lmroman7-regular.otf><<D:
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><<D:/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><<D:/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><<D:/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
-<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><<D:/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr7.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><<D:/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr9.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><<D:/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><<D:/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb
-><<D:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><<D:/MiKTeX 2.9/fonts/type1
-/urw/times/utmb8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><<D:/MiK
-TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on playcb.pdf (52 pages, 1208128 bytes).
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><<D:/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.
+pfb><<D:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><<D:/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmb8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><<D:/
+MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on playcb.pdf (44 pages, 1058613 bytes).
 
-PDF statistics: 655 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 131072)
- 312 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 522 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 131072)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
