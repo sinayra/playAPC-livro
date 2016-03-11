@@ -1,16 +1,14 @@
+\select@language {portuguese}
+\select@language {portuguese}
 \contentsline {schapter}{List of Figures}{xi}{chapter*.4}
 \contentsline {schapter}{List of Tables}{xiii}{chapter*.5}
-\contentsline {schapter}{Foreword}{xv}{chapter*.6}
-\contentsline {schapter}{Preface}{xvii}{chapter*.7}
-\contentsline {schapter}{Acknowledgments}{xix}{chapter*.8}
-\contentsline {schapter}{Acronyms}{xxi}{chapter*.9}
-\contentsline {schapter}{Glossary}{xxiii}{chapter*.10}
-\contentsline {schapter}{List of Symbols}{xxv}{chapter*.11}
-\contentsline {schapter}{Introduction}{xxvii}{chapter*.12}
-\contentsline {ichapter}{Sinayra Pascoal Cotts Moreira.}{xxvii}{chapter*.12}
-\contentsline {ichapter}{Dr. José Carlos Loureiro Ralha}{xxvii}{chapter*.12}
-\contentsline {ichapter}{Dr. Alexandre Zaghetto}{xxvii}{chapter*.12}
-\contentsline {schapter}{References}{xxviii}{section*.13}
+\contentsline {schapter}{Preface}{xv}{chapter*.6}
+\contentsline {schapter}{Acknowledgments}{xvii}{chapter*.7}
+\contentsline {schapter}{Acronyms}{xix}{chapter*.8}
+\contentsline {schapter}{Glossary}{xxi}{chapter*.9}
+\contentsline {schapter}{List of Symbols}{xxiii}{chapter*.10}
+\contentsline {schapter}{Introduction}{xxv}{chapter*.11}
+\contentsline {schapter}{References}{xxvi}{section*.12}
 \contentsline {part}{I\hspace {1em}Algoritmos sequenciais, condicionais e com repetições}{1}{part.1}
 \contentsline {chapter}{\numberline {1}Algoritmos sequenciais}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Resumo}{3}{section.1.1}
@@ -25,6 +23,6 @@
 \contentsline {section}{\numberline {3.2}Galáxia espiral}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Carro andando}{15}{section.3.3}
 \contentsline {section}{\numberline {3.4}Moinho de vento}{16}{section.3.4}
-\contentsline {achapter}{A\hskip 2pt \ \hskip 1em\relax Alternate Reference Styles}{19}{appendix*.14}
-\contentsline {schapter}{References}{21}{appendix*.15}
-\contentsline {schapter}{References}{23}{appendix*.16}
+\contentsline {achapter}{A\hskip 2pt \ \hskip 1em\relax Alternate Reference Styles}{19}{appendix*.13}
+\contentsline {schapter}{References}{21}{appendix*.14}
+\contentsline {schapter}{References}{23}{appendix*.15}

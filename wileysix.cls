@@ -156,16 +156,16 @@ This version is dated \currversion^^J^^J}
 \@openrighttrue
 
 
-\newcommand{\contentsname}{CONTENTS}
-\newcommand{\listfigurename}{List of Figures}
-\newcommand{\listtablename}{List of Tables}
-\newcommand{\bibname}{Bibliography}
-\newcommand{\indexname}{INDEX}
+\newcommand{\contentsname}{CONTEÚDO}
+\newcommand{\listfigurename}{Lista de Figuras}
+\newcommand{\listtablename}{Lista de Tabelas}
+\newcommand{\bibname}{Bibliografia}
+\newcommand{\indexname}{ÍNDICE}
 \newcommand{\figurename}{Figura}
-\newcommand{\tablename}{Table}
-\newcommand{\partname}{PART}
-\newcommand{\chaptername}{Chapter}
-\newcommand{\appendixname}{Appendix}
+\newcommand{\tablename}{Tabela}
+\newcommand{\partname}{PARTE}
+\newcommand{\chaptername}{Capítulo}
+\newcommand{\appendixname}{Apêndice}
 
 %%% <== end global parameters
 
