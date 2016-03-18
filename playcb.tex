@@ -34,6 +34,7 @@
 \usepackage{color}
 \usepackage{hyperref}
 \usepackage{fontspec}
+\usepackage{amsmath}
 \selectlanguage{portuguese}
 \renewcommand{\lstlistingname}{Listagem}
 \lstdefinestyle{customc}{
@@ -48,19 +49,29 @@
   basicstyle=\footnotesize\ttfamily,
   keywordstyle=\bfseries\color{red!40!black},
   commentstyle=\itshape\color{green!40!black},
-  otherkeywords={Ponto},           
+  otherkeywords={Ponto, QUADRADO, RETANGULO, TRIANGULO, CIRCULO, ELIPSE, CIRCUNFERENCIA, PONTO, RETA, GRAFICO},           
   emph={
   		AbreJanela,
   		PintarFundo,
-  		CriaCircunferencia,
-  		CriaCirculo,
-  		CriaGrupo,
   		Pintar,
   		Grafite,
   		Move,
   		Desenha,
   		Desenha1Frame,
-  		MostraPlanoCartesiano
+  		MostraPlanoCartesiano,
+      MudaLimitesJanela,
+      CriaGrafico,
+      CriaReta,
+      CriaCircunferencia,
+      CriaCirculo,
+      CriaGrupo,
+      CriaQuadrado,
+      CriaTriangulo,
+      CriaRetangulo,
+      CriaElipse,
+      CriaPonto,
+      CriaPoligono,
+      ApertouTecla
   		},
   emphstyle={\color{blue!40!black}\bfseries},
   stringstyle=\color{orange},
@@ -293,6 +304,7 @@ Stanley~B. Lippman, Josés Lajoile, and Barbara Moo.
 
 \input{capitulos/capitulo1}
 \input{capitulos/capitulo2}
+\input{capitulos/capitulo3}
 
 
 % \chapter{First Edited Book Sample Chapter Title}

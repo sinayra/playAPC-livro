@@ -45,15 +45,22 @@ Vetores são um tipo de estrutura que podem armazenar um tamanho fixo de element
 % \newblock 2013.
 % \end{chapreferences}
 
+\begin{problems}
+\prob
+Exiba o gráfico do polinômio $-x^3$ para $-50 \leq x \leq 50$.
+\label{ex:cap02_ex1}
+\end{problems}
 
-\section{Criando um gráfico}
+\section{Soluções}
+
+\subsection{\ref{ex:cap02_ex2}Criando um gráfico}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap2_ex8.png}}
   \caption{Gráfico do polinômio $-x^3$}
   \label{fig:cap02_ex1}
 \end{figure}
 Esta prática mostra como construir um gráfico a partir de um vetor de Pontos. Cada posição em \emph{y} de cada ponto é calculada dentro do loop. Por padrão, os limites da janela de exibição da playCB vão de -100 à 100, entretanto, os valores em \emph{y} nesta função variam de $-125.000$ até $125.000$, tendo a necessidade de mudar o limite de exibição com a função \emph{MudaLimitesJanela(125000)}.
-\lstinputlisting[caption=Código fonte de polinômio, style=customc, label=lst:cap2_ex8]{src/ex8_grafico.cpp}
+\lstinputlisting[caption=Código fonte de polinômio, style=customc, label=lst:cap2_ex1]{src/ex8_grafico.cpp}
 
 \chapter[Matrizes]
 {Matrizes}
@@ -97,12 +104,22 @@ Assim como vetores, matrizes são um tipo de estrutura que armazena dados de mes
 % \newblock 2013.
 % \end{chapreferences}
 
+\begin{problems}
+\prob
+Mostre graficamente o jogo da vida para uma matriz com 17 linhas e 17 colunas com a seguinte população inicial onde a população inicial estará \emph{VIVA} para as seguintes posições na matriz:
+$$
+  (1,5), (2,5), (3,5), (3,6), (5,1), (5,2), (5,3), (5,6), (5,7), (6,3), (6,5), (6,7), (7,5), (7,6)
+$$
+\label{ex:cap02_ex2}
+\end{problems}
 
-\section{Criando um gráfico}
+\section{Soluções}
+
+\subsection{\ref{ex:cap02_ex2}Jogo da Vida}
 \begin{figure}[ht]
-  \centerline{\includegraphics[width=.5\textwidth]{img/cap2_ex8.png}}
-  \caption{Gráfico do polinômio $-x^3$}
-  \label{fig:cap02_ex1}
+  \centerline{\includegraphics[width=.5\textwidth]{img/cap2_ex9.png}}
+  \caption{Pulsar}
+  \label{fig:cap02_ex2}
 \end{figure}
-Esta prática mostra como construir um gráfico a partir de um vetor de Pontos. Cada posição em \emph{y} de cada ponto é calculada dentro do loop. Por padrão, os limites da janela de exibição da playCB vão de -100 à 100, entretanto, os valores em \emph{y} nesta função variam de $-125.000$ até $125.000$, tendo a necessidade de mudar o limite de exibição com a função \emph{MudaLimitesJanela(125000)}.
-\lstinputlisting[caption=Código fonte de polinômio, style=customc, label=lst:cap2_ex8]{src/ex8_grafico.cpp}
+Esta prática mostra como utilizar o retorno das função \emph{CriaQuadrado}, que esta retorna o índice da geometria criada. O seu índice é utilizado na função \emph{Pintar}, que recebe, além do índice, o tipo da geometria. Como foi utilizado a função \emph{CriaQuadrado}, o tipo de geometria é \emph{QUADRADO}. Se fosse utilizado \emph{CriaCirculo}, seria utilizado o tipo \emph{CIRCULO} e assim sucessivamente.
+\lstinputlisting[caption=Código fonte do jogo da vida, style=customc, label=lst:cap2_ex2]{src/ex9_gameoflife.cpp}

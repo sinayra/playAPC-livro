@@ -45,33 +45,60 @@ Estrutura sequencial é um conjunto de instruções que serão executadas em seq
 % \newblock 2013.
 % \end{chapreferences}
 
+\begin{problems}
+\prob
+Exiba um plano cartesiano de -100 a 100 com espaçamento de 5 unidades.
+\label{ex:cap01_ex1}
+\prob
+Desenhe um boneco palito que utilize pelo menos uma vez as seguintes geometrias:
+\begin{itemize}
+\item
+Círculo
+\item
+Elipse
+\item
+Retângulo
+\item
+Triângulo
+\item
+Quadrado
+\end{itemize}
+\label{ex:cap01_ex2}
+\prob
+Exiba a estrela de Davi.
+\label{ex:cap01_ex3}
+\end{problems}
 
-\section{Plano Cartesiano}
+
+\section{Soluções}
+
+\subsection{\ref{ex:cap01_ex1}Plano Cartesiano}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex1.png}}
   \caption{Plano Cartesiano de -100 à 100}
   \label{fig:cap01_ex1}
 \end{figure}
+
 Esta prática se refere a exibir um Plano Cartesiano na tela com espaçamento de 5 em 5 unidades, tanto no eixo x quanto no eixo y. Com ela, o aluno poderá notar a importância da ordem de chamada de funções da playCB e a necessidade das funções \emph{AbreJanela} e \emph{Desenha}, além de verificar, com um exemplo simples, se a playCB foi corretamente bem instalada.
 \lstinputlisting[caption=Código fonte de Plano Cartesiano, style=customc, label=lst:cap1_ex1]{src/ex1_PrimeiraJanela.cpp}
 
-\section{Boneco Palito}
+\subsection{\ref{ex:cap01_ex2}Boneco Palito}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex3.png}}
   \caption{Boneco Palito}
   \label{fig:cap01_ex2}
 \end{figure}
-Esta prática se refere a exibir um boneco palito e praticar todas as geometrias pré-definidas existentes na playCB. Os argumentos de cada função podem ser consultados no Guia de Referência da playCB \footnote{\url{http://pt-br.playcb.wikia.com/wiki/Categoria:Geometrias}}
-\lstinputlisting[caption=Código fonte do boneco palito, style=customc, label=lst:cap1_ex3]{src/ex3_boneco.cpp}
+Esta prática se refere a exibir um boneco palito e praticar a grande maioria das geometrias pré-definidas existentes na playCB. Os argumentos de cada função podem ser consultados no Guia de Referência da playCB \footnote{\url{http://pt-br.playcb.wikia.com/wiki/Categoria:Geometrias}}
+\lstinputlisting[caption=Código fonte do boneco palito, style=customc, label=lst:cap1_ex2]{src/ex3_boneco.cpp}
 
-\section{Estrela de Davi}
+\subsection{\ref{ex:cap01_ex3}Estrela de Davi}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex2.png}}
   \caption{Estrela de Davi}
   \label{fig:cap01_ex3}
 \end{figure}
-Esta prática se refere a exibir a estrela de Davi, feita com dois triângulos. Um triângulo foi criado com a função \emph{CriaTriangulo} e o outro com a função \emph{CriaPoligono}. Verificamos nesta prática os argumentos de \emph{CriaTriangulo} (base, altura e ponto esquerdo de referência) e, como não há como ter altura negativa, teve a necessidade de criar um polígono definido pelos três pontos \emph{p1, p2} e \emph{p3} para criar-se um triângulo \emph{de cabeça pra baixo}.
-\lstinputlisting[caption=Código fonte da Estrela de Davi, style=customc, label=lst:cap1_ex2]{src/ex2_davi.cpp}
+Esta prática se refere a exibir a estrela de Davi, feita com dois triângulos. Um triângulo foi criado com a função \emph{CriaTriangulo} e o outro com a função \emph{CriaPoligono}. Verificamos nesta prática os argumentos de \emph{CriaTriangulo} (base, altura e ponto esquerdo inferior) e, como não há como ter altura negativa, teve a necessidade de criar um polígono definido pelos três pontos \emph{p1, p2} e \emph{p3} para criar-se um triângulo \emph{de cabeça pra baixo}.
+\lstinputlisting[caption=Código fonte da Estrela de Davi, style=customc, label=lst:cap1_ex3]{src/ex2_davi.cpp}
 
 
 \chapter[Algoritmos condicionais]
@@ -116,7 +143,25 @@ Estrutura condicional expõe que a instrução ou bloco de instrução só seja 
 % \newblock 2013.
 % \end{chapreferences}
 
-\section{Quadrante de uma reta}
+\begin{problems}
+\prob
+Escreva um programa que receba do usuário um valor de ângulo em graus, converta para radianos, exiba uma reta com comprimento de 50 unidades e pinte-a de acordo com as seguintes regras:
+\begin{itemize}
+\item
+Se a reta pertencer ao \emph{primeiro} quadrante, pinte-a de vermelho
+\item
+Se a reta pertencer ao \emph{segundo} quadrante, pinte-a de verde
+\item
+Se a reta pertencer ao \emph{terceiro} quadrante, pinte-a de azul
+\item
+Se a reta pertencer ao \emph{quarto} quadrante, pinte-a de preto
+\end{itemize}.
+\label{ex:cap01_ex4}
+\end{problems}
+
+\section{Soluções}
+
+\subsection{\ref{ex:cap01_ex4}Quadrante de uma reta}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex4.png}}
   \caption{Determinação do quadrante de uma reta baseado no ângulo de inclinação dela}
@@ -168,25 +213,48 @@ Estruturas de repetição são criadas para que diversas instruções sejam exec
 % \newblock 2013.
 % \end{chapreferences}
 
-\section{Galáxia espiral}
+\begin{problems}
+\prob
+Sabendo que a equação hiperbólica pode ser defina por
+$$
+\begin{matrix}
+x	& = &	a \cos(\theta) \\ 
+y	& = &	a \sin(\theta)
+\end{matrix}.
+$$
+onde $a$ é a assíntota para y e $\theta$ o ângulo equivalente ao ângulo em coordenadas polares, exiba duas espirais hiberbólicas, onde uma delas está invertida em relação a outra e coloque-as para girar.
+\label{ex:cap01_ex5}
+
+\prob
+Exiba um carrinho se movendo de $-100$ à $100$.
+\label{ex:cap01_ex6}
+
+\prob
+Construa um moinho de vento e coloque apenas as hélices para girar.
+\label{ex:cap01_ex7}
+\end{problems}
+
+\section{Soluções}
+
+\subsection{\ref{ex:cap01_ex5}Galáxia espiral}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex6.png}}
   \caption{Duas espirais hiperbólicas girando}
-  \label{fig:cap01_ex6}
+  \label{fig:cap01_ex5}
 \end{figure}
-Esta prática ilustra como a função \emph{Desenha1Frame} funciona. Na linha 23 até a linha 30, a cada frame são criados dois pontos, um de cada espiral. \footnote{Exemplo criado pelo Prof. Dr. José C.L. Ralha}
-\lstinputlisting[caption=Código fonte da galáxia expiral, style=customc, label=lst:cap1_ex6]{src/ex6_galaxy.cpp}
+Esta prática ilustra como a função \emph{Desenha1Frame} funciona. Na linha 23 até a linha 30, a cada frame são criados dois pontos, um de cada espiral.
+\lstinputlisting[caption=Código fonte da galáxia expiral, style=customc, label=lst:cap1_ex5]{src/ex6_galaxy.cpp}
 
-\section{Carro andando}
+\subsection{\ref{ex:cap01_ex6}Carro andando}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex5.png}}
   \caption{Carro se movendo da posição -100 até a posição 100}
-  \label{fig:cap01_ex5}
+  \label{fig:cap01_ex6}
 \end{figure}
 Esta prática exibe um carro construído com dois retângulos e dois círculos, agrupados com a função \emph{CriaGrupo}, movendo-se da posição -100 até a posição 100. Nota-se que todas as geometrias que estão abaixo da função \emph{CriaGrupo} pertencem a um único grupo, o grupo \emph{carro}.
-\lstinputlisting[caption=Código fonte do carro andando, style=customc, label=lst:cap1_ex5]{src/ex5_carrinho.cpp}
+\lstinputlisting[caption=Código fonte do carro andando, style=customc, label=lst:cap1_ex6]{src/ex5_carrinho.cpp}
 
-\section{Moinho de vento}
+\subsection{\ref{ex:cap01_ex7}Moinho de vento}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex7.png}}
   \caption{Moinho de vento}

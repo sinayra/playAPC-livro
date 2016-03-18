@@ -7,26 +7,26 @@ int main(){
 
     p.x = 0;
     p.y = 60;
-    CriaCirculo(20, p);
+    CriaCirculo(20, p); //(raio, ponto central)
     Pintar(255, 233, 234);
 
     p.y = 10;
-    CriaElipse(10, 40, p);
+    CriaElipse(10, 40, p); //(metade do maior raio da elipse, metade do menor raio da elipse, ponto central)
     Pintar(255, 233, 234);
 
     p.x = -40;
     p.y = 30;
-    CriaRetangulo(80, 10, p);
+    CriaRetangulo(80, 10, p); //(base, altura, ponto esquerdo inferior)
     Pintar(255, 233, 234);
 
     p.x = -40;
     p.y = -30;
-    CriaTriangulo(80, 40, p);
+    CriaTriangulo(80, 40, p); //(base, altura, ponto esquerdo inferior)
     Pintar(255, 233, 234);
 
     p.x = -15;
     p.y = -40;
-    CriaQuadrado(10, p);
+    CriaQuadrado(10, p); //(lado, ponto esquerdo inferior)
     Pintar(255, 233, 234);
 
     p.x = 5;
