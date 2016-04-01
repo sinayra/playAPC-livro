@@ -7,7 +7,7 @@ int main(){
     AbreJanela(400, 400, "Carrinho");
     PintarFundo(255, 255, 255);
 
-    carro = CriaGrupo();
+    carro = CriaGrupo(); @\label{line:CriaGrupo}@
         p.x = -100;
         p.y = 20;
         CriaRetangulo(30, 20, p);
@@ -30,7 +30,7 @@ int main(){
 
     p.y = 20;
     for(p.x = -100; p.x < 100; p.x++){
-        Move(p, carro);
+        Move(p, carro); @\label{line:CriaGrupo}@
         Desenha1Frame();
     }
     Desenha();

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.1.7)  1 APR 2016 12:58
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.1.7)  1 APR 2016 14:06
 **D:/GitHub/playCB-livro/playcb.tex
 (D:/GitHub/playCB-livro/playcb.tex
 LaTeX2e <2015/10/01> patch level 2
@@ -235,7 +235,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.074 seconds
+luaotfload | main : fontloader loaded in 0.071 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -930,7 +930,11 @@ Package polyglossia Warning: File gloss-portuguese.ldf does not exist!
  
 )
 \sectsavebox=\box56
- (./playcb.aux)
+ (./playcb.aux
+
+LaTeX Warning: Label `line:CriaGrupo' multiply defined.
+
+)
 \openout1 = playcb.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
@@ -1231,49 +1235,50 @@ LaTeX Font Warning: Font shape `EU2/pcr/m/it' undefined
 (Font)              using `EU2/pcr/m/n' instead on input line 10.
 
 [6<./img/cap1_ex3.png>])
+Overfull \hbox (132.00476pt too wide) in paragraph at lines 166--167
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
 [7]
-Overfull \hbox (4.46288pt too wide) in paragraph at lines 177--178
+Overfull \hbox (4.46288pt too wide) in paragraph at lines 184--185
 []\EU2/ptm/bx/n/10 A função Cri-aQuadrado, na linha []29[], cria uma ge-ome-t
 ria do tipo QUADRADO,
  []
 
 
-Overfull \hbox (18.0036pt too wide) in paragraph at lines 180--181
+Overfull \hbox (18.0036pt too wide) in paragraph at lines 187--188
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.0036pt too wide) in paragraph at lines 185--186
+Overfull \hbox (18.0036pt too wide) in paragraph at lines 192--193
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<img/cap1_ex2.png, id=439, 303.38344pt x 325.215pt>
+<img/cap1_ex2.png, id=440, 303.38344pt x 325.215pt>
 File: img/cap1_ex2.png Graphic file (type png)
  <use img/cap1_ex2.png>
-Package pdftex.def Info: img/cap1_ex2.png used on input line 191.
+Package pdftex.def Info: img/cap1_ex2.png used on input line 198.
 (pdftex.def)             Requested size: 168.0pt x 180.08954pt.
 
+(./src/ex2_davi.cpp [8])
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[8<./img/cap1_ex2.png>] (./src/ex2_davi.cpp)
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[9] [10
+[9<./img/cap1_ex2.png>] [10
 
 ]
 Capítulo 2.
-<img/cap1_ex4.png, id=491, 302.63063pt x 325.215pt>
+<img/cap1_ex4.png, id=496, 302.63063pt x 325.215pt>
 File: img/cap1_ex4.png Graphic file (type png)
  <use img/cap1_ex4.png>
-Package pdftex.def Info: img/cap1_ex4.png used on input line 267.
+Package pdftex.def Info: img/cap1_ex4.png used on input line 274.
 (pdftex.def)             Requested size: 168.0pt x 180.53615pt.
 
 [11] (./src/ex4_reta.cpp [12<./img/cap1_ex4.png>])
@@ -1285,10 +1290,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Capítulo 3.
-[15] <img/cap1_ex6.png, id=573, 651.93562pt x 505.89pt>
+[15] <img/cap1_ex6.png, id=578, 651.93562pt x 505.89pt>
 File: img/cap1_ex6.png Graphic file (type png)
  <use img/cap1_ex6.png>
-Package pdftex.def Info: img/cap1_ex6.png used on input line 347.
+Package pdftex.def Info: img/cap1_ex6.png used on input line 354.
 (pdftex.def)             Requested size: 168.0pt x 130.36269pt.
 
 (./src/ex6_galaxy.cpp [16<./img/cap1_ex6.png>])
@@ -1297,24 +1302,40 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [17]
-Overfull \hbox (58.84958pt too wide) in paragraph at lines 394--433
+Overfull \hbox (58.84958pt too wide) in paragraph at lines 402--441
  [][][] 
  []
 
-<img/cap1_ex5.png, id=663, 302.63063pt x 325.215pt>
+<img/cap1_ex5.png, id=668, 302.63063pt x 325.215pt>
 File: img/cap1_ex5.png Graphic file (type png)
  <use img/cap1_ex5.png>
-Package pdftex.def Info: img/cap1_ex5.png used on input line 438.
+Package pdftex.def Info: img/cap1_ex5.png used on input line 446.
 (pdftex.def)             Requested size: 168.0pt x 180.53615pt.
 
-(./src/ex5_carrinho.cpp [18<./img/cap1_ex5.png>] [19])
-<img/cap1_ex7.png, id=684, 569.87906pt x 427.5975pt>
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[18<./img/cap1_ex5.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[19] (./src/ex5_carrinho.cpp)
+<img/cap1_ex7.png, id=691, 308.65312pt x 325.96782pt>
 File: img/cap1_ex7.png Graphic file (type png)
  <use img/cap1_ex7.png>
-Package pdftex.def Info: img/cap1_ex7.png used on input line 447.
-(pdftex.def)             Requested size: 168.0pt x 126.05534pt.
+Package pdftex.def Info: img/cap1_ex7.png used on input line 460.
+(pdftex.def)             Requested size: 168.0pt x 177.4276pt.
 
-(./src/ex7_moinho.cpp [20] [21<./img/cap1_ex7.png>]))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[20] (./src/ex7_moinho.cpp [21<./img/cap1_ex7.png>]))
 (./capitulos/capitulo2.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
@@ -1326,7 +1347,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Capítulo 4.
-<img/cap2_ex8.png, id=800, 302.63063pt x 325.215pt>
+<img/cap2_ex8.png, id=831, 302.63063pt x 325.215pt>
 File: img/cap2_ex8.png Graphic file (type png)
  <use img/cap2_ex8.png>
 Package pdftex.def Info: img/cap2_ex8.png used on input line 59.
@@ -1356,7 +1377,7 @@ t/10 ; \OT1/cmr/m/n/10 3)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (5\OML/cmm/m/it/10
 cmm/m/it/10 ; \OT1/cmr/m/n/10 (7\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6)
  []
 
-<img/cap2_ex9.png, id=843, 415.5525pt x 438.13687pt>
+<img/cap2_ex9.png, id=874, 415.5525pt x 438.13687pt>
 File: img/cap2_ex9.png Graphic file (type png)
  <use img/cap2_ex9.png>
 Package pdftex.def Info: img/cap2_ex9.png used on input line 122.
@@ -1382,7 +1403,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Capítulo 6.
-<img/cap3_ex10.png, id=1028, 490.83376pt x 513.41812pt>
+<img/cap3_ex10.png, id=1059, 490.83376pt x 513.41812pt>
 File: img/cap3_ex10.png Graphic file (type png)
 
 <use img/cap3_ex10.png>
@@ -1418,18 +1439,21 @@ Package rerunfilecheck Info: File `playcb.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 33216 strings out of 494933
- 305226,794899 words of node,token memory allocated
- 598 words of node memory still in use:
+ 33252 strings out of 494933
+ 305232,794899 words of node,token memory allocated
+ 600 words of node memory still in use:
     nodes
-   avail lists: 1:5,2:15607,3:179,4:13892,5:7482,6:2593,7:7629,8:58,9:11318,10:6
+   avail lists: 1:3,2:15607,3:180,4:13892,5:7482,6:2593,7:7566,8:58,9:11318,10:6
 03
- 34898 multiletter control sequences out of 65536+200000
+ 34907 multiletter control sequences out of 65536+200000
  144 fonts using 9298815 bytes
- 61i,10n,123p,753b,979s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,10n,123p,753b,983s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/miktex 2.9/fonts/opentype/public/lm/lmroman5-regular.otf>{D:/MiKTeX 2.9/font
 s/enc/dvips/fontname/8r.enc}<d:/miktex 2.9/fonts/opentype/public/lm/lmroman6-reg
 ular.otf><d:/miktex 2.9/fonts/opentype/public/lm/lmroman8-regular.otf><d:/miktex
@@ -1448,9 +1472,9 @@ nts/type1/urw/helvetic/uhvb8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
 a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><<D:/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmbi8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><<D:/M
 iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on playcb.pdf (67 pages, 1329795 bytes).
+Output written on playcb.pdf (67 pages, 1334950 bytes).
 
-PDF statistics: 1364 PDF objects out of 1440 (max. 8388607)
- 818 named destinations out of 1000 (max. 131072)
+PDF statistics: 1396 PDF objects out of 1440 (max. 8388607)
+ 845 named destinations out of 1000 (max. 131072)
  168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

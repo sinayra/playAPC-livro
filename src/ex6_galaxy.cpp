@@ -44,7 +44,7 @@ int main (int argc, char * argv[]) {
   Pintar (0, 0,  0);
 
   for (double t=0;  ; t += .5) {
-    Gira(t);  @{ \label{line:Gira}@
+    Gira(t);  @{ \label{line:Giram1}@
     Desenha1Frame();
 
     //Depois de um tempinho, pinta o fundo de branco pra mostrar

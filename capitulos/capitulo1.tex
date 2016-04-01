@@ -161,10 +161,17 @@ Ponto, na linha \ref{line:estruturaPonto}, é uma estrutura do tipo float com do
     \end{lstlisting}
 \end{itemize}
 
+\begin{lstlisting}[label={func:Pintar},language=C++]
+void Pintar(int red, int green, int blue); 
+void Pintar(int red, int green, int blue, geometrias_validas nome, int index);
+\end{lstlisting}
+A função \emph{Pintar}, na linha \ref{line:Pintarm1} pode ser utilizada de duas formas. No caso da Listagem \ref{lst:cap1_ex2}, a última geometria criada receberá a cor definida por esta função, utilizando o sistema de cores RGB.
+
+
 \begin{lstlisting}[label={func:CriaCirculo},language=C++]
 int CriaCirculo(float raio, Ponto meio)
 \end{lstlisting}
-A função \emph{CriaCirculo}, na linha \ref{line:CriaCirculo}, cria uma geometria do tipo \emph{CIRCULO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é o tamanho do raio e o segundo argumento é onde estará centrado o círculo,
+A função \emph{CriaCirculo}, na linha \ref{line:CriaCirculo}, cria uma geometria do tipo \emph{CIRCULO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é o tamanho do raio e o segundo argumento é onde estará centrado o círculo.
 
 \begin{lstlisting}[label={func:CriaElipse},language=C++]
 int CriaElipse(float a, float b, Ponto meio)
@@ -369,8 +376,9 @@ A função \emph{Desenha1Frame}, na linha \ref{line:Desenha1Frame}, renderiza pe
 
 \begin{lstlisting}[label={func:Gira},language=C++]
 void Gira(float theta)
+void Gira(float theta, int index)
 \end{lstlisting}
-A função \emph{Gira}, na linha \ref{line:Gira}, é uma das três funções de transformação implementadas na \playAPC{}. Seu argumento é um ângulo $\theta$ em graus. Quando utilizada, cada pixel da geometria (ou, no caso da Listagem \ref{lst:cap1_ex5}, de todas as geometrias) terá sua posição recalculada a partir da Definição \ref{def:rotacao}.
+A função \emph{Gira}, na linha \ref{line:Giram1}, é uma das três funções de transformação implementadas na \playAPC{}. Há duas formas de utilizar esta função. No caso da Listagem \ref{lst:cap1_ex5}, seu argumento é um ângulo $\theta$ em graus e ele irá girar todas as geometrias criadas, recalculando a posição de cada pixel utilizando a Definição \ref{def:rotacao}. 
 
 \begin{myDef} 
 Seja $x$ a coordenada do eixo x original do ponto, $y$ a coordenada do eixo y original do ponto, $x'$ a coordenada resultado do eixo, $y'$ a coordenada resultante do eixo y e $\theta$ o ângulo em graus de rotação.
@@ -386,7 +394,7 @@ $$
 \begin{lstlisting}[label={func:ApertouTecla},language=C++]
 int ApertouTecla(int tecla)
 \end{lstlisting}
-A função \emph{ApertouTecla}, na linha \ref{line:ApertouTecla}, verifica se o usuário pressionou a tecla \emph{tecla} naquela cena. Seu único argumento pode variar de acordo com a Tabela \ref{tab:teclas}
+A função \emph{ApertouTecla}, na linha \ref{line:ApertouTecla}, verifica se o usuário pressionou a tecla \emph{tecla} naquela cena. Seu único argumento pode variar de acordo com a Tabela \ref{tab:teclas}.
 
 \begin{table}
   \caption{Teclas reconhecidas pela \playAPC{}}
@@ -441,6 +449,11 @@ A função \emph{ApertouTecla}, na linha \ref{line:ApertouTecla}, verifica se o 
 \end{figure}
 Esta prática exibe um carro construído com dois retângulos e dois círculos, agrupados com a função \emph{CriaGrupo}, movendo-se da posição -100 até a posição 100. Nota-se que todas as geometrias que estão abaixo da função \emph{CriaGrupo} pertencem a um único grupo, o grupo \emph{carro}.
 \lstinputlisting[caption=Código fonte do carro andando, style=customc, label=lst:cap1_ex6]{src/ex5_carrinho.cpp}
+
+\begin{lstlisting}[label={func:CriaGrupo},language=C++]
+int CriaGrupo()
+\end{lstlisting}
+A função \emph{CriaGrupo}, na linha \ref{line:CriaGrupo}, agrupará todo um conjunto de geometrias, associando todas a uma única variável, em um único conjunto. Desta forma, é possível transformar um conjunto de geometrias de forma independente, apenas referenciando a variável do grupo.
 
 \subsection*{Exercício \ref{ex:cap01_ex7}}
 \begin{figure}[ht]

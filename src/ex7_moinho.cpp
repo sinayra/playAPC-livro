@@ -1,50 +1,71 @@
-/* *
- UnB - Professor : Ralha - Computação Básica
- Aluno : Pedro Paulo de Pinho Matos
- Matrícula : 14/0070354
- */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <playAPC/playapc.h>
 
+int main (){
+    int angulo = 1;
+    int helices, moinho;
+    Ponto p1, p2;
 
-int main (int argc, char* argv[]){
- int angulo =1;
+    AbreJanela(400, 400, "Moinho de Vento" );
+    PintarFundo(217,255,255);
+    //MostraPlanoCartesiano(10);
 
- AbreJanela(1024, 768, "Moinho de Vento" );
- PintarFundo(255,255,255);
- Ponto p,q, r;
+    moinho = CriaGrupo();
 
- int moinho = CriaGrupo();
- Ponto x, y;
- x.x = -20; x.y = -20; CriaTriangulo(40,60,x); Pintar(255,255,0);
- y.x = -20; y.y = -100; CriaRetangulo(40,80,y); Pintar(0,255,0);
+        p1.x = -20;
+        p1.y = -20;
+        CriaTriangulo(40,60,p1);
+        Pintar(255, 106, 106);
 
- int grupo = CriaGrupo(); // Hélice 1
- q.x = 0; q.y = 0; r.x = 0; r.y = 70;
- CriaReta(q,r); Pintar(255,0,0); Grafite(8);
+        p1.x = -20;
+        p1.y = -100;
+        CriaRetangulo(40,80,p1);
+        Pintar(255, 74, 74);
 
- // Hélice 2
- q.x = 0; q.y = 0; r.x = 70; r.y = 0;
- CriaReta(q,r); Pintar(255,0,0); Grafite(8);
+    helices = CriaGrupo();
 
- // Helice 3
- q.x = 0; q.y = 0; r.x = 0; r.y = -70;
- CriaReta(q,r); Pintar(255,0,0); Grafite(8);
+        p1.x = 0;
+        p1.y = 0;
+        // Hélice 1
+        p2.x = 0;
+        p2.y = 70;
+        CriaReta(p1, p2);
+        Pintar(233, 233, 233);
+        Grafite(8);
 
- // Helice 4
- q.x = 0; q.y = 0; r.x = -70; r.y = 0;
- CriaReta(q,r); Pintar(255,0,0); Grafite(8);
+        // Hélice 2
+        p2.x = 70;
+        p2.y = 0;
+        CriaReta(p1, p2);
+        Pintar(233, 233, 233);
+        Grafite(8);
 
- p.x = 0; p.y = 0;
- CriaCirculo(5,p); Pintar(0,0,0); Grafite(25);
+        // Helice 3
+        p2.x = 0;
+        p2.y = -70;
+        CriaReta(p1, p2);
+        Pintar(233, 233, 233);
+        Grafite(8);
 
- while( angulo > 0){
-     Desenha1Frame();
-     Gira(angulo,grupo);
-     angulo ++;
- }
+        // Helice 4
+        p1.x = -70;
+        p2.y = 0;
+        CriaReta(p1, p2);
+        Pintar(233, 233, 233);
+        Grafite(8);
 
- return 0;
+        p1.x = 0;
+        p1.y = 0;
+        CriaCirculo(5,p1);
+        Pintar(0,0,0);
+
+    while( angulo > 0){
+        Desenha1Frame();
+        Gira(angulo, helices);
+        angulo++;
+    }
+
+    Desenha();
+    return 0;
 }
