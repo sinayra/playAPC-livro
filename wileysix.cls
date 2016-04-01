@@ -1696,9 +1696,9 @@ D R A F T\hfill\today, \realtime\hfill D R A F T\global\titlefalse\vss}}
 \global\subprobcount=0
 \global\c@subproblem=0
 \goodbreak\vskip12pt
-\markright{PROBLEMS}
+\markright{PROBLEMAS}
 \addcontentsline{toc}{section}{\protect\numberline{}Problems}
-\noindent{\sectionfont\uppercase{Problems}\vrule depth 4pt width0pt}\markright{PROBLEMS}\nobreak}
+\noindent{\sectionfont\uppercase{Problems}\vrule depth 4pt width0pt}\markright{PROBLEMAS}\nobreak}
 
 \long\def\xappendixname{\appendixname}%
 

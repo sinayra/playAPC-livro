@@ -24,7 +24,7 @@ int main(){
     PintarFundo(255, 255, 255);
     MostraPlanoCartesiano(10);
 
-    CriaReta(p1, p2);
+    CriaReta(p1, p2); @\label{line:CriaReta}@
 
     if(p2.x > 0){
         if(p2.y > 0)

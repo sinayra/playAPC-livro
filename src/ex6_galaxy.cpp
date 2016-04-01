@@ -20,15 +20,20 @@ int main (int argc, char * argv[]) {
     p.x = 100*cos(t)/t;
     p.y = 100*sin(t)/t;
     */
-  for (double t = 4*PI; t > 0 ; t -= .05) {
+  for (double t = 4*PI; t > 0 ; t -= .05) @{ \label{line:ex6_for}@
     p.x = 100*cos(t)/t;         q.x = -p.x;
     p.y = 100*sin(t)/t;         q.y = -p.y;
 
-    CriaPonto (p);    Pintar (200, 30, 100);    Grafite(3);
-    CriaPonto (q);    Pintar (100, 30, 200);    Grafite(3);
+    CriaPonto (p);    @\label{line:CriaPonto}@
+    Pintar (200, 30, 100);    
+    Grafite(3); @\label{line:Grafite}@
+    
+    CriaPonto (q);    
+    Pintar (100, 30, 200);    
+    Grafite(3);
 
-    Desenha1Frame();
-  }
+    Desenha1Frame(); @\label{line:Desenha1Frame}@
+  } @{ \label{line:ex6_forend}@
 
 
   //A massive Black Hole in the very centre
@@ -39,7 +44,7 @@ int main (int argc, char * argv[]) {
   Pintar (0, 0,  0);
 
   for (double t=0;  ; t += .5) {
-    Gira(t);
+    Gira(t);  @{ \label{line:Gira}@
     Desenha1Frame();
 
     //Depois de um tempinho, pinta o fundo de branco pra mostrar
@@ -47,7 +52,7 @@ int main (int argc, char * argv[]) {
     if ( t > 200 ) PintarFundo (255, 255, 255);
 
     //quebra o loop e encerra o programa
-    if(ApertouTecla(GLFW_KEY_ENTER)) return 0;
+    if(ApertouTecla(GLFW_KEY_ENTER)) return 0;  @{ \label{line:ApertouTecla}@
   }
 
 }

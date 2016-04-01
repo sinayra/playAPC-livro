@@ -35,10 +35,7 @@
 \usepackage{hyperref}
 \usepackage{fontspec}
 \usepackage{amsmath}
-
-\renewcommand*{\theenumi}{\thechapter.\arabic{enumi}}
-\newtheorem{myDef}{Definição}
-
+\usepackage{answers}
 \selectlanguage{portuguese}
 \renewcommand{\lstlistingname}{Listagem}
 \lstdefinestyle{customc}{
@@ -84,7 +81,7 @@
   inputencoding=utf8,
   numbers=left,  numberstyle=\tiny
 }
-\lstset{escapechar=@}
+\lstset{escapechar=@,style=customc}
 \def\playAPC{\textsf{playAPC}}
 
 %%%%%%%
@@ -309,6 +306,8 @@ Stanley~B. Lippman, Josés Lajoile, and Barbara Moo.
 \input{capitulos/capitulo1}
 \input{capitulos/capitulo2}
 \input{capitulos/capitulo3}
+\solutions
+\solutionchap{1} 
 
 
 % \chapter{First Edited Book Sample Chapter Title}

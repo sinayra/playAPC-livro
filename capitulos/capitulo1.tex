@@ -7,14 +7,13 @@
 {Algoritmos sequenciais}
 
 
-
-\section{Resumo}
+\section*{Resumo}
 
 Estrutura sequencial é um conjunto de instruções que serão executadas em sequência. A sequência de cada instrução deve ser seguida apara a realização de uma tarefa.
 
 
 %\begin{chapreferences}{1.}
-%\bibliography{playcb}
+%\bibliography{playAPC{}}
 %\bibliographystyle{plain}
 %\nocite{cbook}
 %\nocite{sb6}
@@ -45,53 +44,149 @@ Estrutura sequencial é um conjunto de instruções que serão executadas em seq
 % \newblock 2013.
 % \end{chapreferences}
 
-\begin{problems}
-\prob
-Exiba um plano cartesiano de -100 a 100 com espaçamento de 5 unidades.
-\label{ex:cap01_ex1}
-\prob
-Desenhe um boneco palito que utilize pelo menos uma vez as seguintes geometrias:
-\begin{itemize}
+\section*{Problemas}
+\begin{enumerate}
 \item
-Círculo
+  Exiba um plano cartesiano de -100 a 100 com espaçamento de 5 unidades.
+  \label{ex:cap01_ex1}
+
 \item
-Elipse
+  Desenhe um boneco palito que utilize pelo menos uma vez as seguintes geometrias:
+  \begin{itemize}
+  \item
+    Círculo
+  \item
+    Elipse
+  \item
+    Retângulo
+  \item
+    Triângulo
+  \item
+    Quadrado
+  \end{itemize}
+  \label{ex:cap01_ex2}
+
 \item
-Retângulo
-\item
-Triângulo
-\item
-Quadrado
-\end{itemize}
-\label{ex:cap01_ex2}
-\prob
-Exiba a estrela de Davi.
-\label{ex:cap01_ex3}
-\end{problems}
+  Exiba a estrela de Davi.
+  \label{ex:cap01_ex3}
+
+\end{enumerate}
 
 
-\section{Soluções}
+\section*{Soluções}
 
-\subsection{\ref{ex:cap01_ex1}Plano Cartesiano}
+\subsection*{Exercício \ref{ex:cap01_ex1}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex1.png}}
   \caption{Plano Cartesiano de -100 à 100}
   \label{fig:cap01_ex1}
 \end{figure}
 
-Esta prática se refere a exibir um Plano Cartesiano na tela com espaçamento de 5 em 5 unidades, tanto no eixo x quanto no eixo y. Com ela, o aluno poderá notar a importância da ordem de chamada de funções da playCB e a necessidade das funções \emph{AbreJanela} e \emph{Desenha}, além de verificar, com um exemplo simples, se a playCB foi corretamente bem instalada.
+Esta prática se refere a exibir um Plano Cartesiano na tela com espaçamento de 5 em 5 unidades, tanto no eixo x quanto no eixo y. Com ela, o aluno poderá notar a importância da ordem de chamada de funções da \playAPC{} e a necessidade das funções \emph{AbreJanela} e \emph{Desenha}, além de verificar, com um exemplo simples, se a playAPC{} foi corretamente bem instalada.
+
 \lstinputlisting[caption=Código fonte de Plano Cartesiano, style=customc, label=lst:cap1_ex1]{src/ex1_PrimeiraJanela.cpp}
 
-\subsection{\ref{ex:cap01_ex2}Boneco Palito}
+\begin{lstlisting}[label={func:AbreJanela},language=C++]
+void AbreJanela(float largura, float altura, const char* titulo)
+\end{lstlisting}
+
+A função \emph{AbreJanela}, na linha \ref{line:AbreJanela}, inicializa todas as variáveis utilizadas pela biblioteca, e preferencialmente é a chamada antes de qualquer outra função da \playAPC{}. Por padrão, o plano de renderização está limitado de (-100,100) em coordenadas $x,y$ do plano cartesiano. Este valor pode ser alterado utilizando a função \emph{MostraPlanoCartesiano} antes de chamar \emph{AbreJanela}.
+Seu primeiro argumento se refere a largura da janela, o segundo a altura, sendo ambos do tipo inteiro, e o terceiro se refere ao nome que a janela terá, sendo uma string.
+
+
+\begin{lstlisting}[label={func:PintarFundo},language=C++]
+void PintaFundo(int red, int green, int blue)
+\end{lstlisting}
+A função \emph{PintarFundo}, na linha \ref{line:PintarFundo}, é específica para pintar o fundo da janela de contexto aberto pela função \emph{AbreJanela}. Seu argumentos utiliza o sistema de cores \emph{RGB} (\emph{red}, \emph{green}, \emph{blue}), utilizando a escala de 0 até 255.
+
+\begin{lstlisting}[label={func:MostraPlanoCartesiano},language=C++]
+void MostraPlanoCartesiano(int intervalo)
+\end{lstlisting}
+A função \emph{MostraPlanoCartesiano}, na linha \ref{line:MostraPlanoCartesiano} exibe o plano de coodernadas cartesianas, plano utilizado para o posicionamento das geometrias criadas pela \playAPC{}. Como as unidades no plano cartesiano não se referem ao posicionamento direto do pixel, a exibição do plano cartesiano com esta função serve de auxílio para o usuário posicionar suas geometrias na janela sem se preocupar com redimensionamento ou posição que a janela se encontra na tela do usuário. Para $x = 0$ e $y = 0$, as retas são pretas e as demais são cinza.
+Seu único argumento se refere de quantas em quantas unidades do plano terão uma reta vertical e horizontal da cor cinza.
+
+\begin{lstlisting}[label={func:Desenha},language=C++]
+void Desenha()
+\end{lstlisting}
+A função \emph{Desenha}, na linha \ref{line:Desenha}, realiza o loop de renderização. Todas as geometrias criadas até esta chamada de função serão renderizadas e permanecerão estáticas, não havendo a possibilidade de posteriores animações.
+Para encerrar o loop de renderização, basta fechar a janela clicando no botão de fechar ou apertando a tela \emph{ESC}. Após fechar a janela, todo o contexto da \playAPC{} será encerrado e as áreas de memórias alocadas serão liberadas.
+
+\subsection*{Exercício \ref{ex:cap01_ex2}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex3.png}}
   \caption{Boneco Palito}
   \label{fig:cap01_ex2}
 \end{figure}
-Esta prática se refere a exibir um boneco palito e praticar a grande maioria das geometrias pré-definidas existentes na playCB. Os argumentos de cada função podem ser consultados no Guia de Referência da playCB \footnote{\url{http://pt-br.playcb.wikia.com/wiki/Categoria:Geometrias}}
+Esta prática se refere a exibir um boneco palito e praticar a grande maioria das geometrias pré-definidas existentes na \playAPC{}. Os argumentos de cada função podem ser consultados no Guia de Referência da playAPC{} \footnote{\url{http://pt-br.playAPC{}.wikia.com/wiki/Categoria:Geometrias}}
 \lstinputlisting[caption=Código fonte do boneco palito, style=customc, label=lst:cap1_ex2]{src/ex3_boneco.cpp}
 
-\subsection{\ref{ex:cap01_ex3}Estrela de Davi}
+\begin{lstlisting}[label={func:Ponto},language=C++]
+struct Ponto{
+    float x;
+    float y;
+}
+\end{lstlisting}
+Ponto, na linha \ref{line:estruturaPonto}, é uma estrutura do tipo float com dois membros, \emph{x} e \emph{y}, os quais devem ser utilizados como coordenadas do plano cartesiano 2D. Esta estrutura possui sobrecarga para os seguintes operadores =, +, -, +=, -=, == e !=.
+\begin{itemize}
+  \item =
+    \begin{lstlisting}[style=customc,language=C++]
+    Ponto p1, p2;
+    (...)
+
+    p1 = p2;
+    \end{lstlisting}
+   \item + (ou -)
+    \begin{lstlisting}[style=customc,language=C++]
+    Ponto p1, p2, p3;
+    (...)
+
+    p1 = p2 + p3;
+    \end{lstlisting} 
+     \item += (ou -=)
+    \begin{lstlisting}[style=customc,language=C++]
+    Ponto p1, p2;
+    (...)
+
+    p1 += p2;
+    \end{lstlisting}
+
+     \item == (ou !=)
+    \begin{lstlisting}[style=customc,language=C++]
+    Ponto p1, p2;
+    (...)
+
+    if(p1 == p2){
+      (...)
+    }
+    \end{lstlisting}
+\end{itemize}
+
+\begin{lstlisting}[label={func:CriaCirculo},language=C++]
+int CriaCirculo(float raio, Ponto meio)
+\end{lstlisting}
+A função \emph{CriaCirculo}, na linha \ref{line:CriaCirculo}, cria uma geometria do tipo \emph{CIRCULO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é o tamanho do raio e o segundo argumento é onde estará centrado o círculo,
+
+\begin{lstlisting}[label={func:CriaElipse},language=C++]
+int CriaElipse(float a, float b, Ponto meio)
+\end{lstlisting}
+A função \emph{CriaElipse}, na linha \ref{line:CriaElipse}, cria uma geometria do tipo \emph{ELIPSE}, retornando um índice deste tipo de geometria. Seu primeiro argumento é a metade do maior eixo da elipse, o segundo é a metade do menor eixo da elipse e o terceiro argumento se refere onde a elipse estará centrada.
+
+\begin{lstlisting}[label={func:CriaQuadrado},language=C++]
+int CriaQuadrado(float lado, Ponto cantoesq)
+\end{lstlisting}
+A função \emph{CriaQuadrado}, na linha \ref{line:CriaQuadrado}, cria uma geometria do tipo \emph{QUADRADO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é o tamanho do lado do quadrado e o segundo argumento é onde ficará localizado o ponto esquerdo inferior da geometria
+
+\begin{lstlisting}[label={func:CriaRetangulo},language=C++]
+int CriaRetangulo(float base, float altura, Ponto cantoesq)
+\end{lstlisting}
+A função \emph{CriaRetangulo}, na linha \ref{line:CriaRetangulo}, cria uma geometria do tipo \emph{RETANGULO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é a base do retângulo, o segundo a altura não-negativa dele e o último é onde ficará localizado o ponto esquerdo inferior da geometria
+
+\begin{lstlisting}[label={func:CriaTriangulo},language=C++]
+int CriaTriangulo(float base, float altura, Ponto cantoesq)
+\end{lstlisting}
+A função \emph{CriaTriangulo}, na linha \ref{line:CriaTriangulo}, cria uma geometria do tipo \emph{TRIANGULO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é a base do triângulo, o segundo a altura não-negativa dele e o último é onde ficará localizado o ponto esquerdo inferior da geometria
+
+\subsection*{Exercício \ref{ex:cap01_ex3}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex2.png}}
   \caption{Estrela de Davi}
@@ -100,19 +195,24 @@ Esta prática se refere a exibir um boneco palito e praticar a grande maioria da
 Esta prática se refere a exibir a estrela de Davi, feita com dois triângulos. Um triângulo foi criado com a função \emph{CriaTriangulo} e o outro com a função \emph{CriaPoligono}. Verificamos nesta prática os argumentos de \emph{CriaTriangulo} (base, altura e ponto esquerdo inferior) e, como não há como ter altura negativa, teve a necessidade de criar um polígono definido pelos três pontos \emph{p1, p2} e \emph{p3} para criar-se um triângulo \emph{de cabeça pra baixo}.
 \lstinputlisting[caption=Código fonte da Estrela de Davi, style=customc, label=lst:cap1_ex3]{src/ex2_davi.cpp}
 
+\begin{lstlisting}[label={func:CriaPoligono},language=C++]
+int CriaPoligono(short int qtd, ...)
+\end{lstlisting}
+A função \emph{CriaPoligono}, na linha \ref{line:CriaPoligono}, cria uma geometria do tipo \emph{POLIGONO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é a quantidade de pontos que serão passados para esta função, e os seguintes argumentos serão os pontos propriamente ditos. Note que a \playAPC{} é limita no aspecto que esta função só consegue renderizar figuras convexas. Caso haja a necessidade de criação de figuras não-convexas, será necessário \emph{"quebrar"} a geometria não-convexa em duas ou mais geometrias convexas.
+
 
 \chapter[Algoritmos condicionais]
 {Algoritmos condicionais}
 
 
 
-\section{Resumo}
+\section*{Resumo}
 
 Estrutura condicional expõe que a instrução ou bloco de instrução só seja executada se a condição for verdadeira.
 
 
 %\begin{chapreferences}{1.}
-%\bibliography{playcb}
+%\bibliography{playAPC{}}
 %\bibliographystyle{plain}
 %\nocite{cbook}
 %\nocite{sb6}
@@ -143,25 +243,26 @@ Estrutura condicional expõe que a instrução ou bloco de instrução só seja 
 % \newblock 2013.
 % \end{chapreferences}
 
-\begin{problems}
-\prob
-Escreva um programa que receba do usuário um valor de ângulo em graus, converta para radianos, exiba uma reta com comprimento de 50 unidades e pinte-a de acordo com as seguintes regras:
-\begin{itemize}
+\section*{Problemas}
+\begin{enumerate}
 \item
-Se a reta pertencer ao \emph{primeiro} quadrante, pinte-a de vermelho
-\item
-Se a reta pertencer ao \emph{segundo} quadrante, pinte-a de verde
-\item
-Se a reta pertencer ao \emph{terceiro} quadrante, pinte-a de azul
-\item
-Se a reta pertencer ao \emph{quarto} quadrante, pinte-a de preto
-\end{itemize}.
-\label{ex:cap01_ex4}
-\end{problems}
+  Escreva um programa que receba do usuário um valor de ângulo em graus, converta para radianos, exiba uma reta com comprimento de 50 unidades e pinte-a de acordo com as seguintes regras:
+    \begin{itemize}
+    \item
+    Se a reta pertencer ao \emph{primeiro} quadrante, pinte-a de vermelho
+    \item
+    Se a reta pertencer ao \emph{segundo} quadrante, pinte-a de verde
+    \item
+    Se a reta pertencer ao \emph{terceiro} quadrante, pinte-a de azul
+    \item
+    Se a reta pertencer ao \emph{quarto} quadrante, pinte-a de preto
+    \end{itemize}.
+    \label{ex:cap01_ex4}
+\end{enumerate}
 
-\section{Soluções}
+\section*{Soluções}
 
-\subsection{\ref{ex:cap01_ex4}Quadrante de uma reta}
+\subsection*{Exercício \ref{ex:cap01_ex4}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex4.png}}
   \caption{Determinação do quadrante de uma reta baseado no ângulo de inclinação dela}
@@ -170,19 +271,23 @@ Se a reta pertencer ao \emph{quarto} quadrante, pinte-a de preto
 Esta prática exibe uma reta com cor variada de acordo com qual quadrante ela pertence. A função \emph{Pintar} neste caso se refere a única geometria criada no programa, no caso, a reta.
 \lstinputlisting[caption=Código fonte do quadrante da reta, style=customc, label=lst:cap1_ex4]{src/ex4_reta.cpp}
 
+\begin{lstlisting}[label={func:CriaReta},language=C++]
+int CriaReta(Ponto p1, Ponto p2)
+\end{lstlisting}
+A função \emph{CriaReta}, na linha \ref{line:CriaReta}, cria uma geometria do tipo \emph{RETA}, retornando um índice deste tipo de geometria. Seu primeiro e segundo argumento são duas variáveis do tipo Ponto.
 
 \chapter[Algoritmos com repetição]
 {Algoritmos com repetição}
 
 
 
-\section{Resumo}
+\section*{Resumo}
 
 Estruturas de repetição são criadas para que diversas instruções sejam executadas um determinado número de vezes, enquanto a condição se manter verdadeira.
 
 
 %\begin{chapreferences}{1.}
-%\bibliography{playcb}
+%\bibliography{playAPC{}}
 %\bibliographystyle{plain}
 %\nocite{cbook}
 %\nocite{sb6}
@@ -213,39 +318,122 @@ Estruturas de repetição são criadas para que diversas instruções sejam exec
 % \newblock 2013.
 % \end{chapreferences}
 
-\begin{problems}
-\prob
-Sabendo que a equação hiperbólica pode ser defina por
-$$
-\begin{matrix}
-x	& = &	a \cos(\theta) \\ 
-y	& = &	a \sin(\theta)
-\end{matrix}.
-$$
-onde $a$ é a assíntota para y e $\theta$ o ângulo equivalente ao ângulo em coordenadas polares, exiba duas espirais hiberbólicas, onde uma delas está invertida em relação a outra e coloque-as para girar.
-\label{ex:cap01_ex5}
+\section*{Problemas}
+\begin{enumerate}
+\item
+  Sabendo que a equação hiperbólica pode ser defina por
+  $$
+  \begin{matrix}
+  x	& = &	a \cos(\theta) \\ 
+  y	& = &	a \sin(\theta)
+  \end{matrix}.
+  $$
+  onde $a$ é a assíntota para y e $\theta$ o ângulo equivalente ao ângulo em coordenadas polares, exiba duas espirais hiberbólicas, onde uma delas está invertida em relação a outra e coloque-as para girar.
+  \label{ex:cap01_ex5}
 
-\prob
-Exiba um carrinho se movendo de $-100$ à $100$.
-\label{ex:cap01_ex6}
+\item
+  Exiba um carrinho se movendo de $-100$ à $100$.
+  \label{ex:cap01_ex6}
 
-\prob
-Construa um moinho de vento e coloque apenas as hélices para girar.
-\label{ex:cap01_ex7}
-\end{problems}
+\item
+  Construa um moinho de vento e coloque apenas as hélices para girar.
+  \label{ex:cap01_ex7}
+\end{enumerate}
 
-\section{Soluções}
+\section*{Soluções}
 
-\subsection{\ref{ex:cap01_ex5}Galáxia espiral}
+\subsection*{Exercício \ref{ex:cap01_ex5}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex6.png}}
   \caption{Duas espirais hiperbólicas girando}
   \label{fig:cap01_ex5}
 \end{figure}
-Esta prática ilustra como a função \emph{Desenha1Frame} funciona. Na linha 23 até a linha 30, a cada frame são criados dois pontos, um de cada espiral.
+Esta prática ilustra como a função \emph{Desenha1Frame} pode ser utilizada. Na linha \ref{line:ex6_for} até a linha \ref{line:ex6_forend}, a cada iteração são criados dois pontos, um de cada espiral.
 \lstinputlisting[caption=Código fonte da galáxia expiral, style=customc, label=lst:cap1_ex5]{src/ex6_galaxy.cpp}
 
-\subsection{\ref{ex:cap01_ex6}Carro andando}
+
+\begin{lstlisting}[label={func:CriaPonto},language=C++]
+int CriaPonto(Ponto p)
+\end{lstlisting}
+A função \emph{CriaPonto}, na linha \ref{line:CriaPonto}, cria uma geometria do tipo \emph{PONTO}, retornando um índice deste tipo de geometria. Seu único argumento é uma variável do tipo Ponto. Uma geometria do tipo \emph{PONTO} é renderizada como um pixel.
+
+\begin{lstlisting}[label={func:Grafite},language=C++]
+void Grafite(int espessura)
+\end{lstlisting}
+A função \emph{Grafite}, na linha \ref{line:Grafite}, aumenta as linhas de rasterização da última geometria criada, variando de 1 a $\infty$. Por padrão, todas as geometrias começam com esta linha igual a 1. Esta função pode ser usada para deixar mais visível geometrias do tipo \emph{PONTO}, que possuem 1 pixel de tamanho.
+
+\begin{lstlisting}[label={func:Desenha1Frame},language=C++]
+int Desenha1Frame()
+\end{lstlisting}
+A função \emph{Desenha1Frame}, na linha \ref{line:Desenha1Frame}, renderiza pelo menos $frac{1}{60}$ segundos da cena, possuindo um controle de 60 frames por segundo. Caso o usuário feche a janela ou aperte a tecla ESC, esta função retornará 0 e encerrará o processo de renderização. Caso contrário, retornará 1.
+
+\begin{lstlisting}[label={func:Gira},language=C++]
+void Gira(float theta)
+\end{lstlisting}
+A função \emph{Gira}, na linha \ref{line:Gira}, é uma das três funções de transformação implementadas na \playAPC{}. Seu argumento é um ângulo $\theta$ em graus. Quando utilizada, cada pixel da geometria (ou, no caso da Listagem \ref{lst:cap1_ex5}, de todas as geometrias) terá sua posição recalculada a partir da Definição \ref{def:rotacao}.
+
+\begin{myDef} 
+Seja $x$ a coordenada do eixo x original do ponto, $y$ a coordenada do eixo y original do ponto, $x'$ a coordenada resultado do eixo, $y'$ a coordenada resultante do eixo y e $\theta$ o ângulo em graus de rotação.
+$$
+  \begin{matrix}
+  x' = x\cos \theta  - y \sin \theta &\\
+  y' = x\sin \theta  + y \cos \theta
+  \end{matrix}
+$$
+\label{def:rotacao}
+\end{myDef}
+
+\begin{lstlisting}[label={func:ApertouTecla},language=C++]
+int ApertouTecla(int tecla)
+\end{lstlisting}
+A função \emph{ApertouTecla}, na linha \ref{line:ApertouTecla}, verifica se o usuário pressionou a tecla \emph{tecla} naquela cena. Seu único argumento pode variar de acordo com a Tabela \ref{tab:teclas}
+
+\begin{table}
+  \caption{Teclas reconhecidas pela \playAPC{}}
+  \centering
+    \begin{tabular}{lcccc}
+    \hline
+    Nome&\bf &\bf Descrição \\[-3pt]
+    \hline
+    GLFW\_KEY\_$n$  & Teclas alfanuméricas ($n \in (0..9)$ ou $n \in (A..Z)$)  \\
+    GLFW\_KEY\_SPACE  & Espaço \\
+    GLFW\_KEY\_ESC  & Escape \\
+    GLFW\_KEY\_F$n$  & Function key ($n \in (0..25)$) \\
+    GLFW\_KEY\_LEFT  & Seta para esquerda \\
+    GLFW\_KEY\_UP  & Seta para cima \\
+    GLFW\_KEY\_DOWN  & Seta para baixo \\
+    GLFW\_KEY\_RIGHT  & Seta para direita \\
+    GLFW\_KEY\_LCONTROL  & Control esquerdo \\
+    GLFW\_KEY\_RCONTROL  & Control direito \\
+    GLFW\_KEY\_LALT  & Alt esquerdo \\
+    GLFW\_KEY\_RALT  & Alt direito \\
+    GLFW\_KEY\_TAB  & Tabulador \\
+    GLFW\_KEY\_ENTER  & Enter \\
+    GLFW\_KEY\_BACKSPACE  & Backspace \\
+    GLFW\_KEY\_INSERT  & Insert \\
+    GLFW\_KEY\_DEL  & Delete \\
+    GLFW\_KEY\_PAGEUP  & Page up \\
+    GLFW\_KEY\_PAGEDOWN  & Page down \\
+    GLFW\_KEY\_HOME  & Home \\
+    GLFW\_KEY\_END  & End \\
+    GLFW\_KEY\_KP\_$n$  & Teclas numéricas do keypad ($n \in (0..9)$)\\
+    GLFW\_KEY\_KP\_DIVIDE  & Tecla dividir do keypad ( \div )\\
+    GLFW\_KEY\_KP\_MULTIPLY  & Tecla multiplicar do keypad ( \times )\\
+    GLFW\_KEY\_KP\_SUBTRACT  & Tecla subtrair do keypad ( - )\\
+    GLFW\_KEY\_KP\_ADD  & Tecla adição do keypad ( + )\\
+    GLFW\_KEY\_KP\_EQUAL  & Tecla igual do keypad ( = )\\
+    GLFW\_KEY\_KP\_NUMLOCK  & Tecla Numlock do keypad ( = )\\
+    GLFW\_KEY\_CAPS\_LOCK  & Caps lock\\
+    GLFW\_KEY\_SCROLL\_LOCK  & Scroll lock\\
+    GLFW\_KEY\_PAUSE  & Pause\\
+    GLFW\_KEY\_MENU  & Menu\\
+    \hline
+  \end{tabular}
+  \label{tab:teclas}
+\end{table}
+
+
+\subsection*{Exercício \ref{ex:cap01_ex6}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex5.png}}
   \caption{Carro se movendo da posição -100 até a posição 100}
@@ -254,7 +442,7 @@ Esta prática ilustra como a função \emph{Desenha1Frame} funciona. Na linha 23
 Esta prática exibe um carro construído com dois retângulos e dois círculos, agrupados com a função \emph{CriaGrupo}, movendo-se da posição -100 até a posição 100. Nota-se que todas as geometrias que estão abaixo da função \emph{CriaGrupo} pertencem a um único grupo, o grupo \emph{carro}.
 \lstinputlisting[caption=Código fonte do carro andando, style=customc, label=lst:cap1_ex6]{src/ex5_carrinho.cpp}
 
-\subsection{\ref{ex:cap01_ex7}Moinho de vento}
+\subsection*{Exercício \ref{ex:cap01_ex7}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex7.png}}
   \caption{Moinho de vento}

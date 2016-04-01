@@ -1,47 +1,19 @@
-\contentsline {schapter}{List of Figures}{xiii}{chapter*.4}
-\contentsline {schapter}{List of Tables}{xv}{chapter*.5}
-\contentsline {schapter}{Preface}{xvii}{chapter*.6}
-\contentsline {schapter}{Acknowledgments}{xix}{chapter*.7}
-\contentsline {schapter}{Acronyms}{xxi}{chapter*.8}
-\contentsline {schapter}{Glossary}{xxiii}{chapter*.9}
-\contentsline {schapter}{List of Symbols}{xxv}{chapter*.10}
-\contentsline {schapter}{Introduction}{xxvii}{chapter*.11}
-\contentsline {ichapter}{Sinayra Pascoal Cotts Moreira.}{xxvii}{chapter*.11}
-\contentsline {schapter}{References}{xxviii}{section*.12}
+\contentsline {schapter}{List of Figures}{xi}{chapter*.4}
+\contentsline {schapter}{List of Tables}{xiii}{chapter*.5}
+\contentsline {schapter}{Preface}{xv}{chapter*.6}
+\contentsline {schapter}{Acknowledgments}{xvii}{chapter*.7}
+\contentsline {schapter}{Acronyms}{xix}{chapter*.8}
+\contentsline {schapter}{Glossary}{xxi}{chapter*.9}
+\contentsline {schapter}{List of Symbols}{xxiii}{chapter*.10}
+\contentsline {schapter}{Introduction}{xxv}{chapter*.11}
+\contentsline {ichapter}{Sinayra Pascoal Cotts Moreira.}{xxv}{chapter*.11}
+\contentsline {schapter}{References}{xxvi}{section*.12}
 \contentsline {part}{I\hspace {1em}Algoritmos sequenciais, condicionais e com repetições}{1}{part.1}
 \contentsline {chapter}{\numberline {1}Algoritmos sequenciais}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Resumo}{3}{section.1.1}
-\contentsline {section}{\numberline {}Problems}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Soluções}{4}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}\ref {ex:cap01_ex1}Plano Cartesiano}{4}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}\ref {ex:cap01_ex2}Boneco Palito}{5}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}\ref {ex:cap01_ex3}Estrela de Davi}{6}{subsection.1.2.3}
-\contentsline {chapter}{\numberline {2}Algoritmos condicionais}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Resumo}{9}{section.2.1}
-\contentsline {section}{\numberline {}Problems}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Soluções}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}\ref {ex:cap01_ex4}Quadrante de uma reta}{10}{subsection.2.2.1}
-\contentsline {chapter}{\numberline {3}Algoritmos com repetição}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Resumo}{13}{section.3.1}
-\contentsline {section}{\numberline {}Problems}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Soluções}{14}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}\ref {ex:cap01_ex5}Galáxia espiral}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}\ref {ex:cap01_ex6}Carro andando}{15}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}\ref {ex:cap01_ex7}Moinho de vento}{16}{subsection.3.2.3}
-\contentsline {part}{II\hspace {1em}Estrutura de dados n-dimensionais homogêneas}{19}{part.2}
-\contentsline {chapter}{\numberline {4}Vetores}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Resumo}{21}{section.4.1}
-\contentsline {section}{\numberline {}Problems}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Soluções}{21}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}\ref {ex:cap02_ex2}Criando um gráfico}{21}{subsection.4.2.1}
-\contentsline {chapter}{\numberline {5}Matrizes}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Resumo}{23}{section.5.1}
-\contentsline {section}{\numberline {}Problems}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Soluções}{24}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}\ref {ex:cap02_ex2}Jogo da Vida}{24}{subsection.5.2.1}
-\contentsline {part}{III\hspace {1em}Subalgoritmos}{29}{part.3}
-\contentsline {chapter}{\numberline {6}Subalgoritmos}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Resumo}{31}{section.6.1}
-\contentsline {section}{\numberline {}Problems}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Soluções}{32}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}\ref {ex:cap03_ex1}Snake}{32}{subsection.6.2.1}
+\contentsline {chapter}{\numberline {2}Algoritmos condicionais}{11}{chapter.2}
+\contentsline {chapter}{\numberline {3}Algoritmos com repetição}{15}{chapter.3}
+\contentsline {part}{II\hspace {1em}Estrutura de dados n-dimensionais homogêneas}{23}{part.2}
+\contentsline {chapter}{\numberline {4}Vetores}{25}{chapter.4}
+\contentsline {chapter}{\numberline {5}Matrizes}{27}{chapter.5}
+\contentsline {part}{III\hspace {1em}Subalgoritmos}{33}{part.3}
+\contentsline {chapter}{\numberline {6}Subalgoritmos}{35}{chapter.6}
