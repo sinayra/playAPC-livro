@@ -161,12 +161,11 @@ Ponto, na linha \ref{line:estruturaPonto}, é uma estrutura do tipo float com do
     \end{lstlisting}
 \end{itemize}
 
-\begin{lstlisting}[label={func:Pintar},language=C++]
+\begin{lstlisting}[label={func:Pintarm1},language=C++]
 void Pintar(int red, int green, int blue); 
 void Pintar(int red, int green, int blue, geometrias_validas nome, int index);
 \end{lstlisting}
-A função \emph{Pintar}, na linha \ref{line:Pintarm1} pode ser utilizada de duas formas. No caso da Listagem \ref{lst:cap1_ex2}, a última geometria criada receberá a cor definida por esta função, utilizando o sistema de cores RGB.
-
+A função \emph{Pintar}, na linha \ref{line:Pintarm1} pode ser utilizada de duas formas. No caso da Listagem \ref{lst:cap1_ex2}, a última geometria criada receberá a cor definida por esta função, utilizando o sistema de cores RGB. A segunda forma de utilizar esta função está ilustrada na Listagem \ref{lst:cap2_ex2}.
 
 \begin{lstlisting}[label={func:CriaCirculo},language=C++]
 int CriaCirculo(float raio, Ponto meio)
@@ -205,7 +204,7 @@ Esta prática se refere a exibir a estrela de Davi, feita com dois triângulos. 
 \begin{lstlisting}[label={func:CriaPoligono},language=C++]
 int CriaPoligono(short int qtd, ...)
 \end{lstlisting}
-A função \emph{CriaPoligono}, na linha \ref{line:CriaPoligono}, cria uma geometria do tipo \emph{POLIGONO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é a quantidade de pontos que serão passados para esta função, e os seguintes argumentos serão os pontos propriamente ditos. Note que a \playAPC{} é limita no aspecto que esta função só consegue renderizar figuras convexas. Caso haja a necessidade de criação de figuras não-convexas, será necessário \emph{"quebrar"} a geometria não-convexa em duas ou mais geometrias convexas.
+A função \emph{CriaPoligono}, na linha \ref{line:CriaPoligono}, cria uma geometria do tipo \emph{POLIGONO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é a quantidade de pontos que serão passados para esta função, e os seguintes argumentos serão os pontos propriamente ditos. Note que a \playAPC{} é limitada no aspecto que esta função só consegue renderizar figuras convexas. Caso haja a necessidade de criação de figuras não-convexas, será necessário \emph{"quebrar"} a geometria não-convexa em duas ou mais geometrias convexas.
 
 
 \chapter[Algoritmos condicionais]
@@ -372,7 +371,7 @@ A função \emph{Grafite}, na linha \ref{line:Grafite}, aumenta as linhas de ras
 \begin{lstlisting}[label={func:Desenha1Frame},language=C++]
 int Desenha1Frame()
 \end{lstlisting}
-A função \emph{Desenha1Frame}, na linha \ref{line:Desenha1Frame}, renderiza pelo menos $frac{1}{60}$ segundos da cena, possuindo um controle de 60 frames por segundo. Caso o usuário feche a janela ou aperte a tecla ESC, esta função retornará 0 e encerrará o processo de renderização. Caso contrário, retornará 1.
+A função \emph{Desenha1Frame}, na linha \ref{line:Desenha1Frame}, renderiza pelo menos $\frac{1}{60}$ segundos da cena, possuindo um controle de 60 frames por segundo. Caso o usuário feche a janela ou aperte a tecla ESC, esta função retornará 0 e encerrará o processo de renderização. Caso contrário, retornará 1.
 
 \begin{lstlisting}[label={func:Gira},language=C++]
 void Gira(float theta)
@@ -396,12 +395,12 @@ int ApertouTecla(int tecla)
 \end{lstlisting}
 A função \emph{ApertouTecla}, na linha \ref{line:ApertouTecla}, verifica se o usuário pressionou a tecla \emph{tecla} naquela cena. Seu único argumento pode variar de acordo com a Tabela \ref{tab:teclas}.
 
-\begin{table}
+~\begin{table}
   \caption{Teclas reconhecidas pela \playAPC{}}
   \centering
-    \begin{tabular}{lcccc}
+    \begin{tabular}{lc}
     \hline
-    Nome&\bf &\bf Descrição \\[-3pt]
+    Valor&\bf Descrição \\
     \hline
     GLFW\_KEY\_$n$  & Teclas alfanuméricas ($n \in (0..9)$ ou $n \in (A..Z)$)  \\
     GLFW\_KEY\_SPACE  & Espaço \\
@@ -461,5 +460,5 @@ A função \emph{CriaGrupo}, na linha \ref{line:CriaGrupo}, agrupará todo um co
   \caption{Moinho de vento}
   \label{fig:cap01_ex7}
 \end{figure}
-Esta prática exibe um moinho de vento criado com um grupo composto por um triângulo e um retângulo, o grupo \emph{moinho}, e outro grupo composto pelas hélices, o grupo \emph{grupo}. Somente o \emph{grupo} sofre a ação de girar. \footnote{Exemplo criado pelo aluno Pedro Paulo de Pinho Matos, da turma de Computação Básica de 1/2014}
+Esta prática exibe um moinho de vento criado com um grupo composto por um triângulo e um retângulo, o grupo \emph{moinho}, e outro grupo composto pelas hélices, o grupo \emph{grupo}. Somente o \emph{grupo} sofre a ação de girar. 
 \lstinputlisting[caption=Código fonte do moinho, style=customc, label=lst:cap1_ex7]{src/ex7_moinho.cpp}

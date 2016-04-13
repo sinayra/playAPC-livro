@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.1.7)  1 APR 2016 14:06
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.1.7)  13 APR 2016 08:12
 **D:/GitHub/playCB-livro/playcb.tex
 (D:/GitHub/playCB-livro/playcb.tex
 LaTeX2e <2015/10/01> patch level 2
@@ -235,7 +235,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.071 seconds
+luaotfload | main : fontloader loaded in 0.070 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -934,37 +934,55 @@ Package polyglossia Warning: File gloss-portuguese.ldf does not exist!
 
 LaTeX Warning: Label `line:CriaGrupo' multiply defined.
 
+
+LaTeX Warning: Label `line:MudaLimitesJanela' multiply defined.
+
+
+LaTeX Warning: Label `lst:cap3_ex1' multiply defined.
+
+
+LaTeX Warning: Label `fig:cap03_ex2' multiply defined.
+
+
+LaTeX Warning: Label `lst:cap4_ex1' multiply defined.
+
+
+LaTeX Warning: Label `lst:cap4_ex1' multiply defined.
+
+
+LaTeX Warning: Label `lst:cap4_ex1' multiply defined.
+
 )
 \openout1 = playcb.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 159.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 159.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 160.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 160.
  ("D:/MiKTeX 2.9/tex/latex/tipa/t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Try loading font information for EU2+ptm on input line 159.
-LaTeX Font Info:    No file EU2ptm.fd. on input line 159.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Try loading font information for EU2+ptm on input line 160.
+LaTeX Font Info:    No file EU2ptm.fd. on input line 160.
 
 
 LaTeX Font Warning: Font shape `EU2/ptm/m/n' undefined
-(Font)              using `EU2/lmr/m/n' instead on input line 159.
+(Font)              using `EU2/lmr/m/n' instead on input line 160.
 
 ("D:/MiKTeX 2.9/tex/context/base/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -987,56 +1005,56 @@ LaTeX Font Warning: Font shape `EU2/ptm/m/n' undefined
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 159.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 159.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 159.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 159.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 159.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 159.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 159.
-LaTeX Font Info:    Redeclaring math accent \check on input line 159.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 159.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 159.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 159.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 159.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 160.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 160.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 160.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 160.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 160.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 160.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 160.
+LaTeX Font Info:    Redeclaring math accent \check on input line 160.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 160.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 160.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 160.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 160.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 159.
+(Font)              `operators' in the math version `normal' on input line 160.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU2/ptm/m/n on input line 159.
+(Font)                  OT1/cmr/m/n --> EU2/ptm/m/n on input line 160.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 159.
+(Font)              `operators' in the math version `bold' on input line 160.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU2/ptm/m/n on input line 159.
+(Font)                  OT1/cmr/bx/n --> EU2/ptm/m/n on input line 160.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU2/ptm/m/n --> EU2/ptm/m/n on input line 159.
+(Font)                  EU2/ptm/m/n --> EU2/ptm/m/n on input line 160.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU2/ptm/m/it on input line 159.
+(Font)                  OT1/cmr/m/it --> EU2/ptm/m/it on input line 160.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU2/ptm/bx/n on input line 159.
+(Font)                  OT1/cmr/bx/n --> EU2/ptm/bx/n on input line 160.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU2/phv/m/n on input line 159.
+(Font)                  OT1/cmss/m/n --> EU2/phv/m/n on input line 160.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU2/pcr/m/n on input line 159.
+(Font)                  OT1/cmtt/m/n --> EU2/pcr/m/n on input line 160.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU2/ptm/m/n --> EU2/ptm/bx/n on input line 159.
+(Font)                  EU2/ptm/m/n --> EU2/ptm/bx/n on input line 160.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU2/ptm/bx/it on input line 159.
+(Font)                  OT1/cmr/bx/it --> EU2/ptm/bx/it on input line 160.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU2/phv/bx/n on input line 159.
+(Font)                  OT1/cmss/bx/n --> EU2/phv/bx/n on input line 160.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU2/pcr/bx/n on input line 159.
+(Font)                  OT1/cmtt/m/n --> EU2/pcr/bx/n on input line 160.
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count199
 \AtBeginShipoutBox=\box58
@@ -1045,7 +1063,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring OFF on input line 159.
+Package hyperref Info: Link coloring OFF on input line 160.
 ("D:/MiKTeX 2.9/tex/latex/hyperref/nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1054,9 +1072,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count266
 )
-LaTeX Info: Redefining \ref on input line 159.
-LaTeX Info: Redefining \pageref on input line 159.
-LaTeX Info: Redefining \nameref on input line 159.
+LaTeX Info: Redefining \ref on input line 160.
+LaTeX Info: Redefining \pageref on input line 160.
+LaTeX Info: Redefining \nameref on input line 160.
  (./playcb.out)
 (./playcb.out)
 \@outlinefile=\write5
@@ -1066,26 +1084,26 @@ LaTeX Info: Redefining \nameref on input line 159.
 f/lmroman17-regular.luc)
 
 LaTeX Font Warning: Font shape `EU2/ptm/bx/n' undefined
-(Font)              using `EU2/ptm/m/n' instead on input line 179.
+(Font)              using `EU2/ptm/m/n' instead on input line 180.
 
 [1{C:/Users/nayra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-Overfull \hbox (26.21631pt too wide) in paragraph at lines 181--181
+Overfull \hbox (26.21631pt too wide) in paragraph at lines 182--182
 [][]|\subtitlefont Bib-lioteca grá-fica para pro-gra-madores
  []
 
-<wileylogo.pdf, id=91, 292.09125pt x 64.24pt>
+<wileylogo.pdf, id=99, 292.09125pt x 64.24pt>
 File: wileylogo.pdf Graphic file (type pdf)
  <use wileylogo.pdf>
-Package pdftex.def Info: wileylogo.pdf used on input line 181.
+Package pdftex.def Info: wileylogo.pdf used on input line 182.
 (pdftex.def)             Requested size: 122.85876pt x 27.0208pt.
  [3<./wileylogo.pdf>](load luc: C:/Users/nayra/AppData/Local/MiKTeX/2.9/luatex-c
 ache/generic/fonts/otf/lmroman7-regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 
  []
 
@@ -1093,7 +1111,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--196
 /otf/lmroman12-regular.luc)
 
 LaTeX Font Warning: Font shape `EU2/ptm/m/it' undefined
-(Font)              using `EU2/ptm/m/n' instead on input line 200.
+(Font)              using `EU2/ptm/m/n' instead on input line 201.
 
 [5
 
@@ -1101,7 +1119,7 @@ LaTeX Font Warning: Font shape `EU2/ptm/m/it' undefined
 been already used, duplicate ignored
 <to be read again> 
 \relax 
-l.208 \end{contributors}
+l.209 \end{contributors}
                        [5] [6
 
 ] (./playcb.toc) [7] [8
@@ -1135,8 +1153,13 @@ eric/fonts/otf/lmroman5-regular.luc))
 \openout7 = playcb.lof
  [11
 
-] [12
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
 
+[12
+Missing character: There is no ń (U+0144) in font ptmr8t!
 ] (./playcb.lot
 LaTeX Font Info:    Try loading font information for EU2+phv on input line 1.
 LaTeX Font Info:    No file EU2phv.fd. on input line 1.
@@ -1149,13 +1172,15 @@ LaTeX Font Warning: Font shape `EU2/phv/m/n' undefined
 \tf@lot=\write8
 
 \openout8 = playcb.lot
- [13] [14
+ [13
+
+] [14
 
 ](load luc: C:/Users/nayra/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/o
 tf/lmroman9-regular.luc)
 
 LaTeX Font Warning: Font shape `EU2/ptm/m/sc' undefined
-(Font)              using `EU2/ptm/m/n' instead on input line 226.
+(Font)              using `EU2/ptm/m/n' instead on input line 227.
 
 [15] [16
 
@@ -1173,12 +1198,12 @@ Package hyperref Warning: bookmark level for unknown ichapter defaults to 0.
 
 (load luc: C:/Users/nayra/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/ot
 f/lmroman6-regular.luc)
-LaTeX Font Info:    Try loading font information for EU2+pcr on input line 282.
-LaTeX Font Info:    No file EU2pcr.fd. on input line 282.
+LaTeX Font Info:    Try loading font information for EU2+pcr on input line 283.
+LaTeX Font Info:    No file EU2pcr.fd. on input line 283.
 
 
 LaTeX Font Warning: Font shape `EU2/pcr/m/n' undefined
-(Font)              using `EU2/lmr/m/n' instead on input line 282.
+(Font)              using `EU2/lmr/m/n' instead on input line 283.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1194,7 +1219,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Capítulo 1.
-[3] <img/cap1_ex1.png, id=304, 302.63063pt x 325.215pt>
+[3] <img/cap1_ex1.png, id=331, 302.63063pt x 325.215pt>
 File: img/cap1_ex1.png Graphic file (type png)
  <use img/cap1_ex1.png>
 Package pdftex.def Info: img/cap1_ex1.png used on input line 80.
@@ -1223,7 +1248,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[4<./img/cap1_ex1.png>] <img/cap1_ex3.png, id=332, 302.63063pt x 325.215pt>
+[4<./img/cap1_ex1.png>] <img/cap1_ex3.png, id=359, 302.63063pt x 325.215pt>
 File: img/cap1_ex3.png Graphic file (type png)
 
 <use img/cap1_ex3.png>
@@ -1245,25 +1270,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7]
-Overfull \hbox (4.46288pt too wide) in paragraph at lines 184--185
+Overfull \hbox (4.46288pt too wide) in paragraph at lines 183--184
 []\EU2/ptm/bx/n/10 A função Cri-aQuadrado, na linha []29[], cria uma ge-ome-t
 ria do tipo QUADRADO,
  []
 
 
-Overfull \hbox (18.0036pt too wide) in paragraph at lines 187--188
+Overfull \hbox (18.0036pt too wide) in paragraph at lines 186--187
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.0036pt too wide) in paragraph at lines 192--193
+Overfull \hbox (18.0036pt too wide) in paragraph at lines 191--192
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<img/cap1_ex2.png, id=440, 303.38344pt x 325.215pt>
+<img/cap1_ex2.png, id=469, 303.38344pt x 325.215pt>
 File: img/cap1_ex2.png Graphic file (type png)
  <use img/cap1_ex2.png>
-Package pdftex.def Info: img/cap1_ex2.png used on input line 198.
+Package pdftex.def Info: img/cap1_ex2.png used on input line 197.
 (pdftex.def)             Requested size: 168.0pt x 180.08954pt.
 
 (./src/ex2_davi.cpp [8])
@@ -1275,10 +1300,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Capítulo 2.
-<img/cap1_ex4.png, id=496, 302.63063pt x 325.215pt>
+<img/cap1_ex4.png, id=525, 302.63063pt x 325.215pt>
 File: img/cap1_ex4.png Graphic file (type png)
  <use img/cap1_ex4.png>
-Package pdftex.def Info: img/cap1_ex4.png used on input line 274.
+Package pdftex.def Info: img/cap1_ex4.png used on input line 273.
 (pdftex.def)             Requested size: 168.0pt x 180.53615pt.
 
 [11] (./src/ex4_reta.cpp [12<./img/cap1_ex4.png>])
@@ -1290,10 +1315,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Capítulo 3.
-[15] <img/cap1_ex6.png, id=578, 651.93562pt x 505.89pt>
+[15] <img/cap1_ex6.png, id=607, 651.93562pt x 505.89pt>
 File: img/cap1_ex6.png Graphic file (type png)
  <use img/cap1_ex6.png>
-Package pdftex.def Info: img/cap1_ex6.png used on input line 354.
+Package pdftex.def Info: img/cap1_ex6.png used on input line 353.
 (pdftex.def)             Requested size: 168.0pt x 130.36269pt.
 
 (./src/ex6_galaxy.cpp [16<./img/cap1_ex6.png>])
@@ -1302,14 +1327,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [17]
-Overfull \hbox (58.84958pt too wide) in paragraph at lines 402--441
+Overfull \hbox (2.35654pt too wide) in paragraph at lines 401--440
  [][][] 
  []
 
-<img/cap1_ex5.png, id=668, 302.63063pt x 325.215pt>
+<img/cap1_ex5.png, id=697, 302.63063pt x 325.215pt>
 File: img/cap1_ex5.png Graphic file (type png)
  <use img/cap1_ex5.png>
-Package pdftex.def Info: img/cap1_ex5.png used on input line 446.
+Package pdftex.def Info: img/cap1_ex5.png used on input line 445.
 (pdftex.def)             Requested size: 168.0pt x 180.53615pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1322,21 +1347,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [19] (./src/ex5_carrinho.cpp)
-<img/cap1_ex7.png, id=691, 308.65312pt x 325.96782pt>
+<img/cap1_ex7.png, id=720, 303.38344pt x 325.96782pt>
 File: img/cap1_ex7.png Graphic file (type png)
  <use img/cap1_ex7.png>
-Package pdftex.def Info: img/cap1_ex7.png used on input line 460.
-(pdftex.def)             Requested size: 168.0pt x 177.4276pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Package pdftex.def Info: img/cap1_ex7.png used on input line 459.
+(pdftex.def)             Requested size: 168.0pt x 180.50641pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[20] (./src/ex7_moinho.cpp [21<./img/cap1_ex7.png>]))
-(./capitulos/capitulo2.tex
+[20] (./src/ex7_moinho.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21<./img/cap1_ex7.png>])) (./capitulos/capitulo2.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1347,7 +1371,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 ]
 Capítulo 4.
-<img/cap2_ex8.png, id=831, 302.63063pt x 325.215pt>
+<img/cap2_ex8.png, id=855, 302.63063pt x 325.215pt>
 File: img/cap2_ex8.png Graphic file (type png)
  <use img/cap2_ex8.png>
 Package pdftex.def Info: img/cap2_ex8.png used on input line 59.
@@ -1359,9 +1383,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [26<./img/cap2_ex8.png>]
+Overfull \hbox (36.00378pt too wide) in paragraph at lines 72--73
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+LaTeX Warning: Reference `line:CriaGrafico' on page 27 undefined on input line 7
+4.
+
+
+Overfull \hbox (208.95068pt too wide) in paragraph at lines 79--89
+ [][][] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[27] [28
+
+]
 Capítulo 5.
 
-Overfull \hbox (52.88878pt too wide) detected at line 114
+Overfull \hbox (52.88878pt too wide) detected at line 140
 \OT1/cmr/m/n/10 (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5)\OML/cmm/m/it/10 ; \OT1/
 cmr/m/n/10 (2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5)\OML/cmm/m/it/10 ; \OT1/cmr/m
 /n/10 (3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
@@ -1377,67 +1422,168 @@ t/10 ; \OT1/cmr/m/n/10 3)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (5\OML/cmm/m/it/10
 cmm/m/it/10 ; \OT1/cmr/m/n/10 (7\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6)
  []
 
-<img/cap2_ex9.png, id=874, 415.5525pt x 438.13687pt>
+<img/cap2_ex9.png, id=914, 415.5525pt x 438.13687pt>
 File: img/cap2_ex9.png Graphic file (type png)
  <use img/cap2_ex9.png>
-Package pdftex.def Info: img/cap2_ex9.png used on input line 122.
+Package pdftex.def Info: img/cap2_ex9.png used on input line 148.
 (pdftex.def)             Requested size: 168.0pt x 177.13023pt.
 
-[27
-
-] (./src/ex9_gameoflife.cpp [28<./img/cap2_ex9.png>]
+[29] (./src/ex9_gameoflife.cpp [30<./img/cap2_ex9.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]))
-(./capitulos/capitulo3.tex
+ [32])
+Overfull \hbox (132.00476pt too wide) in paragraph at lines 157--158
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./capitulos/capitulo3.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[31] [32
+[33]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
 
-] [33] [34
+[34] [35
+
+] [36
 
 ]
 Capítulo 6.
-<img/cap3_ex10.png, id=1059, 490.83376pt x 513.41812pt>
+[37] <img/cap3_ex12.png, id=1115, 609.77812pt x 477.28313pt>
+File: img/cap3_ex12.png Graphic file (type png)
+
+<use img/cap3_ex12.png>
+Package pdftex.def Info: img/cap3_ex12.png used on input line 72.
+(pdftex.def)             Requested size: 168.0pt x 131.49722pt.
+ (./src/ex12_balistica.cpp [38<./img/cap3_ex12.png>]
+Overfull \hbox (103.84863pt too wide) in paragraph at lines 38--40
+[][][][][] 
+ []
+
+
+Overfull \hbox (103.84863pt too wide) in paragraph at lines 49--51
+[][][][][] 
+ []
+
+
+Overfull \hbox (103.84863pt too wide) in paragraph at lines 57--59
+[][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39])
+
+LaTeX Warning: Reference `line:LimpaDesenho' on page 40 undefined on input line 
+82.
+
+<img/cap3_ex10.png, id=1192, 490.83376pt x 513.41812pt>
 File: img/cap3_ex10.png Graphic file (type png)
 
 <use img/cap3_ex10.png>
-Package pdftex.def Info: img/cap3_ex10.png used on input line 66.
+Package pdftex.def Info: img/cap3_ex10.png used on input line 86.
 (pdftex.def)             Requested size: 168.0pt x 175.72713pt.
+ (./src/ex10_snake.cpp [40]
+Underfull \vbox (badness 1009) has occurred while \output is active []
 
+ [41<./img/cap3_ex10.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
-(./src/ex10_snake.cpp [36<./img/cap3_ex10.png>]
+ [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]))
+ [43]))
+(./capitulos/capitulo4.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[39] [40
+[44] [45
+
+] [46
+
+]
+Capítulo 7.
+Missing character: There is no º (U+00BA) in font cmmi10!
+Missing character: There is no º (U+00BA) in font cmmi10!
+[47] <img/cap4_ex13.png, id=1446, 385.44pt x 402.75468pt>
+File: img/cap4_ex13.png Graphic file (type png)
+
+<use img/cap4_ex13.png>
+Package pdftex.def Info: img/cap4_ex13.png used on input line 71.
+(pdftex.def)             Requested size: 168.0pt x 175.54716pt.
+ (./src/ex13_hanoi.cpp [48<./img/cap4_ex13.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50])
+<img/cap4_ex14.png, id=1575, 1023.07219pt x 578.16pt>
+File: img/cap4_ex14.png Graphic file (type png)
+ <use img/cap4_ex14.png>
+Package pdftex.def Info: img/cap4_ex14.png used on input line 81.
+(pdftex.def)             Requested size: 168.0pt x 94.93353pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[51] (./src/ex14_koch.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52<./img/cap4_ex14.png>]) <img/cap4_ex15.png, id=1678, 603.75563pt x 475.7775
+pt>
+File: img/cap4_ex15.png Graphic file (type png)
+
+<use img/cap4_ex15.png>
+Package pdftex.def Info: img/cap4_ex15.png used on input line 90.
+(pdftex.def)             Requested size: 168.0pt x 132.38916pt.
+ (./src/ex15_snowflake.cpp [53<./img/cap4_ex15.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54])
+<img/cap4_ex16.png, id=1780, 1020.81375pt x 548.0475pt>
+File: img/cap4_ex16.png Graphic file (type png)
+
+<use img/cap4_ex16.png>
+Package pdftex.def Info: img/cap4_ex16.png used on input line 99.
+(pdftex.def)             Requested size: 168.0pt x 90.18977pt.
+ (./src/ex16_sierpinski.cpp [55
+Missing character: There is no ń (U+0144) in font ptmr8t!
+Missing character: There is no ń (U+0144) in font ptmr8t!
+<./img/cap4_ex16.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]))
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[57] [58
 
 ]
 No file playcb.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 848.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 848.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 850.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 850.
 (./playcb.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 848.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 848.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 850.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 850.
 Package rerunfilecheck Info: File `playcb.out' has not changed.
-(rerunfilecheck)             Checksum: C41FAA44AD2A62F54E2C4A59DE0ECF1C;1093.
+(rerunfilecheck)             Checksum: D80F4030C0E147D0CB2B805A2D97385A;1192.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1445,17 +1591,17 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33252 strings out of 494933
- 305232,794899 words of node,token memory allocated
- 600 words of node memory still in use:
+ 34101 strings out of 494933
+ 381559,794899 words of node,token memory allocated
+ 623 words of node memory still in use:
     nodes
-   avail lists: 1:3,2:15607,3:180,4:13892,5:7482,6:2593,7:7566,8:58,9:11318,10:6
-03
- 34907 multiletter control sequences out of 65536+200000
+   avail lists: 1:4,2:15607,3:203,4:13877,5:7516,6:2593,7:12533,8:58,9:11326,10:
+603
+ 35114 multiletter control sequences out of 65536+200000
  144 fonts using 9298815 bytes
  61i,10n,123p,753b,983s stack positions out of 5000i,500n,10000p,200000b,50000s
-<d:/miktex 2.9/fonts/opentype/public/lm/lmroman5-regular.otf>{D:/MiKTeX 2.9/font
-s/enc/dvips/fontname/8r.enc}<d:/miktex 2.9/fonts/opentype/public/lm/lmroman6-reg
+{D:/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<d:/miktex 2.9/fonts/opentype/pub
+lic/lm/lmroman5-regular.otf><d:/miktex 2.9/fonts/opentype/public/lm/lmroman6-reg
 ular.otf><d:/miktex 2.9/fonts/opentype/public/lm/lmroman8-regular.otf><d:/miktex
  2.9/fonts/opentype/public/lm/lmroman9-regular.otf><d:/miktex 2.9/fonts/opentype
 /public/lm/lmroman10-regular.otf><d:/miktex 2.9/fonts/opentype/public/lm/lmroman
@@ -1468,13 +1614,14 @@ onts/cm/cmr7.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><<D:/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><<D:/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy7.pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb><<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><<D:/MiKTeX 2.9/fo
-nts/type1/urw/helvetic/uhvb8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
-a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><<D:/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmbi8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><<D:/M
-iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on playcb.pdf (67 pages, 1334950 bytes).
+nts/type1/urw/helvetic/uhvb8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo
+8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><<D:/MiKTeX 2.9/fonts
+/type1/urw/times/utmb8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><<
+D:/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><<D:/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on playcb.pdf (85 pages, 1551473 bytes).
 
-PDF statistics: 1396 PDF objects out of 1440 (max. 8388607)
- 845 named destinations out of 1000 (max. 131072)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 2063 PDF objects out of 2073 (max. 8388607)
+ 1389 named destinations out of 1440 (max. 131072)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

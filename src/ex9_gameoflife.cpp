@@ -51,7 +51,7 @@ int main(){
     for(i = 0; i < LINHAS; i++){
     p1.x = -85+marg;
         for(j = 0; j < COLUNAS; j++){
-            geoIndex[i][j] = CriaQuadrado(largQuad, p1);
+            geoIndex[i][j] = CriaQuadrado(largQuad, p1); @\label{line:matrizgeoIndex}@
             Pintar(0, 0, 0, QUADRADO, geoIndex[i][j]); @\label{line:Pintarm2}@
             p1.x += deltaQuad;
         }

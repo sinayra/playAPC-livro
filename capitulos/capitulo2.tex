@@ -63,6 +63,32 @@ Vetores são um tipo de estrutura que podem armazenar um tamanho fixo de element
 Esta prática mostra como construir um gráfico a partir de um vetor de Pontos. Cada posição em \emph{y} de cada ponto é calculada dentro do loop. Por padrão, os limites da janela de exibição da playCB vão de -100 à 100, entretanto, os valores em \emph{y} nesta função variam de $-125.000$ até $125.000$, tendo a necessidade de mudar o limite de exibição com a função \emph{MudaLimitesJanela(125000)}.
 \lstinputlisting[caption=Código fonte de polinômio, style=customc, label=lst:cap2_ex1]{src/ex8_grafico.cpp}
 
+\begin{lstlisting}[label={func:MudaLimitesJanela},language=C++]
+void MudaLimitesJanela(int limite);
+\end{lstlisting}
+A função \emph{MudaLimitesJanela}, na linha \ref{line:MudaLimitesJanela}, muda o limite da visualização do plano cartesiano, indo de valores $-limite$ até $limite$, tanto em $x$ quanto em $y$. Esta função deve ser chamada antes da função \emph{AbreJanela}.
+
+\begin{lstlisting}[label={func:CriaGrafico},language=C++]
+int CriaGrafico(short int index, Ponto *p, short int verTipo);
+\end{lstlisting}
+A função \emph{CriaGrafico}, na linha \ref{line:CriaGrafico}, cria uma geometria do tipo \emph{GRAFICO}, retornando um índice deste tipo de geometria. A partir de um vetor de pontos \emph{p} de tamanho \emph{index}, esta função cria uma sequência de retas que ligam cada ponto definido pelo vetor. O seu terceiro argumento, \emph{verTipo}, se refere o modo de visualização do gráfico, recebendo os parâmetros descritos na Tabela \ref{tab:CriaGrafico}.
+
+\begin{table}
+  \caption{Valor de \emph{verTipo} da função \emph{CriaGrafico}}
+  \centering
+    \begin{tabular}{lcccc}
+    \hline
+    Valor&\bf Descrição \\
+    \hline
+    0 & Não redimensiona a tela  \\
+    1  & Redimensiona a tela a fim de comportar toda a função dentro da janela de renderização \\
+    2  & Redimensiona a tela a fim de comportar toda a função dentro da janela de rendedização  \\sem interferir na escala de ambos os eixos \\
+    \hline
+  \end{tabular}
+  \label{tab:CriaGrafico}
+\end{table}
+
+
 \chapter[Matrizes]
 {Matrizes}
 
@@ -125,3 +151,32 @@ Assim como vetores, matrizes são um tipo de estrutura que armazena dados de mes
 \end{figure}
 Esta prática mostra como utilizar o retorno das função \emph{CriaQuadrado}, que esta retorna o índice da geometria criada. O seu índice é utilizado na função \emph{Pintar}, que recebe, além do índice, o tipo da geometria. Como foi utilizado a função \emph{CriaQuadrado}, o tipo de geometria é \emph{QUADRADO}. Se fosse utilizado \emph{CriaCirculo}, seria utilizado o tipo \emph{CIRCULO} e assim sucessivamente.
 \lstinputlisting[caption=Código fonte do jogo da vida, style=customc, label=lst:cap2_ex2]{src/ex9_gameoflife.cpp}
+
+\begin{lstlisting}[label={func:Pintarm2},language=C++]
+void Pintar(int red, int green, int blue); 
+void Pintar(int red, int green, int blue, geometrias_validas nome, int index);
+\end{lstlisting}
+A função \emph{Pintar}, na linha \ref{line:Pintarm2} pode ser utilizada de duas formas. No caso da Listagem \ref{lst:cap2_ex2}, como cada índice do tipo \emph{QUADRADO} está salvo na matriz \emph{geoIndex}, na linha \ref{line:matrizgeoIndex}, este índice é passado para o quinto argumento da função \emph{Pintar}. Desta forma, apenas aquela geometria com o valor daquele índice será pintada com as cores especificadas pelos valores \emph{red, green e blue}. O quarto argumento é justamente o tipo de geometria, podendo variar de acordo com a função \emph{Cria} utilizado. A outra forma de utilizar esta função está ilustrada na Listagem \ref{lst:cap1_ex2}.
+De forma resumida, o argumento \emph{nome}, do tipo \emph{geometrias\_validas}, pode receber os valores descritos na Tabela ~\ref{tab:PintarM2}.
+
+\begin{table}
+  \caption{Valor de \em{nome} da função \em{Pintar}}
+  \centering
+    \begin{tabular}{lc}
+    \hline
+    Valor&\bf Retorno da função \\
+    \hline
+    CIRCULO & CriaCirculo  \\
+    QUADRADO  & CriaQuadrado \\
+    CIRCUNFERENCIA  & CriaCircunferencia \\
+    RETANGULO  & CriaRetangulo \\
+    ELIPSE  & CriaElipse \\
+    GRAFICO  & CriaGrafico \\
+    PONTO  & CriaPonto \\
+    RETA  & CriaReta \\
+    POLIGONO  & CriaPoligono e CriaPoligonoVetor \\
+    TRIANGULO  & CriaTriangulo \\
+    \hline
+  \end{tabular}
+  \label{tab:PintarM2}
+\end{table}

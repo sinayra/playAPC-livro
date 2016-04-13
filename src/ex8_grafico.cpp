@@ -5,7 +5,7 @@ int main(){
     Ponto p[100];
     int i, j;
 
-    MudaLimitesJanela(125000);
+    MudaLimitesJanela(125000); @{ \label{line:MudaLimitesJanela}@
 
     AbreJanela(400, 400, "Criando um grafico");
     PintarFundo(255, 255, 255);
@@ -17,7 +17,7 @@ int main(){
         p[i].y = -pow(p[i].x, 3);
     }
 
-    CriaGrafico(100, p, 1);
+    CriaGrafico(100, p, 1); @{ \label{CriaGrafico}@
     Pintar(255, 0, 0);
 
     Desenha();
