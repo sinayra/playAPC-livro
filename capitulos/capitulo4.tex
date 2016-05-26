@@ -51,17 +51,99 @@ Recursão é uma sub-rotina que pode invocar a si mesma, contendo, a cada chamad
   \label{ex:cap04_ex1}
 
 \item
+  Construa uma árvore binária recursiva onde o usuário oferece altura, profundidade e angulo entre ramos.
+  \label{ex:cap04_ex2}
+
+\item
   Sabendo que a curva de Koch é construída que toma, como base, um segmento de reta de tamanho $n$. Na extremidade deste primeiro segmento, desenha-se outro segmento de reta de tamanho $n$, porém com uma curvatura de $60º$ em relação ao primeiro. Na extremidade deste segundo segmento, desenha-se outra curva de reta de tamanho $n$, mas agora com a curvatura de $120º$ em relação ao primeiro. Por fim, desenha-se outro segmento de reta de tamanho $n$ na extremidade do terceiro segmento.
     \begin{enumerate}
       \item Exiba a curva de Koch de ordem $n$
-        \label{ex:cap04_ex2a}
+        \label{ex:cap04_ex3a}
       \item Exiba um floco de neve de ordem $n$ baseado na curva de Koch
-        \label{ex:cap04_ex2b}
+        \label{ex:cap04_ex3b}
     \end{enumerate}
-  \label{ex:cap04_ex2}
-\item
-  A curva de Sierpiński preenche todo o espaço disponível sem cortar suas próprias linhas, sendo mutuamente recursiva entre quatro funções. AQUI TEM UMA EXPLICAÇÃO DAS REGRAS DESSA CURVA. Exiba a curva de Sierpiński de ordem $n$.
   \label{ex:cap04_ex3}
+
+\item
+  A curva de Sierpiński é uma curva do tipo \emph{space-filling curve}, a qual significa que ela tenta ocupar todo espaço disponível sem ser cruzar. Ela pode ser implementada utilizando quatro funções mutuamente recursivas, \emph{A, B, C} e \emph{D}.
+  \begin{itemize}
+    \item
+      O programa inicia com uma curva básica \emph{S} dada pelo padrão A 
+      \begin{tikzpicture}
+        \draw[thick,->] (0.0,0.30) -- (0.30,0.0);
+      \end{tikzpicture}
+      , B
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.30) -- (0.0,0.0);
+      \end{tikzpicture}
+      , C
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.0) -- (0.0,0.30);
+      \end{tikzpicture}
+      e D
+      \begin{tikzpicture}
+        \draw[thick,->] (0.0,0.0) -- (0.30,0.30);
+      \end{tikzpicture}
+      . As setam indicam a virada do ângulo que as retas \emph{fecham} os desenhos das funções.
+    \item
+      A curva A é dada pelo padrão A
+      \begin{tikzpicture}
+        \draw[thick,->] (0.0,0.30) -- (0.30,0.0);
+      \end{tikzpicture}
+      , B
+      \begin{tikzpicture}
+        \draw[thick,->] (0.0,0.0) -- (0.30,0.0);
+      \end{tikzpicture}
+      , D
+      \begin{tikzpicture}
+        \draw[thick,->] (0.0,0.0) -- (0.30,0.30);
+      \end{tikzpicture}
+      A
+    \item
+      A curva B é dada pelo padrão B
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.30) -- (0.0,0.0);
+      \end{tikzpicture}
+      , C
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.30) -- (0.30,0.0);
+      \end{tikzpicture}
+      , A
+      \begin{tikzpicture}
+        \draw[thick,->] (0.0,0.30) -- (0.30,0.0);
+      \end{tikzpicture}
+      B
+    \item
+      A curva C é dada pelo padrão C
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.0) -- (0.0,0.30);
+      \end{tikzpicture}
+      , D
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.0) -- (0.0,0.0);
+      \end{tikzpicture}
+      , B
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.30) -- (0.0,0.0);
+      \end{tikzpicture}
+      C
+    \item
+      A curva D é dada pelo padrão D
+      \begin{tikzpicture}
+        \draw[thick,->] (0.0,0.0) -- (0.30,0.30);
+      \end{tikzpicture}
+      , A
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.0) -- (0.30,0.30);
+      \end{tikzpicture}
+      , C
+      \begin{tikzpicture}
+        \draw[thick,->] (0.30,0.0) -- (0.0,0.30);
+      \end{tikzpicture}
+      D
+  \end{itemize}
+  Com esta configuração, exiba a curva de Sierpiński para ordem $n$.
+  \label{ex:cap04_ex4}
 \end{enumerate}
 
 \section*{Soluções}
@@ -76,25 +158,34 @@ Esta prática ilustra como mover cada geometria utilizando retorno da função \
 \lstinputlisting[caption=Código fonte da torre de Hanói, style=customc, label=lst:cap4_ex1]{src/ex13_hanoi.cpp}
 
 \subsection*{Exercício \ref{ex:cap04_ex2} }
-\subsubsection*{Item \ref{ex:cap04_ex2a}}
+\begin{figure}[ht]
+  \centerline{\includegraphics[width=.5\textwidth]{img/cap4_ex17.png}}
+  \caption{Árvore Binária}
+  \label{fig:cap04_ex2}
+\end{figure}
+Esta prática reforça que os valores da estrutura \emph{Ponto} podem ser ponto flutuantes.
+\lstinputlisting[caption=Árvore recursiva, style=customc, label=lst:cap4_ex3]{src/ex17_arvore.cpp}
+
+\subsection*{Exercício \ref{ex:cap04_ex3} }
+\subsubsection*{Item \ref{ex:cap04_ex3a}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap4_ex14.png}}
   \caption{Curva de Koch de ordem 3}
-  \label{fig:cap04_ex2a}
+  \label{fig:cap04_ex3a}
 \end{figure}
 Esta prática reforça o modo de utilização da função CriaReta, usando a função \emph{movaCaneta}, na linha \ref{line:movaCaneta}.
-\lstinputlisting[caption=Código fonte da curva de koch, style=customc, label=lst:cap4_ex1]{src/ex14_koch.cpp}
+\lstinputlisting[caption=Código fonte da curva de koch, style=customc, label=lst:cap4_ex2a]{src/ex14_koch.cpp}
 
-\subsubsection*{Item \ref{ex:cap04_ex2b}}
+\subsubsection*{Item \ref{ex:cap04_ex3b}}
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap4_ex15.png}}
   \caption{Floco de neve}
-  \label{fig:cap04_ex2b}
+  \label{fig:cap04_ex3b}
 \end{figure}
-\lstinputlisting[caption=Código fonte do floco de neve, style=customc, label=lst:cap4_ex1]{src/ex15_snowflake.cpp}
+\lstinputlisting[caption=Código fonte do floco de neve, style=customc, label=lst:cap4_ex2b]{src/ex15_snowflake.cpp}
 
 
-\subsection*{Exercício \ref{ex:cap04_ex3} }
+\subsection*{Exercício \ref{ex:cap04_ex4} }
 \begin{figure}[ht]
   \centerline{\includegraphics[width=.5\textwidth]{img/cap4_ex16.png}}
   \caption{Curva de Sierpiński}
