@@ -126,6 +126,7 @@ int main(){
     tipoCelula m[TAM][TAM]; //-100 a 100 pra cima e pra baixo, cada quadrado
     int pos_i = TAM/2; //posicao i da cabeca
     int pos_j = TAM/2; //posicao j da cabeca
+    int aberto;
 
     int rpos_i = pos_i; //posicao i do rabo
     int rpos_j = pos_j; //posicao j do rabo
@@ -165,12 +166,18 @@ int main(){
         else
             break;
 
-        Desenha1Frame();
+        aberto = Desenha1Frame();
+        aberto = Desenha1Frame();
+        aberto = Desenha1Frame();
+        if(!aberto)
+            break;
     }
 
     printf("O jogo acabou!\n");
 
-    Desenha();
+    if(aberto)
+        Desenha();
+
     return 0;
 }
 
