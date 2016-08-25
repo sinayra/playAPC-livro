@@ -10,14 +10,14 @@
 \contentsline {schapter}{References}{xxvi}{section*.12}
 \contentsline {part}{I\hspace {1em}Algoritmos sequenciais, condicionais e com repetições}{1}{part.1}
 \contentsline {chapter}{\numberline {1}Algoritmos sequenciais}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}Algoritmos condicionais}{11}{chapter.2}
-\contentsline {chapter}{\numberline {3}Algoritmos com repetição}{15}{chapter.3}
-\contentsline {part}{II\hspace {1em}Estrutura de dados n-dimensionais homogêneas}{23}{part.2}
-\contentsline {chapter}{\numberline {4}Vetores}{25}{chapter.4}
-\contentsline {chapter}{\numberline {5}Matrizes}{29}{chapter.5}
-\contentsline {part}{III\hspace {1em}Subalgoritmos}{35}{part.3}
-\contentsline {chapter}{\numberline {6}Subalgoritmos}{37}{chapter.6}
-\contentsline {part}{IV\hspace {1em}Recursão}{45}{part.4}
-\contentsline {chapter}{\numberline {7}Recursão}{47}{chapter.7}
-\contentsline {part}{V\hspace {1em}Exercícios extras}{61}{part.5}
-\contentsline {chapter}{\numberline {8}Exercícios extras}{63}{chapter.8}
+\contentsline {chapter}{\numberline {2}Algoritmos condicionais}{13}{chapter.2}
+\contentsline {chapter}{\numberline {3}Algoritmos com repetição}{21}{chapter.3}
+\contentsline {part}{II\hspace {1em}Estrutura de dados n-dimensionais homogêneas}{29}{part.2}
+\contentsline {chapter}{\numberline {4}Vetores}{31}{chapter.4}
+\contentsline {chapter}{\numberline {5}Matrizes}{35}{chapter.5}
+\contentsline {part}{III\hspace {1em}Subalgoritmos}{41}{part.3}
+\contentsline {chapter}{\numberline {6}Subalgoritmos}{43}{chapter.6}
+\contentsline {part}{IV\hspace {1em}Recursão}{51}{part.4}
+\contentsline {chapter}{\numberline {7}Recursão}{53}{chapter.7}
+\contentsline {part}{V\hspace {1em}Exercícios extras}{67}{part.5}
+\contentsline {chapter}{\numberline {8}Exercícios extras}{69}{chapter.8}

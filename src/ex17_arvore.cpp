@@ -39,7 +39,7 @@ int main(){
     p.x = 0;
     p.y = -80;
 
-    AbreJanela(800,600, "Arvore recursiva");
+    AbreJanela(800,800, "Arvore recursiva");
     PintarFundo(255, 255, 255);
 
     arvore(p, altura, 90, angulo, profundidade);

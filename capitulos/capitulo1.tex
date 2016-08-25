@@ -70,6 +70,11 @@ Estrutura sequencial é um conjunto de instruções que serão executadas em seq
   Exiba a estrela de Davi.
   \label{ex:cap01_ex3}
 
+\item
+  Escreva um programa que solicite do usuário um raio de um círculo e exiba um quadrado inscrito neste círculo.
+  \label{ex:cap01_ex8}
+
+
 \end{enumerate}
 
 
@@ -117,7 +122,7 @@ Para encerrar o loop de renderização, basta fechar a janela clicando no botão
   \caption{Boneco Palito}
   \label{fig:cap01_ex2}
 \end{figure}
-Esta prática se refere a exibir um boneco palito e praticar a grande maioria das geometrias pré-definidas existentes na \playAPC{}. Os argumentos de cada função podem ser consultados no Guia de Referência da playAPC{} \footnote{\url{http://pt-br.playAPC{}.wikia.com/wiki/Categoria:Geometrias}}
+Esta prática se refere a exibir um boneco palito e praticar a grande maioria das geometrias pré-definidas existentes na \playAPC{}. Os argumentos de cada função podem ser consultados no Guia de Referência da playAPC{} \footnote{\url{http://playapc.zaghetto.com/category/funcoes/geometria}}
 \lstinputlisting[caption=Código fonte do boneco palito, style=customc, label=lst:cap1_ex2]{src/ex3_boneco.cpp}
 
 \begin{lstlisting}[label={func:Ponto},language=C++]
@@ -206,6 +211,16 @@ int CriaPoligono(short int qtd, ...)
 \end{lstlisting}
 A função \emph{CriaPoligono}, na linha \ref{line:CriaPoligono}, cria uma geometria do tipo \emph{POLIGONO}, retornando um índice deste tipo de geometria. Seu primeiro argumento é a quantidade de pontos que serão passados para esta função, e os seguintes argumentos serão os pontos propriamente ditos. Note que a \playAPC{} é limitada no aspecto que esta função só consegue renderizar figuras convexas. Caso haja a necessidade de criação de figuras não-convexas, será necessário \emph{"quebrar"} a geometria não-convexa em duas ou mais geometrias convexas.
 
+\subsection*{Exercício \ref{ex:cap01_ex8}}
+\begin{figure}[ht]
+  \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex8.png}}
+  \caption{Quadrado inscrito em um círculo}
+  \label{fig:cap01_ex4}
+\end{figure}
+
+Esta prática exercita conceitos de geometria analítica e mostra ao aluno a indenpedência entre a biblioteca \playAPC{} e as bibliotecas padrões do C.
+
+\lstinputlisting[caption=Código fonte do quadrado inscrito, style=customc, label=lst:cap1_ex4]{src/ex21_inscrito.cpp}
 
 \chapter[Algoritmos condicionais]
 {Algoritmos condicionais}
@@ -264,6 +279,14 @@ Estrutura condicional expõe que a instrução ou bloco de instrução só seja 
     Se a reta pertencer ao \emph{quarto} quadrante, pinte-a de preto
     \end{itemize}.
     \label{ex:cap01_ex4}
+\item
+  Escreva um programa que solicita do usuário um raio e um ponto de centro de uma circunferência. Em seguida, solicite outro ponto e exiba a circunferência e o novo ponto solicitado, escrevendo no título da janela se o ponto está dentro da ou fora da circunferência
+    \label{ex:cap01_ex9}
+
+\item
+  Escreva um programa em C que solicita três pontos A, B e C ao usuário, e verifica se esses valores satisfazem a condição de existência do triângulo. Caso essa condição seja satisfeita, exiba esse triângulo usando a playAPC (Sugestão: não usar CriaTriangulo) e escreva no título da janela se o triângulo é eqüilátero, isósceles ou escaleno.
+
+    \label{ex:cap01_ex10}
 \end{enumerate}
 
 \section*{Soluções}
@@ -277,10 +300,44 @@ Estrutura condicional expõe que a instrução ou bloco de instrução só seja 
 Esta prática exibe uma reta com cor variada de acordo com qual quadrante ela pertence. A função \emph{Pintar} neste caso se refere a única geometria criada no programa, no caso, a reta.
 \lstinputlisting[caption=Código fonte do quadrante da reta, style=customc, label=lst:cap1_ex4]{src/ex4_reta.cpp}
 
+
 \begin{lstlisting}[label={func:CriaReta},language=C++]
 int CriaReta(Ponto p1, Ponto p2)
 \end{lstlisting}
 A função \emph{CriaReta}, na linha \ref{line:CriaReta}, cria uma geometria do tipo \emph{RETA}, retornando um índice deste tipo de geometria. Seu primeiro e segundo argumento são duas variáveis do tipo Ponto.
+
+\subsection*{Exercício \ref{ex:cap01_ex9}}
+\begin{figure}[ht]
+  \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex9.png}}
+  \caption{Indicação se ponto está dentro ou fora da circunferência}
+  \label{fig:cap01_ex4}
+\end{figure}
+Esta prática exercita um conceito básico de geometria analítica, distância entre dois pontos, e realiza o tipo de colisão mais simples.
+\lstinputlisting[caption=Código fonte do ponto dentro ou fora da circunferência, style=customc, label=lst:cap1_ex9]{src/ex22_inout.cpp}
+
+\begin{lstlisting}[label={func:CriaCircunferencia},language=C++]
+int CriaCircunferencia(float raio, Ponto meio)
+\end{lstlisting}
+A função \emph{CriaCircunferencia}, na linha \ref{line:CriaCircunferencia}, cria uma geometria do tipo \emph{CIRCUNFERENCIA}, retornando um índice deste tipo de geometria. Seu primeiro argumento é o tamanho do raio e o segundo argumento é onde estará centrado a circunferência.
+
+\begin{lstlisting}[label={func:CriaPonto},language=C++]
+int CriaPonto(Ponto p)
+\end{lstlisting}
+A função \emph{CriaPonto}, na linha \ref{line:CriaPonto}, cria uma geometria do tipo \emph{PONTO}, retornando um índice deste tipo de geometria. Seu único argumento é uma variável do tipo Ponto. Uma geometria do tipo \emph{PONTO} é renderizada como um pixel.
+
+\begin{lstlisting}[label={func:Grafite},language=C++]
+void Grafite(int espessura)
+\end{lstlisting}
+A função \emph{Grafite}, na linha \ref{line:Grafite}, aumenta as linhas de rasterização da última geometria criada, variando de 1 a $\infty$. Por padrão, todas as geometrias começam com esta linha igual a 1. Esta função pode ser usada para deixar mais visível geometrias do tipo \emph{PONTO}, que possuem 1 pixel de tamanho.
+
+\subsection*{Exercício \ref{ex:cap01_ex10}}
+\begin{figure}[ht]
+  \centerline{\includegraphics[width=.5\textwidth]{img/cap1_ex10.png}}
+  \caption{Classificação de triângulos}
+  \label{fig:cap01_ex4}
+\end{figure}
+Esta prática exercita classificação de triângulos e condição de existência dos mesmos, além de exercirtar alternativas aninhadas.
+\lstinputlisting[caption=Código fonte da classificação de triângulos, style=customc, label=lst:cap1_ex10]{src/ex23_exibetriangulo.cpp}
 
 \chapter[Algoritmos com repetição]
 {Algoritmos com repetição}
@@ -357,16 +414,6 @@ Estruturas de repetição são criadas para que diversas instruções sejam exec
 Esta prática ilustra como a função \emph{Desenha1Frame} pode ser utilizada. Na linha \ref{line:ex6_for} até a linha \ref{line:ex6_forend}, a cada iteração são criados dois pontos, um de cada espiral.
 \lstinputlisting[caption=Código fonte da galáxia expiral, style=customc, label=lst:cap1_ex5]{src/ex6_galaxy.cpp}
 
-
-\begin{lstlisting}[label={func:CriaPonto},language=C++]
-int CriaPonto(Ponto p)
-\end{lstlisting}
-A função \emph{CriaPonto}, na linha \ref{line:CriaPonto}, cria uma geometria do tipo \emph{PONTO}, retornando um índice deste tipo de geometria. Seu único argumento é uma variável do tipo Ponto. Uma geometria do tipo \emph{PONTO} é renderizada como um pixel.
-
-\begin{lstlisting}[label={func:Grafite},language=C++]
-void Grafite(int espessura)
-\end{lstlisting}
-A função \emph{Grafite}, na linha \ref{line:Grafite}, aumenta as linhas de rasterização da última geometria criada, variando de 1 a $\infty$. Por padrão, todas as geometrias começam com esta linha igual a 1. Esta função pode ser usada para deixar mais visível geometrias do tipo \emph{PONTO}, que possuem 1 pixel de tamanho.
 
 \begin{lstlisting}[label={func:Desenha1Frame},language=C++]
 int Desenha1Frame()
