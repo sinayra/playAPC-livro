@@ -7,7 +7,6 @@ int main (){
 
     AbreJanela(400, 400, "Moinho de Vento" );
     PintarFundo(217,255,255);
-    //MostraPlanoCartesiano(10);
 
     moinho = CriaGrupo();
 
@@ -60,7 +59,7 @@ int main (){
 
     while( angulo > 0){
         Desenha1Frame();
-        Gira(angulo, helices);
+        Gira(angulo, helices); @\label{line:Giram1}@
         angulo++;
     }
 

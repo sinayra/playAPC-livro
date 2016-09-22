@@ -24,15 +24,15 @@ int main (int argc, char * argv[]) {
     p.x = 100*cos(t)/t;         q.x = -p.x;
     p.y = 100*sin(t)/t;         q.y = -p.y;
 
-    CriaPonto (p);    @\label{line:CriaPonto}@
-    Pintar (200, 30, 100);    
-    Grafite(3); @\label{line:Grafite}@
-    
-    CriaPonto (q);    
-    Pintar (100, 30, 200);    
+    CriaPonto (p);
+    Pintar (200, 30, 100);
     Grafite(3);
 
-    Desenha1Frame(); @\label{line:Desenha1Frame}@
+    CriaPonto (q);
+    Pintar (100, 30, 200);
+    Grafite(3);
+
+    Desenha1Frame();
   } @{ \label{line:ex6_forend}@
 
 
@@ -44,7 +44,7 @@ int main (int argc, char * argv[]) {
   Pintar (0, 0,  0);
 
   for (double t=0;  ; t += .5) {
-    Gira(t);  @{ \label{line:Giram1}@
+    Gira(t);  @{ \label{line:Giram2}@
     Desenha1Frame();
 
     //Depois de um tempinho, pinta o fundo de branco pra mostrar
@@ -54,6 +54,8 @@ int main (int argc, char * argv[]) {
     //quebra o loop e encerra o programa
     if(ApertouTecla(GLFW_KEY_ENTER)) return 0;  @{ \label{line:ApertouTecla}@
   }
+
+  Desenha();
 
 }
 

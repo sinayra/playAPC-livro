@@ -2,23 +2,25 @@
 #include <stdio.h>
 #include <math.h>
 
-#define HIP 50
-#define PI 3.14
 int main(){
     int angulo;
-    float anguloRad;
+    float anguloRad, raio;
     Ponto p1, p2;
 
     printf("Digite um angulo de 0 a 360 graus:");
     scanf("%d", &angulo);
+
+    printf("Digite um raio de 0 a 100:");
+    scanf("%f", &raio);
 
     p1.x = 0;
     p2.x = 0;
 
     anguloRad = (PI * angulo)/180;
 
-    p2.y = sin(anguloRad) * HIP;
-    p2.x = cos(anguloRad) * HIP;
+    p2.y = sin(anguloRad) * raio;
+    p2.x = cos(anguloRad) * raio;
+
 
     AbreJanela(400, 400, "Quadrante da reta");
     PintarFundo(255, 255, 255);

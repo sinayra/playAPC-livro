@@ -19,6 +19,7 @@
 %  http://www.texnology.com
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 %%%%%%%%%%%%%
 % 7x10
 %\documentclass{wileySev}
@@ -36,6 +37,9 @@
 \usepackage{fontspec}
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[section]{placeins}
 
 \renewcommand*{\theenumi}{\thechapter.\arabic{enumi}}
 \newtheorem{myDef}{Definição}
@@ -54,30 +58,38 @@
   basicstyle=\footnotesize\ttfamily,
   keywordstyle=\bfseries\color{red!40!black},
   commentstyle=\itshape\color{green!40!black},
-  otherkeywords={Ponto, QUADRADO, RETANGULO, TRIANGULO, CIRCULO, ELIPSE, CIRCUNFERENCIA, PONTO, RETA, GRAFICO},           
+  otherkeywords={QUADRADO, RETANGULO, TRIANGULO, CIRCULO, ELIPSE, CIRCUNFERENCIA, PONTO, RETA, GRAFICO},           
   emph={
-  		AbreJanela,
-  		PintarFundo,
-  		Pintar,
-  		Grafite,
-  		Move,
-  		Desenha,
-  		Desenha1Frame,
-  		MostraPlanoCartesiano,
-      MudaLimitesJanela,
-      CriaGrafico,
-      CriaReta,
-      CriaCircunferencia,
-      CriaCirculo,
-      CriaGrupo,
-      CriaQuadrado,
-      CriaTriangulo,
-      CriaRetangulo,
-      CriaElipse,
-      CriaPonto,
-      CriaPoligono,
+  		AbreImagem,
+      AbreJanela,
+      ApagaGrupo,
       ApertouTecla,
-      LimpaDesenho
+      AssociaImagem,
+      CriaCirculo,
+      CriaCircunferencia,
+      CriaElipse,
+      CriaGrafico,
+      CriaGrupo,
+      CriaPoligono,
+      CriaPoligonoVetor,
+      CriaPonto,
+      CriaQuadrado,
+      CriaReta,
+      CriaRetangulo,
+      CriaTriangulo,
+      Desenha,
+      Desenha1Frame,
+      ExtraiRGBdeBMP,
+      Gira,
+      Grafite,
+      LimpaDesenho,
+      MostraPlanoCartesiano,
+      Move,
+      MudaLimitesJanela,
+      PintarFundo,
+      Pintar,
+      Redimensiona,
+      RetornaTecla
   		},
   emphstyle={\color{blue!40!black}\bfseries},
   stringstyle=\color{orange},
@@ -88,6 +100,11 @@
 }
 \lstset{escapechar=@}
 \def\playAPC{\textsf{playAPC}}
+
+\newcounter{equationset}
+\newcommand{\equationset}[1]{% \equationset{<caption>}
+  \refstepcounter{equationset}% Step counter
+  \noindent\makebox[\textwidth]{Equação~\theequationset: #1}}% Print caption
 
 %%%%%%%
 %% for times math: However, this package disables bold math (!)
@@ -183,28 +200,28 @@ Prof. Dr. Alexandre Zaghetto,\\
 \titlepage
 
 
-\begin{copyrightpage}{2007}
-Survey Methodology / Robert M. Groves . . . [et al.].
-\       p. cm.---(Wiley series in survey methodology)
-\    ``Wiley-Interscience."
-\    Includes bibliographical references and index.
-\    ISBN 0-471-48348-6 (pbk.)
-\    1. Surveys---Methodology.  2. Social 
-\  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
-Series.\\
+% \begin{copyrightpage}{2007}
+% Survey Methodology / Robert M. Groves . . . [et al.].
+% \       p. cm.---(Wiley series in survey methodology)
+% \    ``Wiley-Interscience."
+% \    Includes bibliographical references and index.
+% \    ISBN 0-471-48348-6 (pbk.)
+% \    1. Surveys---Methodology.  2. Social 
+% \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
+% Series.\\
 
-HA31.2.S873 2007
-001.4'33---dc22                                             2004044064
-\end{copyrightpage}
+% HA31.2.S873 2007
+% 001.4'33---dc22                                             2004044064
+% \end{copyrightpage}
 
 
 
-\dedication{À todos os alunos que queiram fazer trabalhos bonitinhos na primeira matéria de computação da UnB}
+\dedication{À todos os alunos que queiram fazer trabalhos divertidos na primeira matéria de computação da UnB}
 
 \begin{contributors}
 
-%\name{Prof. Dr. José Carlos Loureiro Ralha,} Departamento de Ciência da Computação - UnB, Brasília, DF, Brasil
-%\name{Prof. Dr. Alexandre Zaghetto,} Departamento de Ciência da Computação - UnB, Brasília, DF, Brasil
+\name{Prof. Dr. José Carlos Loureiro Ralha,} Departamento de Ciência da Computação - UnB, Brasília, DF, Brasil
+\name{Prof. Dr. Alexandre Zaghetto,} Departamento de Ciência da Computação - UnB, Brasília, DF, Brasil
 
 
 \end{contributors}
@@ -220,27 +237,29 @@ HA31.2.S873 2007
 % \end{foreword}
 
 \begin{preface}
-This is an example preface.
-This is an example preface.
-This is an example preface.
-This is an example preface.
 
-\prefaceauthor{R. K. Watts}
-\where{Durham, North Carolina\\
-September, 2007}
+A playAPC é uma biblioteca gráfica voltada para alunos que possuem pouca ou nenhuma experiência de programação. Com ela, os alunos poderão obter uma resposta visual dos exercícios, catalisando o ensino, e permite aos professores uma maior gama de liberdade na elaboração de práticas de laboratórios, uma vez que abre a possibilidade de explorar problemas gráficos, como animações ou jogos que não exijam tantos recursos.
+
+Este livro contém uma série de exercícios separados por tópicos os quais podem auxiliar professores na elaboração de práticas de laboratórios usando a playAPC. Na introdução de cada capítulo, existe uma sessão de \emph{Pré-requisitos} que indica quais as funções da playAPC serão usadas nos problemas.
+
+O capítulo 1 contém quatro exercícios de algoritmos sequenciais, três exercícios de algoritmos condicionais e cinco exercícios de algoritmos com repetição.
+O capítulo 2 contém dois exercícios de vetores e dois exercícios de matrizes.
+O capítulo 3 contém três exercícios de funções.
+O capítulo 4 contém quatro exercícios de algoritmos recursivos.
+O capítulo 5 contém três exercícios extras, que envolvem todos os conteúdos abordados no livro.
+
+\prefaceauthor{Sinayra Pascoal Cotts Moreira}
+\where{Brasília, Universidade de Brasília\\
+Setembro, 2016}
 
 \end{preface}
 
 
 \begin{acknowledgments}
-From Dr.~Jay Young, consultant from Silver Spring, Maryland, I received
-the initial push to even consider writing this book. Jay was a constant
-``peer reader'' and very welcome advisor durying this year-long process.
+Gostaria de agradecer à todos os alunos e professores que me apoiaram no desenvolvimento deste projeto. Aos professores, que toda semana surgiam com novas ideias de práticas de laboratórios e, por consequência, novas funcionalidades para a biblioteca e aos alunos, que conseguiam realizar estas mesmas práticas.
 
-
-To all these wonderful people I owe a deep sense of gratitude especially now
-that this project has been completed.
-\authorinitials{G. T. S.}
+Em especial, gostaria de agradecer ao professor Ralha, por ter me apoiado inicialmente com este projeto, com toda ajuda, paciência e ideias no início do desenvolvimento da biblioteca.
+Também gostaria de agradecer o professor Zaghetto, por ter abraçado a proposta da biblioteca e ter apoiado o desenvolvimento deste livro, além de estar sempre surgindo com novas ideias de funcionalidades.
 \end{acknowledgments}
 
 \begin{acronyms}
@@ -248,27 +267,27 @@ that this project has been completed.
 \acro{APC}{Análise e Programação de Algoritmos}
 \end{acronyms}
 
-\begin{glossary}
-\term{NormGibbs}Draw a sample from a posterior distribution
-of data with an unknown mean and variance using Gibbs sampling.
+% \begin{glossary}
+% \term{NormGibbs}Draw a sample from a posterior distribution
+% of data with an unknown mean and variance using Gibbs sampling.
 
-\term{pNull}Test a one sided hypothesis from a numberically
-specified posterior CDF or from a sample from the posterior
+% \term{pNull}Test a one sided hypothesis from a numberically
+% specified posterior CDF or from a sample from the posterior
 
-\term{sintegral}A numerical integration using Simpson's rule
-\end{glossary}
+% \term{sintegral}A numerical integration using Simpson's rule
+% \end{glossary}
 
-\begin{symbols}
-\term{A}Amplitude
+% \begin{symbols}
+% \term{A}Amplitude
 
-\term{\hbox{\&}}Propositional logic symbol 
+% \term{\hbox{\&}}Propositional logic symbol 
 
-\term{a}Filter Coefficient
+% \term{a}Filter Coefficient
 
-\bigskip
+% \bigskip
 
-\term{\mathcal{B}}Number of Beats
-\end{symbols}
+% \term{\mathcal{B}}Number of Beats
+% \end{symbols}
 
 \begin{introduction}
 
@@ -281,7 +300,7 @@ Brasília, DF, Brasil}
 O índice de reprovação nas matérias iniciais do curso de Ciência da Computação da UnB tem crescido a cada semestre, bem como o índice de evasão. Apesar das tentativas de criar mais horários de plantão de dúvidas e maior disponibilidade dos monitores para essas disciplinas, o desinteresse se mantém. Visando aumentar o interesse dos alunos pelo curso, está sendo desenvolvida uma biblioteca gráfica 2D simplificada denominada playAPC.
 Para o discente, a playAPC deve ser usada para consolidar os conceitos aprendidos em Análise e Programação de Algoritmos (APC) através de modelagem gráfica. Dessa forma, os alunos podem interagir com outras disciplinas do curso de modo lúdico. 
 
-A playAPC foi desenvolvida utilizando a linguagem C++, a API OpenGL e a biblioteca GLFW 2.7. A API OpenGL deve ser suportada pela placa de vídeo presente no computador, sendo exigido a versão 1.3 no mínimo. O tutorial para instalação tanto da GLFW quanto da própria playAPC está disponível em detalhes no site Guia de Referência da playAPC \footnote{\url{http://pt-br.playcb.wikia.com/wiki/Categoria:Instala\%C3\%A7\%C3\%A3o}}. Apesar da playAPC ter sido desenvolvida em C++, o seu uso é focado primariamente para alunos que estejam a programar em C, ou seja, não é necessário conhecimento de C++ para utilizar a biblioteca, apenas utilizar a \emph{toolchain} do \emph{g++} para compilar.
+A playAPC foi desenvolvida utilizando a linguagem C++, a API OpenGL e a biblioteca GLFW 2.7. A API OpenGL deve ser suportada pela placa de vídeo presente no computador, sendo exigido a versão 1.3 no mínimo. O tutorial para instalação tanto da GLFW quanto da própria playAPC está disponível em detalhes no site Guia de Referência da playAPC \footnote{\url{http://playapc.zaghetto.com/category/como-instalar}}. Apesar da playAPC ter sido desenvolvida em C++, o seu uso é focado primariamente para alunos que estejam a programar em C, ou seja, não é necessário conhecimento de C++ para utilizar a biblioteca, apenas utilizar a \emph{toolchain} do \emph{g++} para compilar.
 
 Neste livro, será disponibilizado uma série de exercícios usando da playAPC focando auxiliar os professores da Univerdade de Brasília (UnB) a desenvolverem novas práticas de laboratórios das turmas de APC.
 

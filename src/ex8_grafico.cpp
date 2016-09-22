@@ -17,7 +17,8 @@ int main(){
         p[i].y = -pow(p[i].x, 3);
     }
 
-    CriaGrafico(100, p, 1); @{ \label{CriaGrafico}@
+    CriaGrafico(100, p, 1); @{ \label{line:CriaGrafico}@
+
     Pintar(255, 0, 0);
 
     Desenha();

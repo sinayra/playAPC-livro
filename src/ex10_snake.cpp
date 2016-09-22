@@ -167,8 +167,6 @@ int main(){
             break;
 
         aberto = Desenha1Frame();
-        aberto = Desenha1Frame();
-        aberto = Desenha1Frame();
         if(!aberto)
             break;
     }

@@ -75,28 +75,30 @@ Ponto d (Cardinal k, float h, Ponto p) {
 }
 
 
-int main(void) {
+int main() {
 
-  Ponto p;
-  int   i = 4; //dai pra cima a coisa fica grande e mais lenta
-  float   h = 40;
+    Ponto p;
+    int   k;
+    float   h = 40;
 
-  p.x = -70; p.y = 100; //ordem=1 cabe todo na tela
+    printf("Insira a ordem para a criacao das curvas: ");
+    scanf("%d", &k);
 
-
-  MostraPlanoCartesiano(10);
-  AbreJanela(LARGURA,ALTURA, "Curvas de Sierpinski");
-  PintarFundo(255, 255, 255);
+    p.x = -70; p.y = 100; //ordem=1 cabe todo na tela
 
 
-  if (i>0) h /= i*i;
-  p=a(i,h, p); p=reta(7,h, p);
-  p=b(i,h, p); p=reta(5,h, p);
-  p=c(i,h, p); p=reta(3,h, p);
-  p=d(i,h, p); p=reta(1,h, p);
+    MostraPlanoCartesiano(10);
+    AbreJanela(800,600, "Curvas de Sierpinski");
+    PintarFundo(255, 255, 255);
 
 
-  Desenha();
+    if (k>0) h /= k*k;
+    p = a(k,h, p); p = reta(7,h, p); //esta chamada da funcao reta calcula o proximo ponto onde a outra reta deve comecar
+    p = b(k,h, p); p = reta(5,h, p);
+    p = c(k,h, p); p = reta(3,h, p);
+    p = d(k,h, p); p = reta(1,h, p);
 
-  return 0;
+    Desenha();
+
+return 0;
 }

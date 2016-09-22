@@ -30,8 +30,8 @@ int main(){
 
     p.y = 20;
     for(p.x = -100; p.x < 100; p.x++){
-        Move(p, carro); @\label{line:CriaGrupo}@
-        Desenha1Frame();
+        Move(p, carro); @\label{line:Movem1}@
+        Desenha1Frame(); @\label{line:Desenha1Frame}@
     }
     Desenha();
 }
