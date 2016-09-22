@@ -29,12 +29,14 @@ int main(){
     PintarFundo(255, 255, 255);
     MostraPlanoCartesiano(10);
 
-    CriaCircunferencia(raio, centro);
+    CriaCircunferencia(raio, centro); @\label{line:CriaCircunferencia}@
+
     Pintar(255, 0, 0);
 
     CriaPonto(p); @\label{line:CriaPonto}@
     Pintar(0, 0, 255);
     Grafite(10); @\label{line:Grafite}@
+
     Desenha();
 
     return 0;

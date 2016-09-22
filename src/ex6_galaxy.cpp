@@ -1,4 +1,4 @@
-#include <playAPC/playapc.h>
+﻿#include <playAPC/playapc.h>
 #include <math.h>
 
 int main (int argc, char * argv[]) {
@@ -24,8 +24,12 @@ int main (int argc, char * argv[]) {
     p.x = 100*cos(t)/t;         q.x = -p.x;
     p.y = 100*sin(t)/t;         q.y = -p.y;
 
-    CriaPonto (p);
-    Pintar (200, 30, 100);
+    CriaPonto (p);    
+    Pintar (200, 30, 100);    
+    Grafite(3); 
+    
+    CriaPonto (q);    
+    Pintar (100, 30, 200);    
     Grafite(3);
 
     CriaPonto (q);
