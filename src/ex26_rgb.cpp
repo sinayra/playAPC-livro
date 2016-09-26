@@ -10,7 +10,7 @@ int main(){
     int mfiltro = 3;
     int somaaux[3];
     Ponto p, pf;
-    float mse = 0, distancia;
+    float dist = 0;
 
     R[0] = 0; R[QTD-1] = 0;
     G[0] = 0; G[QTD-1] = 0;
@@ -61,14 +61,12 @@ int main(){
         Pintar(Rf[i], Gf[i], Bf[i]);
         pf.y -= 10;
 
-        mse +=      pow(R[i] - Rf[i], 2) + pow(R[i] - Gf[i], 2) + pow(R[i] - Bf[i], 2)  //distancia euclidiana de R
-                +   pow(G[i] - Rf[i], 2) + pow(G[i] - Gf[i], 2) + pow(G[i] - Bf[i], 2) //distancia euclidiana de G
-                +   pow(B[i] - Rf[i], 2) + pow(B[i] - Gf[i], 2) + pow(B[i] - Bf[i], 2); //distancia euclidiana de B
+        dist += sqrt(pow(R[i] - Rf[i], 2) + pow(G[i] - Gf[i], 2) + pow(B[i] - Bf[i], 2));
 
     }
-    mse = (sqrt(mse))/(QTD-2);
+    dist = dist/(QTD-2);
 
-    printf("A distancia euclidiana media e %.2f\n", mse);
+    printf("A distancia euclidiana media e %.2f\n", dist);
 
     Desenha();
 }

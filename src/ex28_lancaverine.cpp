@@ -29,7 +29,7 @@ void defineCenario(Ponto *alvo, Ponto *partida, int *grupo_wolverine, int imgbac
     else //Repete fase anterior
         p.x = (*partida).x - 25;
 
-    ///////////////////////////////////Magneto//////////////////////////////////
+    ////Magneto////
     CriaGrupo();
 
     if(colisao == 1) //Comeca uma nova fase
@@ -41,16 +41,16 @@ void defineCenario(Ponto *alvo, Ponto *partida, int *grupo_wolverine, int imgbac
     CriaQuadrado(TAMANHOQUADRADO, *alvo);
     Pintar(255, 255, 255);
     AssociaImagem(imgmagneto_standing);
-    ////////////////////////////////////////////////////////////////////////////////
+    //////////////////
 
-    ///////////////////////////////////Wolverine//////////////////////////////////
+    ////Wolverine////
     *grupo_wolverine = CriaGrupo();
     (*partida).x = -100;
     (*partida).y = -15;
     CriaQuadrado(TAMANHOQUADRADO, *partida);
     Pintar(255, 255, 255);
     AssociaImagem(imgwolverine_standing);
-    ////////////////////////////////////////////////////////////////////////////////
+    //////////////////
 }
 
 float setaAngulo(Ponto partida){

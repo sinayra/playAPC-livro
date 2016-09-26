@@ -10,12 +10,12 @@
 \contentsline {chapter}{\numberline {1}Algoritmos sequenciais}{3}{chapter.1}
 \contentsline {chapter}{\numberline {2}Algoritmos condicionais}{13}{chapter.2}
 \contentsline {chapter}{\numberline {3}Algoritmos com repetição}{21}{chapter.3}
-\contentsline {part}{II\hspace {1em}Estrutura de dados n-dimensionais homogêneas}{37}{part.2}
-\contentsline {chapter}{\numberline {4}Vetores}{39}{chapter.4}
-\contentsline {chapter}{\numberline {5}Matrizes}{45}{chapter.5}
-\contentsline {part}{III\hspace {1em}Subalgoritmos}{53}{part.3}
-\contentsline {chapter}{\numberline {6}Subalgoritmos}{55}{chapter.6}
-\contentsline {part}{IV\hspace {1em}Recursão}{71}{part.4}
-\contentsline {chapter}{\numberline {7}Recursão}{73}{chapter.7}
-\contentsline {part}{V\hspace {1em}Exercícios extras}{89}{part.5}
-\contentsline {chapter}{\numberline {8}Exercícios extras}{91}{chapter.8}
+\contentsline {part}{II\hspace {1em}Estrutura de dados n-dimensionais homogêneas}{35}{part.2}
+\contentsline {chapter}{\numberline {4}Vetores}{37}{chapter.4}
+\contentsline {chapter}{\numberline {5}Matrizes}{43}{chapter.5}
+\contentsline {part}{III\hspace {1em}Subalgoritmos}{51}{part.3}
+\contentsline {chapter}{\numberline {6}Subalgoritmos}{53}{chapter.6}
+\contentsline {part}{IV\hspace {1em}Recursão}{69}{part.4}
+\contentsline {chapter}{\numberline {7}Recursão}{71}{chapter.7}
+\contentsline {part}{V\hspace {1em}Exercícios extras}{87}{part.5}
+\contentsline {chapter}{\numberline {8}Exercícios extras}{89}{chapter.8}

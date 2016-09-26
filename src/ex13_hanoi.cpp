@@ -1,155 +1,159 @@
 #include <stdio.h>
 #include <playAPC/playapc.h>
-
-#define CHAO -70
-#define POSX_A -62.5
-#define POSX_B -2.5
-#define POSX_C 58.5
+#include <math.h>
+#include <stdlib.h>
+#include <time.h>
 
 typedef struct{
-    int index, largura, label;
-    float posicao;
+    int grupo, largura;
     char torre;
-}discoHanoi;
-//discoHanoi.index : se refere ao indice do grupo, retornado pela funcao CriaGrupo
-//discoHanoi.label: qual a numeracao do disco, do menor para o maior
-//discoHanoi.posicao: em qual posicao do plano cartesiano o disco esta
-//discoHanoi.torre: em qual torre que ele esta
-//discoHanoi.largura: largura do disco
+}tipoDisco;
 
-//Aqui eu conto quantos discos tem em uma torre
-int contDiscos(discoHanoi disco[], int discoindex, char torre, int numDiscos){
-    int i, total;
+void geraDiscos(tipoDisco discos[], int numDiscos){
+    Ponto p;
+    int base, altura;
 
-    total = 0;
-    for(i = 0; i < numDiscos; i++){
-        if(i != discoindex){
-            if(disco[i].torre == torre)
-                total++;
-        }
+    for(int i = 0; i < 5; i++){
+        discos[i].torre = '0';
+        discos[i].grupo = -1;
+        discos[i].largura = -1;
     }
-    return total;
+
+    p.y = -90;
+    p.x = -100;
+
+    base = 80;
+    altura = 10;
+    for(int i = numDiscos - 1; i >= 0; i--){
+        discos[i].torre = 'A';
+        discos[i].grupo = CriaGrupo();
+        discos[i].largura = base;
+
+        CriaRetangulo(base, altura, p);
+        Pintar(rand()%255, rand()%255, rand()%255);
+
+        base -= 16;
+        p.x += 8;
+        p.y += 10;
+
+    }
 }
 
-//Aqui eu movo os discos para a torre
-void moveHanoi(int n, discoHanoi discos[], char torre, int numDiscos){
+int geraFundo(){
     Ponto p;
-    int i, disco, discoindex, auxposicao;
+    int fundo;
 
-    /////////Procurando o disco que tenho que mover
-    for(i = 0; i < numDiscos; i++){
-        if(discos[i].label == n){
-            disco = discos[i].index; //O grupo que este disco pertence
-            discoindex = i; //A posicao do vetor de discoHanoi que este disco esta
+    fundo = CriaGrupo();
+
+    p.x = -100;
+    p.y = -100;
+    CriaRetangulo(200, 10, p);
+    Pintar(185, 122, 87);
+
+    p.y = -90;
+    //Torre A
+    p.x = -66;
+    CriaRetangulo(10, 100, p);
+    Pintar(0, 128, 255);
+
+    //Torre B
+    p.x = -5;
+    CriaRetangulo(10, 100, p);
+    Pintar(255, 0, 0);
+
+    //Torre C
+    p.x = 66;
+    CriaRetangulo(10, 100, p);
+    Pintar(255, 255, 0);
+
+    return fundo;
+}
+
+void moveDisco(tipoDisco discos[5], char a, char b){
+    int grupodisco, qtddiscos = 0;
+    int i = 0, index;
+    Ponto p;
+
+    while(discos[i].torre != a){
+        i++;
+    }
+    index = i; //Se saiu do loop, entao encontramos o disco que precisaremos mover
+
+    for(i = 0; i < 5; i++){
+        if(discos[i].torre == b)
+            qtddiscos++;
+    }
+
+    p.y = -90 + qtddiscos * 10; //altura da mesa + quantidade de discos
+
+    switch(b){
+        case 'A':
+            p.x = -66 + 5; //mais 5 do centro da pilastra
             break;
-        }
+        case 'B':
+            p.x = -5 + 5; //mais 5 do centro da pilastra
+            break;
+        case 'C':
+            p.x = 66 + 5; //mais 5 do centro da pilastra
+            break;
     }
 
-    //Aqui eu movo na coordenada x o meu disco
-    if(torre == 'B'){
-        p.x = POSX_B - discos[i].largura/2;
-        discos[discoindex].torre = 'B';
-    }
-    else if (torre == 'C'){
-        p.x = POSX_C - discos[i].largura/2;
-        discos[discoindex].torre = 'C';
-    }
-    else{
-        p.x = POSX_A - discos[i].largura/2;
-        discos[discoindex].torre = 'A';
-    }
+    p.x -= discos[index].largura/2;
 
-    //posicao do chao + quantos discos tem naquela torre
-    p.y = CHAO + contDiscos(discos, discoindex, torre, numDiscos) * 10; //vezes largura de cada disco
+    discos[index].torre = b;
 
-    Move(p, disco);
+    Move(p, discos[index].grupo);
 
     while(!ApertouTecla(GLFW_KEY_ENTER))
         Desenha1Frame();
+
 }
 
-void hanoi(int n, discoHanoi disco[], char a, char b, char c, int numDiscos){
+void hanoi(int n, char a, char b, char c, tipoDisco discos[5]){
  /* mova n discos do pino a para o pino b usando
    o pino c como intermediario                    */
 
     if (n == 1){
         printf("\nmova disco %d de %c para %c\n", n, a, b);
-        moveHanoi(n, disco, b, numDiscos);
+        moveDisco(discos, a, b);
     }
     else
     {
-        hanoi(n - 1, disco, a, c, b, numDiscos);                            // H1
+        hanoi(n - 1, a, c, b, discos);                            // H1
         printf("\nmova disco %d de %c para %c\n", n, a, b);
-        moveHanoi(n, disco, b, numDiscos);
+        moveDisco(discos, a, b);
 
-        hanoi(n - 1, disco, c, b, a, numDiscos);                            // H2
+        hanoi(n - 1, c, b, a, discos);                            // H2
     }
 }
 
 int main(void){
-    int numDiscos, i;
-    discoHanoi disco[5];
-    Ponto p;
+    int numDiscos;
+    int grupofundo;
+    tipoDisco discos[5];
+
+    srand(time(NULL));
 
     do{
         printf("\nDigite uma quantidade de discos menor ou igual a 5: ");
         scanf("%d", &numDiscos);
-    }while(numDiscos > 5 || numDiscos <= 0); //Pergunte a quantidade de discos de novo se o usuario colocar um numero maior que 5 ou menor ou igual a 0
+    }while(numDiscos > 5 || numDiscos <= 0);
 
-    AbreJanela(500, 500, "Torre de Hanoi");
+    AbreJanela(400, 400, "Torre de Hanoi");
     PintarFundo(255, 255, 255);
+    MostraPlanoCartesiano(10);
 
-    ///////////////////////// Chao e torres /////////////////////////
-    CriaGrupo(); //Grupo das coisas que nao se mexem
-    //Chao
-    p.x = -100;
-    p.y = -80;
-    CriaRetangulo(200, 10, p);
-    Pintar(0, 0, 0);
+    grupofundo = geraFundo();
+    geraDiscos(discos, numDiscos);
 
-    //A
-    p.x = POSX_A;
-    p.y = CHAO;
-    CriaRetangulo(5, 60, p);
-    Pintar(255, 0, 0);
-
-    //B
-    p.x = POSX_B;
-    p.y = CHAO;
-    CriaRetangulo(5, 60, p);
-    Pintar(255, 0, 0);
-
-    //C
-    p.x = POSX_C;
-    p.y = CHAO;
-    CriaRetangulo(5, 60, p);
-    Pintar(255, 255, 0);
-
-    ///////////////////////// Discos /////////////////////////
-    p.y = CHAO;
-    for(i = 0; i < numDiscos; i++){
-
-        disco[i].index = CriaGrupo(); //Cada disco tem que estar em um grupo para poderem se mover independente
-        disco[i].largura = 10 * (numDiscos - i); //largura do disco pra torre ficar bonitinha
-        disco[i].posicao = p.y; //posicao original do disco
-        disco[i].torre = 'A'; //torre de partida
-        disco[i].label = numDiscos - i; //Label para os discos
-        p.x = POSX_A - disco[i].largura/2;
-
-        CriaRetangulo(disco[i].largura, 10, p);
-        Pintar(rand()%256, rand()%256, rand()%256);
-
-        p.y += 10;
-    }
-
-    printf("Agora vou mostrar passo a passo como se resolve esta torre. Aperte enter para o proximo passo");
     while(!ApertouTecla(GLFW_KEY_ENTER))
         Desenha1Frame();
 
-    hanoi(numDiscos, disco, 'A', 'B', 'C', numDiscos);
+    hanoi(numDiscos, 'A', 'B', 'C', discos);
 
     printf("\nPronto! E assim que se resolve esta torre!");
 
     Desenha();
+
     return 0;
 }

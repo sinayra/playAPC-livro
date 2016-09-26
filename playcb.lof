@@ -3,19 +3,19 @@
 \contentsline {figure}{\numberline {1.3\relax }{\ignorespaces Estrela de Davi\relax }}{5}{figure.caption.16}
 \contentsline {figure}{\numberline {1.4\relax }{\ignorespaces Quadrado inscrito em um círculo\relax }}{6}{figure.caption.17}
 \contentsline {figure}{\numberline {3.1\relax }{\ignorespaces Carro se movendo da posição -100 até a posição 100\relax }}{22}{figure.caption.36}
-\contentsline {figure}{\numberline {3.2\relax }{\ignorespaces Moinho de vento\relax }}{23}{figure.caption.37}
+\contentsline {figure}{\numberline {3.2\relax }{\ignorespaces Moinho de vento\relax }}{22}{figure.caption.37}
 \contentsline {figure}{\numberline {3.3\relax }{\ignorespaces Sistema solar\relax }}{23}{figure.caption.38}
-\contentsline {figure}{\numberline {4.1\relax }{\ignorespaces Gráfico do polinômio $-x^3$\relax }}{40}{figure.caption.50}
-\contentsline {figure}{\numberline {4.2\relax }{\ignorespaces À esquerda, 20 quadrados com componentes RGB fornecidos pelo usuário. À direita, aplicação do filtro de média móvel central em cada quadrado\relax }}{41}{figure.caption.51}
-\contentsline {figure}{\numberline {5.2\relax }{\ignorespaces Filtro Motion Blur\relax }}{46}{figure.caption.60}
-\contentsline {figure}{\numberline {6.1\relax }{\ignorespaces Lançador Balístico\relax }}{56}{figure.caption.68}
-\contentsline {figure}{\numberline {6.3\relax }{\ignorespaces Jogo Snake\relax }}{57}{figure.caption.70}
-\contentsline {figure}{\numberline {7.1\relax }{\ignorespaces Árvore Binária com altura $30$, ângulo $25º$ e profundidade $6$\relax }}{74}{figure.caption.77}
-\contentsline {figure}{\numberline {7.2\relax }{\ignorespaces Solucionador da torre de Hanói\relax }}{74}{figure.caption.78}
-\contentsline {figure}{\numberline {7.3\relax }{\ignorespaces Curva de Koch \relax }}{76}{figure.caption.79}
-\contentsline {figure}{\numberline {7.4\relax }{\ignorespaces Floco de neve \relax }}{76}{figure.caption.80}
-\contentsline {figure}{\numberline {7.5\relax }{\ignorespaces Curva de Sierpiński de ordem $1$ com ângulo de $45º$\relax }}{77}{figure.caption.81}
-\contentsline {figure}{\numberline {7.6\relax }{\ignorespaces Curva de Sierpiński \relax }}{79}{figure.caption.82}
-\contentsline {figure}{\numberline {8.1\relax }{\ignorespaces Simulador de inundação\relax }}{92}{figure.caption.92}
-\contentsline {figure}{\numberline {8.2\relax }{\ignorespaces Lua em órbita espiral\relax }}{92}{figure.caption.93}
-\contentsline {figure}{\numberline {8.3\relax }{\ignorespaces Sonar\relax }}{93}{figure.caption.94}
+\contentsline {figure}{\numberline {4.1\relax }{\ignorespaces Gráfico do polinômio $-x^3$\relax }}{38}{figure.caption.50}
+\contentsline {figure}{\numberline {4.2\relax }{\ignorespaces À esquerda, 20 quadrados com componentes RGB fornecidos pelo usuário. À direita, aplicação do filtro de média móvel central em cada quadrado\relax }}{39}{figure.caption.51}
+\contentsline {figure}{\numberline {5.2\relax }{\ignorespaces Filtro Motion Blur\relax }}{44}{figure.caption.60}
+\contentsline {figure}{\numberline {6.1\relax }{\ignorespaces Lançador Balístico\relax }}{54}{figure.caption.68}
+\contentsline {figure}{\numberline {6.3\relax }{\ignorespaces Jogo Snake\relax }}{55}{figure.caption.70}
+\contentsline {figure}{\numberline {7.1\relax }{\ignorespaces Árvore Binária com altura $30$, ângulo $25º$ e profundidade $6$\relax }}{72}{figure.caption.77}
+\contentsline {figure}{\numberline {7.2\relax }{\ignorespaces Solucionador da torre de Hanói\relax }}{72}{figure.caption.78}
+\contentsline {figure}{\numberline {7.3\relax }{\ignorespaces Curva de Koch \relax }}{74}{figure.caption.79}
+\contentsline {figure}{\numberline {7.4\relax }{\ignorespaces Floco de neve \relax }}{74}{figure.caption.80}
+\contentsline {figure}{\numberline {7.5\relax }{\ignorespaces Curva de Sierpiński de ordem $1$ com ângulo de $45º$\relax }}{75}{figure.caption.81}
+\contentsline {figure}{\numberline {7.6\relax }{\ignorespaces Curva de Sierpiński \relax }}{77}{figure.caption.82}
+\contentsline {figure}{\numberline {8.1\relax }{\ignorespaces Simulador de inundação\relax }}{90}{figure.caption.92}
+\contentsline {figure}{\numberline {8.2\relax }{\ignorespaces Lua em órbita espiral\relax }}{90}{figure.caption.93}
+\contentsline {figure}{\numberline {8.3\relax }{\ignorespaces Sonar\relax }}{91}{figure.caption.94}
